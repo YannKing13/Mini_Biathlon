@@ -1,7 +1,39 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#061429"><meta name="apple-mobile-web-app-capable" content="yes"><title>Mini Biathlon Championship</title>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#061429"><meta name="apple-mobile-web-app-capable" content="yes"><title>Mini Biathlon Championship V2</title>
 <style>
 :root{color-scheme:dark;--bg:#07172b;--panel:#102844;--panel2:#173655;--line:#31536e;--glow:#30d6f7;--lime:#b5e94f;--amber:#ffc55c;--muted:#9bb6cb;--txt:#edf7ff;--red:#ef6170}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--txt);touch-action:none}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.36;cursor:default}#app{position:fixed;inset:0;overflow:hidden}#background{position:absolute;inset:0;background:radial-gradient(ellipse at 75% -5%,#34668b 0,transparent 55%),linear-gradient(148deg,#081426,#112b47 63%,#07182d)}#background:after{content:'';position:absolute;left:0;right:0;bottom:-15%;height:63%;background:repeating-linear-gradient(160deg,transparent 0 30px,#ffffff05 31px 32px);transform:skewY(-7deg);pointer-events:none}#menu{position:absolute;inset:0;overflow:auto;overscroll-behavior:contain;touch-action:pan-y;padding:max(14px,env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left))}#menu::-webkit-scrollbar{width:6px}#menu::-webkit-scrollbar-thumb{background:#ffffff32;border-radius:9px}.shell{max-width:1200px;margin:auto;position:relative}.header{display:flex;gap:14px;justify-content:space-between;align-items:center;margin-bottom:15px}.logo{font-weight:1000;letter-spacing:.04em;font-size:clamp(20px,3.6vw,32px);line-height:1.02;text-shadow:0 4px 18px #0008}.logo em{font-style:normal;color:var(--glow)}.eyebrow{font-size:11px;letter-spacing:.24em;color:var(--lime);font-weight:900;margin-bottom:5px}.chip{border:1px solid #ffffff32;background:#ffffff13;border-radius:30px;padding:7px 11px;font-size:11px;font-weight:800;color:#d2eaf5;white-space:nowrap}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 16px}.tab{background:#102e4c;border:1px solid #31506f;color:#a7c4d8;padding:10px 16px;border-radius:11px;font-weight:800}.tab.active{background:#2b6480;border-color:#4fd9fa;color:#fff;box-shadow:inset 0 0 0 1px #4fd9fa35}.panel{background:linear-gradient(146deg,#173957eb,#0e223de8);border:1px solid #4c77954f;border-radius:16px;box-shadow:0 14px 35px #0002;padding:16px}.grid2{display:grid;grid-template-columns:minmax(260px,1.18fr) minmax(250px,1fr);gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.title2{font-size:17px;font-weight:900;margin:0 0 11px}.small{font-size:12px;color:var(--muted);line-height:1.55}.statline{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0}.pill{display:inline-block;border:1px solid #456b81;background:#081d34;border-radius:16px;padding:5px 9px;font-size:11px;color:#d6ecf7;font-weight:800}.pill.good{color:#baff79;border-color:#617e36}.pill.warn{color:#ffd27d;border-color:#867046}.action{background:linear-gradient(180deg,#cdfa73,#a8df42);color:#182915;border:0;border-radius:11px;padding:12px 18px;font-weight:1000;box-shadow:0 6px 20px #9ae1332a}.action.alt{background:#214a69;color:#e8f7fd;border:1px solid #517c97;box-shadow:none}.action.warn{background:#4b3446;color:#ffcad0;border:1px solid #8b5567;box-shadow:none}.action:active{filter:brightness(1.12);transform:translateY(1px)}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.field label{display:block;color:#a9c8d7;font-size:11px;letter-spacing:.08em;margin-bottom:5px;font-weight:900;text-transform:uppercase}.field select,.field input{width:100%;padding:10px 10px;background:#081d31;color:#eafaff;border:1px solid #416681;border-radius:8px;outline:none}.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hero{position:relative;overflow:hidden;min-height:180px;background:linear-gradient(116deg,#244967,#126e86 52%,#4d93a8);border-radius:14px;padding:20px;border:1px solid #83c5d273}.hero:after{content:'❄';position:absolute;right:-12px;top:-50px;opacity:.16;font-size:250px;line-height:1;color:white;pointer-events:none}.hero .big{font-weight:1000;font-size:clamp(24px,4vw,43px);max-width:520px;line-height:1.08;margin-bottom:10px}.hero .sub{font-size:13px;max-width:440px;color:#e3f2fa;line-height:1.5}.race-item{display:flex;gap:10px;align-items:center;padding:10px;border-bottom:1px solid #ffffff18}.race-item:last-child{border-bottom:0}.race-item.sel{background:#205376a0;border-radius:9px}.race-item .num{flex:0 0 26px;color:#85a9ba;font-weight:1000;font-size:14px}.race-item .info{flex:1;min-width:0}.race-item .name{font-weight:850;font-size:13px}.race-item .meta{font-size:11px;color:#9cbacc;margin-top:3px}.race-item .status{font-size:12px;white-space:nowrap;font-weight:900}.scrolllist{max-height:330px;overflow:auto;touch-action:pan-y}.scrolllist::-webkit-scrollbar{width:4px}.scrolllist::-webkit-scrollbar-thumb{background:#4b6e87}.table{width:100%;border-collapse:collapse;font-size:12px}.table th,.table td{padding:9px 8px;text-align:left;border-bottom:1px solid #ffffff17;white-space:nowrap}.table th{color:#9fbaca;font-size:11px;letter-spacing:.05em}.table tr.me{background:#28638679;color:#fff;font-weight:900}.table tr:first-child td:first-child{color:#d8f77e}.banner{padding:9px 12px;background:#9cc44d17;border-left:3px solid #bff468;border-radius:7px;font-size:12px;color:#dff3bf;margin:10px 0}.cardformat{padding:11px;border:1px solid #436580;background:#0e2944;border-radius:11px;text-align:left;color:white;cursor:pointer;min-height:90px}.cardformat.active{border-color:#c3f86b;box-shadow:inset 0 0 0 1px #bcf176;background:#1d4d60}.cardformat b{font-size:13px}.cardformat div{font-size:11px;color:#b5cddd;margin-top:5px;line-height:1.45}.how{line-height:1.65;font-size:13px;color:#cadfee}.how b{color:white}#game{position:absolute;inset:0;display:none;width:100%;height:100%;touch-action:none}#hud{display:none;position:absolute;inset:0;pointer-events:none}#hud>*{pointer-events:auto}.topbar{height:53px;background:linear-gradient(180deg,#061628f2,#0a2440e0);display:flex;align-items:center;gap:14px;padding:4px max(10px,env(safe-area-inset-left));border-bottom:1px solid #8cc8df47}.topbar .metric{min-width:0}.topbar .metric strong{font-weight:1000;font-size:clamp(13px,2.8vh,21px);display:block;white-space:nowrap}.topbar .metric span{font-size:10px;letter-spacing:.08em;color:#a7c5d5;font-weight:900}.topbar .metric .cyan{color:#86f2ff}.topbar .metric .lime{color:#cafa76}.topbar #raceTitle{flex:1;min-width:70px}.hudbtn{background:#0c3653ed;border:1px solid #83b8d1a1;border-radius:8px;padding:8px 11px;color:white;font-size:12px;font-weight:900}.hudbtn:active{background:#266687}.leftinfo{position:absolute;top:62px;left:max(8px,env(safe-area-inset-left));min-width:192px;max-width:34%;background:#09233fe4;border:1px solid #79b2d35c;border-radius:10px;padding:8px 10px;pointer-events:none}.barline{display:flex;align-items:center;gap:6px;margin:4px 0}.barline span{width:60px;font-size:10px;color:#daecf3;font-weight:900}.bar{width:105px;height:8px;background:#04111e;border-radius:10px;overflow:hidden;border:1px solid #65849c80}.bar i{display:block;height:100%;background:linear-gradient(90deg,#83efbc,#cef96e);width:50%;transition:width .12s}.bar i.hot{background:linear-gradient(90deg,#f8b452,#ef5b62)}.barline b{font-size:10px;width:30px;text-align:right}.sideboard{position:absolute;top:62px;right:max(8px,env(safe-area-inset-right));min-width:153px;max-width:25%;background:#09233fdc;border:1px solid #79b2d35c;border-radius:10px;padding:6px 8px;pointer-events:none;font-size:11px}.sideboard .line{display:flex;gap:5px;justify-content:space-between;padding:4px 1px;border-bottom:1px solid #ffffff22}.sideboard .line:last-child{border:0}.sideboard .line.me{color:#d6ff8c;font-weight:900}.sideboard .head{font-weight:1000;color:#b0d7e8;margin-bottom:3px}.bottomrow{position:absolute;left:0;right:0;bottom:max(7px,env(safe-area-inset-bottom));display:flex;align-items:flex-end;justify-content:space-between;padding:0 max(12px,env(safe-area-inset-left));gap:10px;pointer-events:none}.controls{display:flex;gap:9px;align-items:flex-end;pointer-events:auto}.control{border-radius:15px;border:2px solid #9cc8de8c;color:white;background:linear-gradient(180deg,#2c627ce8,#0a2b48e8);box-shadow:0 4px 15px #0007;min-width:90px;height:61px;font-weight:1000;font-size:15px;letter-spacing:.02em;touch-action:none;user-select:none;-webkit-user-select:none}.control small{display:block;font-size:10px;font-weight:800;color:#b9d6e3}.control:active,.control.pressed{background:linear-gradient(180deg,#c7f66d,#80b838);color:#10281b;border-color:#d5ff9a;transform:scale(.98)}.control:active small,.control.pressed small{color:#18320f}.control.fire{background:#ad3649;color:#fff;border-color:#fc919d;min-width:135px;height:65px;font-size:18px}.control.fire:active{background:#ea6b6b}.control.recover{background:#22536beb}.hintcenter{position:absolute;left:50%;bottom:79px;transform:translateX(-50%);background:#061b2dbd;border:1px solid #80b9d561;border-radius:25px;color:#eafaff;padding:5px 14px;font-size:11px;text-align:center;max-width:45%;pointer-events:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.shootinfo{position:absolute;left:50%;top:62px;transform:translateX(-50%);font-weight:950;background:#09233fe0;border:1px solid #7bb6d3;border-radius:10px;padding:7px 16px;white-space:nowrap;font-size:13px;pointer-events:none}.modalback{position:absolute;inset:0;background:#020a15b9;display:flex;align-items:center;justify-content:center;padding:14px;z-index:12}.modal{width:min(800px,98vw);max-height:90vh;overflow:auto;touch-action:pan-y;background:linear-gradient(160deg,#1c3f5e,#0e203a);border:1px solid #77a8c2;border-radius:20px;padding:19px;box-shadow:0 20px 60px #000b}.modal h2{margin:0 0 8px;font-size:24px}.modal h3{font-size:15px}.modal .tablewrap{max-height:47vh;overflow:auto;touch-action:pan-y}.toast{position:absolute;top:51%;left:50%;transform:translate(-50%,-50%);font-weight:1000;color:#fff;font-size:clamp(17px,3.5vw,30px);text-shadow:0 3px 14px #061524;pointer-events:none;z-index:8;text-align:center;background:#0c3154b9;padding:10px 22px;border-radius:12px;max-width:78%;border:1px solid #cdefff53}.hidden{display:none!important}#rotate{display:none;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;text-align:center;background:#061729ed;z-index:25;font-size:21px;padding:25px;gap:8px}#rotate span{font-size:65px}@media(orientation:portrait) and (max-width:800px){#rotate{display:flex}#menu{pointer-events:none}#game,#hud{pointer-events:none}}@media(max-height:500px){.topbar{height:45px}.topbar .metric strong{font-size:14px}.topbar .metric span{font-size:8px}.leftinfo,.sideboard,.shootinfo{top:51px}.control{height:52px;min-width:82px;font-size:13px;border-radius:12px}.control.fire{height:57px;min-width:105px;font-size:15px}.hintcenter{bottom:64px;font-size:10px}.barline{margin:2px 0}.leftinfo{padding:5px 7px}.sideboard .line{padding:2px 1px}}@media(max-width:700px){.grid2{grid-template-columns:1fr}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.header{align-items:flex-start}.chip{font-size:9px}.control{min-width:73px}.sideboard{min-width:135px}.leftinfo{min-width:150px}.bar{width:70px}.barline span{width:49px}}
+
+/* V2 — Défilement tactile sûr, boutons de navigation et classement en course. */
+.modalback{overscroll-behavior:contain;touch-action:auto}
+.modal.results-modal{display:flex;flex-direction:column;height:min(91dvh,710px);max-height:91dvh;overflow:hidden;touch-action:pan-y;padding:clamp(10px,2.4vh,18px);gap:2px}
+.modal.results-modal .eyebrow{flex-shrink:0}
+.modal.results-modal h2{font-size:clamp(17px,3.2vw,25px);margin:2px 0 7px;flex-shrink:0}
+.modal.results-modal .statline{margin:5px 0;flex-shrink:0}
+.modal.results-modal .tablewrap{flex:1 1 auto;min-height:44px;max-height:none;overflow-y:auto;overflow-x:auto;touch-action:pan-y;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;border:1px solid #7293a450;border-radius:9px}
+.modal.results-modal .tablewrap::-webkit-scrollbar{width:9px}
+.modal.results-modal .tablewrap::-webkit-scrollbar-thumb{background:#8cb6ca;border-radius:8px}
+.result-table{font-size:clamp(12px,1.8vw,15px)}
+.result-table th{position:sticky;top:0;background:#173953;z-index:2}
+.result-table td,.result-table th{padding:9px 11px}
+.result-table tr.me{box-shadow:inset 3px 0 #b8f47b}
+.result-toolbar{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;flex-shrink:0;font-size:11px;font-weight:850;color:#acc5d4;margin:3px 0}
+.result-nav{display:flex;align-items:center;gap:5px}
+.result-nav button{border:1px solid #5183a0;border-radius:8px;background:#163f5b;color:#e6f5fb;padding:6px 10px;font-size:11px;font-weight:900;touch-action:manipulation}
+.result-actions{margin:8px 0 0;flex-shrink:0;align-items:center}
+.result-actions .action{padding:10px 13px;font-size:clamp(11px,2vw,15px)}
+.sideboard{width:clamp(177px,23vw,290px);max-width:29%;padding:8px 10px;background:#09223ff1;box-shadow:0 4px 16px #08243a59;pointer-events:auto;cursor:pointer}
+.sideboard .head{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:clamp(10px,1.5vw,12px);color:#edfaff}
+.sideboard .board-expand{font-size:10px;color:#dfffc1;background:#295a68b9;border:1px solid #6d9694;border-radius:6px;padding:4px 5px;white-space:nowrap}
+.sideboard .board-sub{font-size:9px;color:#bdd0df;margin:4px 0 7px;letter-spacing:.02em}
+.sideboard .line{align-items:center;gap:8px;font-size:clamp(11px,1.5vw,13px);padding:5px 0}
+.sideboard .line .board-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sideboard .board-gap{font-variant-numeric:tabular-nums;white-space:nowrap;font-size:clamp(11px,1.35vw,13px);color:#eff9ff}
+.sideboard .line.me{background:#b3f67a18;margin:0 -4px;padding:5px 4px;border-left:3px solid #c8ff86}
+.sideboard .line.me .board-gap{color:#d2ff81}
+.sideboard .board-bottom{font-size:9px;text-align:center;color:#9cbaca;padding-top:5px}
+.live-modal .small{margin-bottom:2px}
+@media(max-height:440px){.modal.results-modal{height:96dvh;max-height:96dvh}.modal.results-modal h2{margin:0 0 3px}.modal.results-modal .statline{margin:2px 0}.result-toolbar{margin:1px 0}.result-actions{margin:4px 0 0}.sideboard .line{padding:3px 0}.sideboard .board-bottom{display:none}}
+@media(max-width:700px){.sideboard{max-width:31%;min-width:158px;padding:6px}.sideboard .board-sub{font-size:8px}.sideboard .board-expand{font-size:9px}.sideboard .board-bottom{display:none}.result-toolbar>span{display:none}.result-nav button{font-size:10px;padding:6px 7px}}
 </style></head><body><div id="app"><div id="background"></div><div id="menu"></div><canvas id="game"></canvas><div id="hud"><div class="topbar"><div id="raceTitle" class="metric"><strong>BIATHLON</strong><span>ÉPREUVE</span></div><div class="metric"><strong class="cyan" id="clock">00:00</strong><span>CHRONO</span></div><div class="metric"><strong id="distance">0.0 km</strong><span>PARCOURS</span></div><div class="metric"><strong class="lime" id="rank">1 / 60</strong><span>POSITION</span></div><button id="pauseButton" class="hudbtn">Ⅱ PAUSE</button></div><div class="leftinfo"><div class="barline"><span>ÉNERGIE</span><div class="bar"><i id="energyBar"></i></div><b id="energyText">100%</b></div><div class="barline"><span>FATIGUE</span><div class="bar"><i id="fatigueBar" class="hot"></i></div><b id="fatigueText">0%</b></div><div class="barline"><span>CŒUR</span><div class="bar"><i id="heartBar" class="hot"></i></div><b id="heartText">120</b></div><div class="barline"><span>VITESSE</span><b id="speedText">0 km/h</b><span id="terrainText" style="width:auto"></span></div></div><div id="shootInfo" class="shootinfo hidden"></div><div id="sideboard" class="sideboard"></div><div id="hint" class="hintcenter">Alternez les poussées pour prendre de la vitesse</div><div class="bottomrow"><div class="controls" id="skiControls"><button class="control" id="leftButton">◀ G<small>POUSSÉE</small></button><button class="control" id="rightButton">D ▶<small>POUSSÉE</small></button></div><div class="controls" id="effortControls"><button class="control" id="recoverButton">RÉCUP.<small>GLISSER</small></button><button class="control" id="attackButton">ATTAQUE<small>MAINTENIR</small></button></div><div class="controls hidden" id="shootControls"><button class="control recover" id="breathButton">SOUFFLE<small>RETENIR</small></button><button class="control fire" id="fireButton">◎ TIRER</button><button class="control alt hidden" id="reloadButton">+ RECHARGE</button></div></div></div><div id="modalRoot"></div><div id="toast" class="toast hidden"></div><div id="rotate"><span>↻</span><b>Tourne ton téléphone en paysage</b><small>Mini Biathlon Championship se joue horizontalement.</small></div></div>
 <script>
 'use strict';
@@ -46,7 +78,7 @@ function standingsFor(discipline){const scores={};for(const a of getAthletes(sta
 function teamStandings(filter){const scores={};for(let n=0;n<12;n++)scores[n]={n,pts:0,starts:0,wins:0};for(const r of state.results){if(!r.team)continue;if(filter!=='Équipes'&&r.discipline!==filter)continue;for(const row of r.rows||[]){let t=scores[row.n];if(t){t.pts+=pts(row.rank,r.type);t.starts++;if(row.rank===1)t.wins++}}}return Object.values(scores).filter(x=>x.starts>0).sort((a,b)=>b.pts-a.pts||b.wins-a.wins)}
 function playerResults(){return state.results.filter(r=>r.userRank).map(r=>({name:r.name,rank:r.userRank,winner:r.winner,when:r.venue}))}
 function optionsRoster(){return getAthletes(state.sex).filter(a=>a.n===state.nation).map(a=>`<option value="${a.id}" ${a.id===player().id?'selected':''}>${esc(a.name)} · Ski ${a.ski} / Tir ${a.shoot}</option>`).join('')}
-function menuRender(){if(state.screen!=='menu')return;const general=standingsFor('Général'),mine=general.findIndex(x=>x.id===player().id)+1;const current=CALENDAR[Math.min(state.stage,CALENDAR.length-1)],stageType=current?.[0],end=state.stage>=CALENDAR.length;const p=player();$('menu').innerHTML=`<div class="shell"><div class="header"><div><div class="eyebrow">WORLD TOUR • SIMULATION SPORTIVE</div><div class="logo">MINI <em>BIATHLON</em><div style="font-size:.53em;color:#e9f4ff;margin-top:4px;letter-spacing:.27em">CHAMPIONSHIP</div></div></div><div class="chip">❄ SAISON · 12 ÉTAPES</div></div><div class="tabs">${[['home','ACCUEIL'],['season','SAISON'],['quick','COURSE LIBRE'],['ranks','CLASSEMENTS'],['results','RÉSULTATS'],['rules','RÈGLES']].map(([id,label])=>`<button class="tab ${state.tab===id?'active':''}" data-tab="${id}">${label}</button>`).join('')}</div><div id="tabBody"></div></div>`;document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{state.tab=b.dataset.tab;menuRender()});let html='';
+function menuRender(){if(state.screen!=='menu')return;const general=standingsFor('Général'),mine=general.findIndex(x=>x.id===player().id)+1;const current=CALENDAR[Math.min(state.stage,CALENDAR.length-1)],stageType=current?.[0],end=state.stage>=CALENDAR.length;const p=player();$('menu').innerHTML=`<div class="shell"><div class="header"><div><div class="eyebrow">WORLD TOUR • SIMULATION SPORTIVE</div><div class="logo">MINI <em>BIATHLON</em><div style="font-size:.53em;color:#e9f4ff;margin-top:4px;letter-spacing:.27em">CHAMPIONSHIP</div></div></div><div class="chip">❄ SAISON · 12 ÉTAPES · V2</div></div><div class="tabs">${[['home','ACCUEIL'],['season','SAISON'],['quick','COURSE LIBRE'],['ranks','CLASSEMENTS'],['results','RÉSULTATS'],['rules','RÈGLES']].map(([id,label])=>`<button class="tab ${state.tab===id?'active':''}" data-tab="${id}">${label}</button>`).join('')}</div><div id="tabBody"></div></div>`;document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{state.tab=b.dataset.tab;menuRender()});let html='';
 if(state.tab==='home')html=`<div class="grid2"><div><div class="hero"><div class="eyebrow">NEIGE • VENT • PRÉCISION</div><div class="big">Skiez vite.<br>Visez juste.<br><span style="color:#dcff9b">Gagnez la saison.</span></div><div class="sub">La fatigue perturbe la visée. Choisissez le bon rythme en côte et récupérez avant le pas de tir.</div></div><div class="panel" style="margin-top:12px"><div class="title2">Votre biathlète</div><div class="fields"><div class="field"><label>Catégorie</label><select id="sexSelect"><option value="M" ${state.sex==='M'?'selected':''}>Hommes</option><option value="F" ${state.sex==='F'?'selected':''}>Femmes</option></select></div><div class="field"><label>Nation</label><select id="nationSelect">${NATIONS.map((n,i)=>`<option value="${i}" ${state.nation===i?'selected':''}>${n[1]} ${n[2]}</option>`).join('')}</select></div><div class="field" style="grid-column:1/-1"><label>Athlète</label><select id="athleteSelect">${optionsRoster()}</select></div><div class="field" style="grid-column:1/-1"><label>Difficulté</label><select id="difficultySelect"><option value="easy" ${state.difficulty==='easy'?'selected':''}>Accessible</option><option value="normal" ${state.difficulty==='normal'?'selected':''}>Normale</option><option value="hard" ${state.difficulty==='hard'?'selected':''}>Expert (adversaires rapides)</option></select></div></div><div class="statline"><span class="pill">⛷ Ski ${p.ski}/100</span><span class="pill">◎ Tir ${p.shoot}/100</span><span class="pill">♥ Endurance ${p.endurance}/100</span></div><div class="small">Les concurrents possèdent des profils différents. La sélection s'applique à la prochaine course.</div></div></div><div><div class="panel"><div class="eyebrow">PROCHAINE ÉPREUVE</div><div class="title2" style="font-size:24px">${end?'🏆 Saison terminée':eventDefs[stageType].name}</div><div class="statline"><span class="pill">${end?'12 / 12':`Étape ${state.stage+1} / 12`}</span><span class="pill">${end?'Palmarès':current[1]}</span></div><div class="small">${end?'Consultez les classements finaux. Vous pouvez lancer une nouvelle saison.':eventDefs[stageType].sub}</div><div class="actions">${end?`<button class="action" id="gotoRanks">VOIR LE PALMARÈS</button><button class="action warn" id="newSeason">NOUVELLE SAISON</button>`:`<button class="action" id="startSeason">${state.stage?'ÉTAPE SUIVANTE':'DÉMARRER LA SAISON'} ➜</button><button class="action alt" id="goSeason">CALENDRIER</button>`}</div></div><div class="panel" style="margin-top:12px"><div class="title2">Situation au championnat</div><div class="statline"><span class="pill good">${state.results.length} courses disputées</span><span class="pill">${mine?'N° '+mine+' au général':'Pas encore classé'}</span></div>${playerResults().slice(-4).reverse().map(r=>`<div class="race-item"><div class="num">${r.rank}e</div><div class="info"><div class="name">${esc(r.name)}</div><div class="meta">${esc(r.when)}</div></div><div class="status">${r.rank===1?'🥇':r.rank===2?'🥈':r.rank===3?'🥉':'❄'}</div></div>`).join('')||'<div class="small">Disputez votre première course pour obtenir des points.</div>'}</div></div></div>`;
 if(state.tab==='season')html=`<div class="grid2"><div class="panel"><div class="title2">Calendrier de la saison</div><div class="scrolllist">${CALENDAR.map(([t,loc,ct],i)=>{const r=state.results.find(x=>x.stage===i);return `<div class="race-item ${i===state.stage?'sel':''}"><div class="num">${String(i+1).padStart(2,'0')}</div><div class="info"><div class="name">${eventDefs[t].name}</div><div class="meta">${loc} • ${ct}</div></div><div class="status">${r?`<span style="color:#c7ee75">${r.userRank}e</span>`:i===state.stage?'À JOUER':'—'}</div></div>`}).join('')}</div><div class="actions">${state.stage<CALENDAR.length?`<button class="action" id="startSeason">JOUER L'ÉTAPE ${state.stage+1}</button>`:''}<button class="action alt" id="goRanks">CLASSEMENTS</button></div></div><div class="panel"><div class="title2">Formats au programme</div><div class="how">Une saison de 12 manches :<br>• Sprint et poursuite avec écarts de départ<br>• Individuel et individuel court<br>• Mass start et mass start 60<br>• Relais national, mixte et mixte simple<br>• Super sprint, avec qualification simulée<br><br><b>Classements conservés :</b> général, classements par discipline, nations/relais et résultats de chaque étape. Les relais alimentent le classement des équipes, pas le général individuel.</div></div></div>`;
 if(state.tab==='quick')html=`<div class="panel"><div class="title2">Choisissez une épreuve</div><div class="grid3">${Object.entries(eventDefs).map(([key,r])=>`<button class="cardformat ${state.quick===key?'active':''}" data-format="${key}"><b>${esc(r.name)}</b><div>${esc(r.sub)}</div></button>`).join('')}</div><div class="actions"><button class="action" id="startQuick">LANCER LA COURSE ➜</button><span class="small">La course libre n'altère pas le championnat. Résultats consultables après l'arrivée.</span></div></div>`;
@@ -61,7 +93,7 @@ if($('athleteSelect'))$('athleteSelect').onchange=e=>{state.athleteId=e.target.v
 if($('difficultySelect'))$('difficultySelect').onchange=e=>{state.difficulty=e.target.value;save();menuRender()};
 bind('startSeason',()=>beginRace(CALENDAR[state.stage][0],true));bind('startQuick',()=>beginRace(state.quick,false));bind('goSeason',()=>{state.tab='season';menuRender()});bind('goRanks',()=>{state.tab='ranks';menuRender()});bind('gotoRanks',()=>{state.tab='ranks';menuRender()});bind('newSeason',()=>confirmReset());bind('soundToggle',()=>{state.sound=!state.sound;save();menuRender()});document.querySelectorAll('[data-format]').forEach(b=>b.onclick=()=>{state.quick=b.dataset.format;save();menuRender()});document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{state.rankFilter=b.dataset.filter;menuRender()});document.querySelectorAll('[data-result]').forEach(b=>b.onclick=()=>{state.resultFilter=+b.dataset.result;menuRender()});}
 function confirmReset(){showModal(`<h2>Recommencer la saison ?</h2><p class="small">Les résultats et les classements des 12 étapes seront effacés de cet appareil.</p><div class="actions"><button class="action warn" id="yesReset">EFFACER LA SAISON</button><button class="action alt" id="noReset">ANNULER</button></div>`);$('yesReset').onclick=()=>{state.stage=0;state.results=[];state.seasonActive=false;save();hideModal();menuRender()};$('noReset').onclick=hideModal}
-function showModal(html){$('modalRoot').innerHTML=`<div class="modalback"><div class="modal">${html}</div></div>`}
+function showModal(html,kind=''){$('modalRoot').innerHTML=`<div class="modalback"><div class="modal ${kind}">${html}</div></div>`}
 function hideModal(){$('modalRoot').innerHTML=''}
 let toastTimer=0;function toast(t,time=2.3){$('toast').textContent=t;$('toast').classList.remove('hidden');toastTimer=time;}
 let audio=null;function tone(freq=440,dur=.08,type='sine',vol=.035){if(!state.sound)return;try{audio=audio||new(window.AudioContext||window.webkitAudioContext)();const o=audio.createOscillator(),g=audio.createGain();o.type=type;o.frequency.setValueAtTime(freq,audio.currentTime);g.gain.setValueAtTime(vol,audio.currentTime);g.gain.exponentialRampToValueAtTime(.0001,audio.currentTime+dur);o.connect(g);g.connect(audio.destination);o.start();o.stop(audio.currentTime+dur)}catch(e){}}
@@ -118,19 +150,96 @@ function finishPlayer(){const r=race;if(r.p.finishGlobal!==null)return;r.dist=r.
 // Finir les concurrents encore en course ; temps de la simulation respecté.
 let remaining=r.objects.filter(a=>a!==r.p&&a.finishGlobal===null),ticks=0;while(remaining.length&&ticks++<1500){const t=r.elapsed+ticks*25;for(const a of remaining)updateAI(a,25,t);remaining=r.objects.filter(a=>a!==r.p&&a.finishGlobal===null)}for(const a of remaining)a.finishGlobal=r.elapsed+ticks*25+rand(0,50);
 const sort=r.objects.slice().sort((a,b)=>{let aTime=a.finishGlobal-(r.def.kind==='interval'?a.startOffset:0),bTime=b.finishGlobal-(r.def.kind==='interval'?b.startOffset:0);return aTime-bTime});const rows=sort.map((a,i)=>({id:a.id,n:a.n,name:a.name,rank:i+1,time:Math.round(a.finishGlobal-(r.def.kind==='interval'?a.startOffset:0)),misses:a.misses,shoots:a.shootStats.map(s=>s.miss).join('-')}));const place=rows.find(x=>x.id===r.p.id).rank;const label=r.season?CALENDAR[state.stage][1]:'COURSE LIBRE';r.result={type:r.type,name:r.def.name,discipline:r.def.discipline,venue:label,stage:r.season?state.stage:null,team:r.def.team,rows,userRank:place,userTime:rows.find(x=>x.id===r.p.id).time,winner:rows[0].name};if(r.season){state.results.push(r.result);state.stage++;state.seasonActive=true;save()}setTimeout(()=>{if(race===r)showResults()},1050);}
-function showResults(){const r=race;if(!r?.result)return;const place=r.result.userRank,row=r.result.rows.find(x=>x.id===r.p.id),end=state.stage>=CALENDAR.length;let medal=place===1?'🥇':place===2?'🥈':place===3?'🥉':'🏁';showModal(`<div class="eyebrow">RÉSULTATS OFFICIELS DE LA COURSE</div><h2>${medal} ${esc(r.def.name)} • ${esc(r.result.venue)}</h2><div class="statline"><span class="pill good">PLACE ${place} / ${r.objects.length}</span><span class="pill">CHRONO ${fmt(row.time)}</span><span class="pill">CIBLES MANQUÉES : ${r.p.misses}</span><span class="pill">${r.season?`+${pts(place,r.type)} points`:'COURSE LIBRE'}</span></div><div class="tablewrap"><table class="table"><thead><tr><th>POS.</th><th>${r.def.team?'ÉQUIPE':'ATHLÈTE'}</th><th>TEMPS / ÉCART</th><th>TIRS</th><th>PTS</th></tr></thead><tbody>${r.result.rows.map(a=>`<tr class="${a.id===r.p.id?'me':''}"><td>${a.rank}</td><td>${nation(a.n)[1]} ${esc(a.name)}</td><td>${a.rank===1?fmt(a.time):`+${fmt(a.time-r.result.rows[0].time)}`}</td><td>${a.shoots||'—'}</td><td>${pts(a.rank,r.type)}</td></tr>`).join('')}</tbody></table></div><div class="actions"><button class="action" id="backToMenu">${end&&r.season?'PALMARÈS DE SAISON':'RETOUR AU MENU'}</button>${!r.season?`<button class="action alt" id="retry">REJOUER</button>`:''}</div>`);$('backToMenu').onclick=()=>{hideModal();endRaceUI();state.tab=end&&r.season?'ranks':'home';menuRender()};if($('retry'))$('retry').onclick=()=>{const type=r.type;hideModal();beginRace(type,false)};}
+function showResults(){
+ const r=race;if(!r?.result)return;
+ const place=r.result.userRank,row=r.result.rows.find(x=>x.id===r.p.id),end=state.stage>=CALENDAR.length;
+ const medal=place===1?'🥇':place===2?'🥈':place===3?'🥉':'🏁';
+ showModal(`<div class="eyebrow">RÉSULTATS OFFICIELS • ${r.result.rows.length} CONCURRENTS</div>
+  <h2>${medal} ${esc(r.def.name)} • ${esc(r.result.venue)}</h2>
+  <div class="statline"><span class="pill good">PLACE ${place} / ${r.objects.length}</span><span class="pill">CHRONO ${fmt(row.time)}</span><span class="pill">CIBLES MANQUÉES : ${r.p.misses}</span><span class="pill">${r.season?`+${pts(place,r.type)} points`:'COURSE LIBRE'}</span></div>
+  <div class="result-toolbar"><span>↕ Glisse pour voir tout le classement</span><div class="result-nav"><button type="button" id="resultTop">↑ 1er</button><button type="button" id="resultMe">◎ Ma place</button><button type="button" id="resultBottom">↓ Dernier</button></div></div>
+  <div class="tablewrap" id="resultsScroll"><table class="table result-table"><thead><tr><th>POS.</th><th>${r.def.team?'ÉQUIPE':'ATHLÈTE'}</th><th>TEMPS / ÉCART</th><th>TIRS</th><th>PTS</th></tr></thead><tbody>${r.result.rows.map(a=>`<tr class="${a.id===r.p.id?'me':''}"><td>${a.rank}</td><td>${nation(a.n)[1]} ${esc(a.name)}</td><td>${a.rank===1?fmt(a.time):`+${fmt(a.time-r.result.rows[0].time)}`}</td><td>${a.shoots||'—'}</td><td>${pts(a.rank,r.type)}</td></tr>`).join('')}</tbody></table></div>
+  <div class="actions result-actions"><button class="action" id="backToMenu">${end&&r.season?'PALMARÈS DE SAISON':'RETOUR AU MENU'}</button>${!r.season?`<button class="action alt" id="retry">REJOUER</button>`:''}</div>`,'results-modal');
+ const wrap=$('resultsScroll');
+ $('resultTop').onclick=()=>wrap.scrollTop=0;
+ $('resultBottom').onclick=()=>wrap.scrollTop=wrap.scrollHeight;
+ $('resultMe').onclick=()=>{const tr=wrap.querySelector('tr.me');if(!tr)return;const w=wrap.getBoundingClientRect(),a=tr.getBoundingClientRect();wrap.scrollTop+=a.top-w.top-w.height/2+a.height/2};
+ $('backToMenu').onclick=()=>{hideModal();endRaceUI();state.tab=end&&r.season?'ranks':'home';menuRender()};
+ if($('retry'))$('retry').onclick=()=>{const type=r.type;hideModal();beginRace(type,false)};
+}
 function endRaceUI(){race=null;held.attack=held.recover=held.breath=false;state.screen='menu';$('hud').style.display='none';$('game').style.display='none';$('background').style.display='block';$('menu').style.display='block';$('toast').classList.add('hidden');save()}
 function pause(){if(!race||race.finished)return;if(race.paused){race.paused=false;hideModal();$('pauseButton').textContent='Ⅱ PAUSE';return}race.paused=true;held.attack=held.recover=held.breath=false;$('pauseButton').textContent='▶ REPRENDRE';showModal(`<div class="eyebrow">COURSE INTERROMPUE</div><h2>Ⅱ Pause</h2><div class="small">Votre progression dans cette course n'est pas sauvegardée. Le championnat reste enregistré après chaque épreuve terminée.</div><div class="actions"><button class="action" id="resume">REPRENDRE ▶</button><button class="action alt" id="instructions">COMMANDES</button><button class="action warn" id="quit">ABANDONNER</button></div>`);$('resume').onclick=pause;$('instructions').onclick=()=>{showModal(`<h2>Comment jouer</h2><div class="how"><b>SKI :</b> alternez poussées G et D pour garder la cadence. Maintenez ATTAQUE pour accélérer, RÉCUP. pour reprendre de l'énergie.<br><b>TIR :</b> déplacez la visée du doigt. Stabilisez avec SOUFFLE puis tirez. En relais, appuyez sur RECHARGE pour utiliser les trois balles de pioche.<br><b>TEMPS :</b> les durées sont accélérées pour rendre les courses jouables sur téléphone.</div><div class="actions"><button class="action" id="backPause">RETOUR PAUSE</button></div>`);$('backPause').onclick=()=>{race.paused=false;pause()}};$('quit').onclick=()=>{hideModal();endRaceUI();menuRender()}}
 function updateControls(){if(!race)return;const isShot=race.mode==='shoot';$('skiControls').classList.toggle('hidden',isShot||race.finished);$('effortControls').classList.toggle('hidden',isShot||race.finished);$('shootControls').classList.toggle('hidden',!isShot);$('shootInfo').classList.toggle('hidden',!isShot);if(isShot){const s=race.shoot;$('reloadButton').classList.toggle('hidden',!race.def.team||s.loaded>0||s.spares>=3||s.hit.every(Boolean));$('fireButton').disabled=s.loaded<=0;}}
-function relativeRanks(){if(!race)return[];const r=race,team=r.def.team;return r.objects.map(a=>({a,value:a.finishGlobal===null?a.dist:a.dist+10000,starting:a.startOffset})).sort((x,y)=>y.value-x.value).map(x=>x.a)}
+function liveStandings(){
+ if(!race)return[];
+ const r=race,interval=r.def.kind==='interval';
+ const vals=r.objects.map(a=>{
+  const finished=a.finishGlobal!==null;
+  const ski=currentRunner(a)||player();
+  const elapsed=Math.max(0,r.elapsed-a.startOffset);
+  const remaining=Math.max(0,r.def.total-a.dist);
+  const base=clamp(6.45+(ski.ski-78)*.026+(ski.endurance-78)*.009,4.2,9);
+  const current=a===r.p?(r.playerPace||base):a.speed>0?a.speed/3.6:base;
+  // Les dix premières secondes ne suffisent pas pour projeter une course entière.
+  const confidence=clamp(a.dist/Math.max(500,r.def.total*.42),0,.42);
+  const speed=clamp(mix(base,current,confidence),3.5,10);
+  const shootsLeft=Math.max(0,r.def.shotDistances.length-a.shotIndex);
+  const tShot=r.def.team?46:39;
+  const expectedPenalty=r.def.timePenalty?r.def.timePenalty*.75:(r.def.penalty||150)/6.2*.75;
+  const official=a.finishGlobal-(interval?a.startOffset:0);
+  const predicted=finished?official:
+   elapsed+remaining/speed+shootsLeft*(tShot+expectedPenalty)+
+   (a.penaltyRemaining||0)/6.4+(a===r.p?r.penaltyLeft||0:0)/6.4+
+   (a.extraTime||0)+(a.shotTime>0?a.shotTime:0);
+  return {a,projected:predicted,finished,elapsed};
+ });
+ vals.sort(interval?(x,y)=>x.projected-y.projected:(x,y)=>{
+  if(x.finished!==y.finished)return x.finished?-1:1;
+  if(x.finished)return x.a.finishGlobal-y.a.finishGlobal;
+  return y.a.dist-x.a.dist || x.projected-y.projected;
+ });
+ const first=vals[0];const speedLead=first?Math.max(4.5,((first.a.speed||25)/3.6)):6.6;
+ vals.forEach((v,i)=>{
+  v.rank=i+1;
+  v.gap=i===0?0:interval?v.projected-first.projected:
+    v.finished&&first.finished?v.a.finishGlobal-first.a.finishGlobal:
+    Math.max(0,first.a.dist-v.a.dist)/speedLead;
+ });
+ return vals;
+}
+function relativeRanks(){return liveStandings().map(v=>v.a)}
+function gapText(v){return v.rank===1?'LEADER':`+${fmt(v.gap)}`}
+function liveBoard(){
+ if(!race)return;
+ const r=race,vals=liveStandings(),p=vals.findIndex(v=>v.a===r.p),shown=vals.slice(Math.max(0,Math.min(vals.length-7,p-3)),Math.max(7,Math.min(vals.length,p+4)));
+ const interval=r.def.kind==='interval';
+ $('sideboard').innerHTML=`<div class="head"><span>CLASSEMENT PROVISOIRE</span><button class="board-expand" id="showLiveBoard" type="button">⤢ TOUT</button></div>
+   <div class="board-sub">${interval?'TEMPS FINAL ESTIMÉ':'POSITION SUR LA PISTE'} · ÉCARTS ≈</div>
+   ${shown.map(v=>`<div class="line ${v.a===r.p?'me':''}"><span class="board-name">${v.rank}. ${nation(v.a.n)[1]} ${r.def.team?nation(v.a.n)[0]:esc(v.a.name.split(' ').pop())}</span><b class="board-gap">${v.a===r.p?'VOUS '+(v.rank===1?'🥇':`+${fmt(v.gap)}`):gapText(v)}</b></div>`).join('')}
+   <div class="board-bottom">${p+1}/${vals.length} · toucher pour voir les 60</div>`;
+ $('sideboard').onclick=()=>showLiveBoard();
+}
+function showLiveBoard(){
+ if(!race||race.finished)return;
+ const wasPaused=race.paused;race.paused=true;
+ const vals=liveStandings(),r=race,interval=r.def.kind==='interval';
+ showModal(`<div class="eyebrow">POINTAGE INTERMÉDIAIRE</div><h2>Classement provisoire · ${esc(r.def.name)}</h2>
+ <div class="small">${interval?'Les temps sont projetés à l’arrivée en tenant compte du rythme et des tirs restants.':'Ordre sur la piste, écarts évalués en secondes à partir des distances entre concurrents.'} Classement non officiel, susceptible d’évoluer.</div>
+ <div class="result-toolbar"><span>${(r.dist/1000).toFixed(1)} km parcourus</span><div class="result-nav"><button id="liveTop">↑ 1er</button><button id="liveMe">◎ Ma place</button><button id="liveBottom">↓ Dernier</button></div></div>
+ <div class="tablewrap" id="liveScroll"><table class="table result-table"><thead><tr><th>POS.</th><th>${r.def.team?'ÉQUIPE':'ATHLÈTE'}</th><th>ÉCART EST.</th><th>KM</th></tr></thead><tbody>${vals.map(v=>`<tr class="${v.a===r.p?'me':''}"><td>${v.rank}</td><td>${nation(v.a.n)[1]} ${esc(v.a.name)}</td><td>${gapText(v)}</td><td>${(v.a.dist/1000).toFixed(1)}</td></tr>`).join('')}</tbody></table></div>
+ <div class="actions result-actions"><button class="action" id="closeLive">REPRENDRE LA COURSE ▶</button></div>`,'results-modal live-modal');
+ const wrap=$('liveScroll');$('liveTop').onclick=()=>wrap.scrollTop=0;$('liveBottom').onclick=()=>wrap.scrollTop=wrap.scrollHeight;
+ $('liveMe').onclick=()=>{const tr=wrap.querySelector('tr.me');if(tr){const w=wrap.getBoundingClientRect(),a=tr.getBoundingClientRect();wrap.scrollTop+=a.top-w.top-w.height/2+a.height/2}};
+ $('closeLive').onclick=()=>{hideModal();race.paused=wasPaused};
+}
 function updateHUD(force=false){if(!race)return;const r=race,p=r.p;if(!force&&performance.now()-(r.lastHudAt||0)<110)return;r.lastHudAt=performance.now();const elapsedPlayer=r.elapsed;const start= r.def.kind==='interval'?0:0;
 $('raceTitle').innerHTML=`<strong>${esc(r.def.name.toUpperCase())}</strong><span>${r.season?`ÉTAPE ${state.stage+1} • `:'LIBRE • '}${esc(r.season?CALENDAR[state.stage]?.[1]||'SAISON':nation(state.nation)[2])}${r.def.team?' • MANCHE '+(r.leg+1)+'/4':''}</span>`;
 $('clock').textContent=fmt(elapsedPlayer-start);$('distance').textContent=`${(r.dist/1000).toFixed(1)} / ${(r.def.total/1000).toFixed(1)} km`;
 const ranks=relativeRanks();const pos=ranks.indexOf(p)+1;$('rank').textContent=`${pos} / ${r.objects.length}`;
 $('energyBar').style.width=r.energy+'%';$('energyText').textContent=Math.round(r.energy)+'%';$('fatigueBar').style.width=r.fatigue+'%';$('fatigueText').textContent=Math.round(r.fatigue)+'%';$('heartBar').style.width=clamp((r.heartbeat-90)/1.15,0,100)+'%';$('heartText').textContent=Math.round(r.heartbeat);$('speedText').textContent=`${Math.round(r.playerPace*3.6)} km/h`;
 const elev=slopeAt(r.dist);$('terrainText').textContent=elev>.26?'↗ MONTÉE':elev<-.26?'↘ DESCENTE':'→ PLAT';
-const around=ranks.slice(Math.max(0,pos-3),Math.max(5,pos+2));$('sideboard').innerHTML=`<div class="head">CLASSEMENT EN DIRECT</div>${around.map(a=>`<div class="line ${a===p?'me':''}"><span>${ranks.indexOf(a)+1}. ${nation(a.n)[1]} ${r.def.team?nation(a.n)[0]:a.name.split(' ').pop()}</span><span>${a===p?'VOUS':a.finishGlobal===null?(a.dist/1000).toFixed(1)+'k':'FIN'}</span></div>`).join('')}`;
-if(r.mode==='shoot'){const s=r.shoot;$('shootInfo').textContent=`${s.stance==='P'?'COUCHÉ':'DEBOUT'} • ${s.hit.filter(Boolean).length}/5 • ${s.loaded} CART. ${r.def.team?'• PIOCHES '+(3-s.spares):''} • VENT ${s.wind>0?'→':'←'} ${Math.abs(s.wind).toFixed(1)} m/s`;$('hint').textContent='Glisse sur les cibles pour viser • Souffle pour stabiliser';$('reloadButton').classList.toggle('hidden',!r.def.team||s.loaded>0||s.spares>=3||s.hit.every(Boolean));$('fireButton').disabled=s.loaded<=0}else if(r.mode==='penalty')$('hint').textContent=`BOUCLE DE PÉNALITÉ • ${Math.ceil(r.penaltyLeft)} m restant(s)`;else $('hint').textContent=held.attack?'ATTAQUE • Énergie consommée':held.recover?'RÉCUPÉRATION • Ralentissement volontaire':`TIR ${r.shootingIndex+1}/${r.def.shotDistances.length} • alterner G / D`;}
+liveBoard();
+if(r.mode==='shoot'){const s=r.shoot;$('shootInfo').textContent=`${s.stance==='P'?'COUCHÉ':'DEBOUT'} • ${s.hit.filter(Boolean).length}/5 • ${s.loaded} CART. ${r.def.team?'• PIOCHES '+(3-s.spares):''} • VENT ${s.wind>0?'→':'←'} ${Math.abs(s.wind).toFixed(1)} m/s`;$('hint').textContent='Glisse sur les cibles pour viser • Souffle pour stabiliser';$('reloadButton').classList.toggle('hidden',!r.def.team||s.loaded>0||s.spares>=3||s.hit.every(Boolean));$('fireButton').disabled=s.loaded<=0}else if(r.mode==='penalty')$('hint').textContent=`BOUCLE DE PÉNALITÉ • ${Math.ceil(r.penaltyLeft)} m restant(s)`;else $('hint').textContent=held.attack?'ATTAQUE • Énergie consommée':held.recover?'RÉCUPÉRATION • Ralentissement volontaire':r.shootingIndex>=r.def.shotDistances.length?`DERNIÈRE BOUCLE • ARRIVÉE DANS ${Math.round(Math.max(0,r.def.total-r.dist))} m`:`TIR ${r.shootingIndex+1}/${r.def.shotDistances.length} • alterner G / D`;}
 function path(poly,fill,stroke,width=1){ctx.beginPath();ctx.moveTo(poly[0][0],poly[0][1]);for(let i=1;i<poly.length;i++)ctx.lineTo(poly[i][0],poly[i][1]);ctx.closePath();if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke()}}
 function line(x1,y1,x2,y2,color,w=1){ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.strokeStyle=color;ctx.lineWidth=w;ctx.stroke()}
 function ellipse(x,y,rx,ry,color){ctx.beginPath();ctx.ellipse(x,y,Math.max(0,rx),Math.max(0,ry),0,0,Math.PI*2);ctx.fillStyle=color;ctx.fill()}
@@ -138,39 +247,254 @@ function rect(x,y,w,h,color){ctx.fillStyle=color;ctx.fillRect(x,y,w,h)}
 function roundRect(x,y,w,h,rad,fill,stroke){ctx.beginPath();ctx.roundRect(x,y,w,h,rad);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=1;ctx.stroke()}}
 function txt(s,x,y,size=14,color='#fff',align='left',weight=900){ctx.font=`${weight} ${size}px system-ui,-apple-system,sans-serif`;ctx.fillStyle=color;ctx.textAlign=align;ctx.textBaseline='middle';ctx.fillText(s,x,y)}
 function gradient(y0,y1,c1,c2){let g=ctx.createLinearGradient(0,y0,0,y1);g.addColorStop(0,c1);g.addColorStop(1,c2);return g}
-function drawMountainLayer(base,scale,fill,snow){let pts=[[0,H],[0,base]];for(let i=0;i<=14;i++){let x=i*W/14;let alt=(Math.sin(i*2.41+1)*.5+Math.sin(i*4.2+1.8)*.25+.6)*scale;pts.push([x,base-alt])}pts.push([W,H]);path(pts,fill);if(snow){for(let i=2;i<14;i+=2){let px=i*W/14,py=base-(Math.sin(i*2.41+1)*.5+Math.sin(i*4.2+1.8)*.25+.6)*scale;path([[px-20,py+29],[px,py],[px+19,py+35],[px+7,py+24],[px-5,py+18]],snow)}}}
-function pine(x,y,s,alpha=1){ctx.save();ctx.globalAlpha=alpha;rect(x-s*.09,y-s*.1,s*.18,s*.5,'#584f51');const c=['#245b64','#1c4d56','#1c4650'];for(let i=0;i<3;i++){const b=y-s*(.08+i*.23);path([[x-s*(.45-i*.05),b],[x,b-s*.73],[x+s*(.45-i*.05),b]],c[i])}path([[x-s*.22,y-s*.28],[x,y-s*.55],[x+s*.16,y-s*.27]],'#b3d6d1b7');ctx.restore()}
-function poles(x,y,s){line(x-s*.1,y-s*.4,x-s*.30,y+s*.46,'#bbcbd5',Math.max(1,s*.025));line(x+s*.1,y-s*.4,x+s*.33,y+s*.40,'#bccdd6',Math.max(1,s*.025));line(x-s*.37,y+s*.39,x-s*.24,y+s*.39,'#7d9ead',Math.max(1,s*.01));line(x+s*.25,y+s*.35,x+s*.44,y+s*.35,'#7d9ead',Math.max(1,s*.01))}
-function skier(x,y,s,color='#ec5c59',motion=0,shade=1){ctx.save();ctx.translate(x,y);ctx.scale(s,s);let swing=Math.sin(motion)*.14;ellipse(0,9,31,8,'#355c7088');ctx.save();ctx.rotate(swing*.32);line(-6,4,-27,48,'#283e59',7);line(8,5,19,46,'#293f59',7);line(-27,48,-44,62,'#182e4c',4);line(19,46,34,62,'#1c3856',4);line(-28,54,-52,72,'#e3faee',4);line(20,54,40,72,'#e3faee',4);ctx.restore();poles(0,0,.7*70);path([[-18,-26],[-27,3],[-4,13],[22,-2],[17,-27],[0,-32]],color);path([[-18,-12],[16,-3],[18,-13],[-17,-23]],'#ffffff36');line(-10,-26,-31,-4,color,9);line(16,-25,35,-10,color,9);ellipse(-32,-4,5,5,'#152e42');ellipse(35,-10,5,5,'#152e42');path([[-17,-29],[17,-29],[10,-48],[-11,-48]],'#132c47');ellipse(0,-52,15,17,'#e7ba8f');path([[-15,-58],[-15,-67],[0,-77],[15,-65],[16,-58]],color);rect(-15,-60,30,6,'#dcefff');rect(-11,-55,22,5,'#1a3a4a');line(11,-44,29,-11,'#26333f',7);line(5,-50,24,-15,'#556770',2);ctx.restore()}
-function drawSki(){const r=race,clock=performance.now()/1000;const horizon=H*.345,offset=r.dist;rect(0,0,W,H,gradient(0,H*.65,'#5387b6','#e1f5fb'));ellipse(W*.76,H*.16,W*.09,W*.09,'#fff6d68c');drawMountainLayer(H*.41,H*.21,'#729db7','#eaf5f7');drawMountainLayer(H*.47,H*.12,'#abc7ce','#e5f4f9');rect(0,horizon,W,H-horizon,'#d9eff1');let mist=ctx.createLinearGradient(0,horizon,0,H);mist.addColorStop(0,'#effbf8');mist.addColorStop(1,'#c4e3ec');rect(0,horizon,W,H-horizon,mist);
-// Les arbres défilent avec la piste, en perspective.
-let phase=offset%185;for(let j=19;j>=0;j--){let z=(j*185-phase+185)%3600;let q=1-z/3900;if(q<0||q>1)continue;let y=horizon+Math.pow(q,1.42)*(H-horizon)*1.2;let s=(.18+q*1.9)*38;let roadHalf=(.05+q*.49)*W;const n=(j*73)%6;pine(W/2-roadHalf-38-q*(48+n*16),y,s,.55+.45*q);pine(W/2+roadHalf+33+q*(40+n*18),y,s*(.88+.1*n),.55+.45*q)}
-const perspective=q=>({y:horizon+Math.pow(q,1.30)*(H-horizon)*1.13,w:(.045+q*.56)*W});let roadL=[],roadR=[];for(let i=0;i<=22;i++){let q=i/22,{y,w}=perspective(q);let bending=Math.sin((offset/280+i*.16))*W*.019*(1-q);roadL.push([W/2-w+bending,y]);roadR.push([W/2+w+bending,y]);}path([...roadL,...roadR.reverse()],'#f7faf7');line(roadL[0][0],roadL[0][1],roadL[roadL.length-1][0],roadL[roadL.length-1][1],'#a2cbd6',2);for(let i=0;i<16;i++){let q=(i+(offset%120)/120)/16;let {y,w}=perspective(q);let curve=Math.sin((offset/280+q*4))*W*.019*(1-q);let side=q<.7?1:1.4;ellipse(W/2-w*.25+curve,y,1+q*3,1+q*4,'#9abdcabe');ellipse(W/2+w*.24+curve,y,1+q*3,1+q*4,'#9abdcabe')}
-// Panneaux de distance et fanions de course.
-for(let i=10;i>=0;i--){let along=i*250-offset%250;let q=1-along/2700;if(q<=.06||q>.95)continue;let {y,w}=perspective(q),x=W/2+w+19;line(x,y,x,y-(13+q*35),'#294763',2+q*2);path([[x,y-(13+q*35)],[x+(13+q*16),y-(10+q*33)],[x,y-(7+q*31)]],i%2?'#e14757':'#2684c2')}
-// Les adversaires autour de vous sont visibles lorsque leurs positions sont proches.
-const skiers=r.objects.filter(a=>a!==r.p&&a.finishGlobal===null).map((a,i)=>({a,d:a.dist-r.dist,i})).filter(o=>o.d>-95&&o.d<680).sort((a,b)=>b.d-a.d).slice(0,14);for(const ob of skiers){const dist=ob.d,q=clamp(1-(dist+45)/900,.03,.94);const {y}=perspective(q),sz=clamp(.10+q*.49,.10,.68);const slot=(ob.a.n%7)-3;let x=W/2+slot*W*(.045+q*.023)+Math.sin(ob.a.n*4.7)*13;const col=nation(ob.a.n)[3];skier(x,y-20*sz,sz,col,clock*7+ob.i);if(q>.55){roundRect(x-28,y-69*sz,56,16,6,'#0a294cc4');txt(nation(ob.a.n)[0],x,y-61*sz,10,'#fff','center',900)}}
-// Personnage joueur : vue arrière.
-let bounce=r.cadence*Math.sin(clock*11)*3;let meSize=clamp(H/450,.65,1.25);skier(W*.5,H*.80+bounce,meSize*.96,nation(r.p.n)[3],clock*(5+r.cadence*7));
-if(r.mode==='penalty'){roundRect(W/2-112,H*.17,224,45,10,'#c44543e8','#f6e1d3');txt('BOUCLE DE PÉNALITÉ',W/2,H*.20,14,'#fff','center');txt(`${Math.ceil(r.penaltyLeft)} m`,W/2,H*.27,19,'#ffed9a','center')}
-let next=r.def.shotDistances[r.shootingIndex]??r.def.total,distToShoot=Math.max(0,next-r.dist);if(r.mode==='ski'&&r.shootingIndex<r.def.shotDistances.length){roundRect(W/2-116,58,232,28,9,'#0d3a59c9','#79bed8');txt(`◎ PAS DE TIR DANS ${Math.round(distToShoot)} m`,W/2,72,11,'#dff9ff','center')}
-// Progrès de piste discret, avec tous les pas de tir.
-const barX=W*.26,barW=W*.48,barY=H-83;roundRect(barX,barY,barW,5,3,'#1b5a7988');roundRect(barX,barY,barW*(r.dist/r.def.total),5,3,'#bdff80');for(const t of r.def.shotDistances){const pos=barX+barW*t/r.def.total;ellipse(pos,barY+2.5,4,4,'#f6fcf5')}
-if(r.flash>0){ellipse(W*.5,H*.81,25,4,'#efffff99')}
+function drawMountainLayer(base,scale,fill,snow){
+ const yTop=base-scale*.92;
+ const count=13;const pts=[[0,H],[0,base]],tops=[];
+ for(let i=0;i<=count;i++){
+  const x=i*W/count,y=base-(.61+Math.sin(i*2.41+1)*.27+Math.sin(i*4.2+1.8)*.14)*scale;
+  pts.push([x,y]);tops.push({x,y});
+ }
+ pts.push([W,H]);path(pts,fill);
+ if(snow)for(let i=1;i<count;i++){
+  let {x,y}=tops[i],span=scale*.28;
+  path([[x-span*.74,y+span*.65],[x,y],[x+span*.68,y+span*.75],[x+span*.18,y+span*.41],[x-span*.09,y+span*.30]],snow);
+  path([[x,y],[x+span*.68,y+span*.75],[x+span*.30,y+span*1.8]],'#829fb04b');
+ }
 }
-function drawScope(){const s=race.shoot;if(!s)return;const horizon=H*.30;rect(0,0,W,H,gradient(0,H,'#789abb','#d6e9ed'));drawMountainLayer(H*.38,H*.17,'#648ba5','#d6ecf1');drawMountainLayer(H*.43,H*.09,'#abc5cc','#eaf9f8');rect(0,H*.42,W,H*.58,'#dcecef');
-// Stand de tir et coupe-vent.
-rect(0,H*.24,W,H*.12,'#163a56');rect(0,H*.35,W,8,'#27475c');for(let i=0;i<12;i++){rect(i*W/11-3,H*.24,6,H*.17,'#163047');rect(i*W/11-2,H*.17,4,H*.07,'#dbe8ee')}
-let l=shootLayout();roundRect(l.first-l.space*.51,l.y-l.r*2.25,5*l.space+5,l.r*4.5,12,'#b7c9ca','#5d879b');for(let i=0;i<5;i++){let x=l.first+i*l.space;ellipse(x,l.y,l.r+5,l.r+5,'#eefafa');ellipse(x,l.y,l.r+.9,l.r+.9,'#1c303b');ellipse(x,l.y,l.r*.8,l.r*.8,s.hit[i]?'#f8fdfb':'#121b26');if(s.hit[i]){ellipse(x-2,l.y-3,l.r*.32,l.r*.25,'#ffffff9f')}
-if(i===s.active&&!s.hit[i]){ctx.strokeStyle='#daf77b';ctx.lineWidth=2;ctx.setLineDash([3,4]);ctx.beginPath();ctx.arc(x,l.y,l.r+11,0,Math.PI*2);ctx.stroke();ctx.setLineDash([])}}
-// Pas de tir numérotés, tapis et silhouettes.
-for(let i=0;i<5;i++){let x=l.first+i*l.space;rect(x-2,H*.63,4,H*.32,'#31516752');path([[x-38,H*.94],[x-24,H*.79],[x+24,H*.79],[x+38,H*.94]],'#9ab4ba88');txt(String(i+1).padStart(2,'0'),x,H*.65,Math.max(10,Math.min(15,W*.015)),'#2e5b70','center')}
-if(s.stance==='P'){path([[W*.22,H],[W*.28,H*.84],[W*.31,H*.81],[W*.52,H*.86],[W*.50,H]],'#365b70');ellipse(W*.27,H*.84,18,11,'#203e5b');line(W*.29,H*.81,W*.57,H*.67,'#162b38',10);line(W*.56,H*.68,W*.65,H*.65,'#637888',3)}else{rect(W*.24,H*.79,22,H*.21,'#29455e');ellipse(W*.26,H*.74,17,19,'#254c6c');line(W*.27,H*.74,W*.61,H*.62,'#334d5d',10);line(W*.55,H*.61,W*.69,H*.61,'#586b79',4)}
-const aim=s.aim,wob=shotSway(s),actualX=aim.x+wob.x,actualY=aim.y+wob.y;ctx.strokeStyle='#eb6462';ctx.lineWidth=2;ctx.beginPath();ctx.arc(actualX,actualY,Math.max(18,l.r*1.2),0,Math.PI*2);ctx.moveTo(actualX-31,actualY);ctx.lineTo(actualX-7,actualY);ctx.moveTo(actualX+7,actualY);ctx.lineTo(actualX+31,actualY);ctx.moveTo(actualX,actualY-31);ctx.lineTo(actualX,actualY-7);ctx.moveTo(actualX,actualY+7);ctx.lineTo(actualX,actualY+31);ctx.stroke();ellipse(actualX,actualY,2.5,2.5,'#f9eddd');
-if(s.feedback>0&&s.shotX!==null){let hit=s.hit[s.active];ellipse(s.shotX,s.shotY,4,4,'#ed7455');ctx.strokeStyle='#ffc991';ctx.lineWidth=1.7;ctx.beginPath();ctx.arc(s.shotX,s.shotY,7+s.feedback*13,0,Math.PI*2);ctx.stroke()}
-// Infos mécaniques du tir, indépendantes du HUD.
-const bW=Math.min(225,W*.25),bx=W*.5-bW*.5,by=H*.69;roundRect(bx,by,bW,9,5,'#193147aa');roundRect(bx,by,bW*(s.breathLeft/100),9,5,s.breathLeft<25?'#ffb65e':'#a8f2ce');txt(`RÉSERVE DE SOUFFLE ${Math.round(s.breathLeft)}%`,W/2,by+23,10,'#1b4662','center');if(s.exhausted)txt('SOUFFLE ÉPUISÉ !',W/2,by-16,13,'#b03d30','center');
-const bxWind=W*.5,yy=H*.16;line(bxWind-50,yy,bxWind+50,yy,'#173c56',2);const wx=clamp(s.wind/3,-1,1)*42;path([[bxWind+wx,yy-5],[bxWind+wx+Math.sign(wx||1)*10,yy],[bxWind+wx,yy+5]],'#effcff');txt(`${s.wind>0?'VENT →':'VENT ←'} ${Math.abs(s.wind).toFixed(1)} m/s`,bxWind,yy-17,12,'#113449','center');
+function pine(x,y,s,alpha=1){
+ ctx.save();ctx.globalAlpha=alpha;
+ ellipse(x+s*.09,y+s*.35,s*.43,s*.15,'#36677b32');
+ rect(x-s*.075,y-s*.12,s*.15,s*.48,'#5d5a55');
+ for(let i=0;i<4;i++){
+  const b=y-s*(.07+i*.22),sz=(.48-i*.073)*s;
+  path([[x-sz,b],[x-s*.035,b-s*.63],[x+sz,b]],i%2?'#214d52':'#2b6262');
+  path([[x-sz*.74,b-s*.047],[x-s*.035,b-s*.63],[x+sz*.55,b-s*.045],[x+sz*.18,b-s*.14],[x-sz*.24,b-s*.14]],'#e7f3eb9e');
+ }
+ ctx.restore();
+}
+function poles(x,y,s){
+ line(x-s*.1,y-s*.34,x-s*.41,y+s*.50,'#b8c4c7',Math.max(1,s*.021));
+ line(x+s*.1,y-s*.34,x+s*.35,y+s*.47,'#b8c4c7',Math.max(1,s*.021));
+ line(x-s*.51,y+s*.53,x-s*.31,y+s*.53,'#455c67',Math.max(1,s*.021));
+ line(x+s*.27,y+s*.52,x+s*.51,y+s*.52,'#455c67',Math.max(1,s*.021));
+}
+function skier(x,y,s,color='#ec5c59',motion=0,shade=1){
+ ctx.save();ctx.translate(x,y);ctx.scale(s,s);
+ const swing=Math.sin(motion)*13,kick=Math.cos(motion)*9;
+ ellipse(2,72,45,9,'#244c6292');
+ // Skis et neige soulevée par la glisse.
+ line(-42+swing*.5,73,-76+swing*.5,102,'#18405d',5);
+ line(21-kick*.5,77,58-kick*.5,100,'#1b4259',5);
+ line(-42+swing*.5,75,-75+swing*.5,104,'#d8eff4',1.8);
+ line(21-kick*.5,79,57-kick*.5,102,'#d8eff4',1.8);
+ // Animation des jambes dissociées.
+ line(-8,4,-23+swing*.52,46,'#1f3653',11);
+ line(10,4,19-kick*.4,47,'#203751',11);
+ line(-23+swing*.52,46,-42+swing*.5,76,'#24435a',8);
+ line(19-kick*.4,47,25-kick*.5,79,'#223e59',8);
+ line(-48+swing*.4,76,-33+swing*.4,79,'#0c2941',8);
+ line(15-kick*.4,79,35-kick*.4,78,'#0c2941',8);
+ // Corps en combinaison, gilet de dossard et sac/fusil.
+ path([[-23,-34],[-18,-4],[-8,15],[18,15],[26,-17],[17,-40]],'#143650');
+ path([[-22,-32],[-25,-7],[-3,12],[21,0],[21,-32],[5,-40]],color);
+ path([[-20,-21],[19,-21],[18,-1],[-6,6]],'#f7fbf1');
+ path([[-15,-18],[12,-18],[12,-4],[-12,-3]],'#e0edf2');
+ path([[-23,-25],[-16,-29],[-14,-6],[-23,1]],'#20394e67');
+ // Bâtons synchronisés avec les bras.
+ line(-18,-30,-32+swing*.5,-7-kick*.16,color,11);
+ line(18,-27,36-kick*.35,-12+swing*.14,color,10);
+ ellipse(-33+swing*.5,-6-kick*.16,5,5,'#112d3f');
+ ellipse(37-kick*.35,-12+swing*.14,5,5,'#112d3f');
+ line(-32+swing*.5,-6-kick*.16,-59+swing*.6,68,'#8cabb6',2.4);
+ line(37-kick*.35,-12+swing*.14,65-kick*.3,65,'#8cabb6',2.4);
+ // Fusil en bandoulière, lunettes et bonnet.
+ line(18,-54,31,-8,'#3d4242',8);line(16,-53,29,-9,'#907d65',2.2);
+ ellipse(0,-54,16,18,'#e9b998');
+ path([[-17,-56],[-16,-68],[-8,-74],[5,-76],[16,-66],[16,-55]],color);
+ line(-15,-60,15,-60,'#f8faf6',5);
+ roundRect(-14,-57,28,7,3,'#1e3a52');
+ ellipse(0,-72,4.6,3.5,'#e5f8fc');
+ ctx.restore();
+}
+function drawSki(){
+ const r=race,clock=performance.now()/1000,offset=r.dist;
+ const horizon=H*.36;
+ rect(0,0,W,H,gradient(0,H*.68,'#47769e','#dcf0f2'));
+ const sunX=W*.79,sunY=H*.145;
+ const glow=ctx.createRadialGradient(sunX,sunY,7,sunX,sunY,W*.31);
+ glow.addColorStop(0,'#fffbe6da');glow.addColorStop(.12,'#fbefc683');glow.addColorStop(1,'#e8f9fd00');
+ rect(0,0,W,H*.57,glow);ellipse(sunX,sunY,35,35,'#fff7d4a8');
+ for(let k=0;k<6;k++){
+  let xx=(W*(k*.22+.13)+Math.sin(clock*.05+k)*15)%(W+130)-60,yy=H*(.09+.036*(k%3));
+  ellipse(xx,yy,W*.095,H*.023,'#edf6f658');ellipse(xx+W*.052,yy-6,W*.057,H*.018,'#f7ffff75');
+ }
+ drawMountainLayer(H*.42,H*.27,'#527e9e','#d1e2e8');
+ drawMountainLayer(H*.47,H*.17,'#779fb7','#edf6f3');
+ drawMountainLayer(H*.52,H*.11,'#aac8d1','#fcfefd');
+ rect(0,horizon,W,H-horizon,gradient(horizon,H,'#e9f8f6','#bdd9e0'));
+ const perspective=q=>({y:horizon+Math.pow(q,1.30)*(H-horizon)*1.10,w:(.047+q*.56)*W});
+ // Silhouettes de sapins lointains : animation de parallaxe.
+ for(let j=0;j<32;j++){
+  const n=j*17.81,side=j%2?1:-1;const q=((j*83-offset*.17)%2600+2600)%2600/2600;
+  const yy=horizon+q*(H-horizon)*.57;
+  const xx=W/2+side*(W*.28+q*W*.22)+Math.sin(n)*27;
+  pine(xx,yy,20+q*66,.30+q*.45);
+ }
+ // Bord de la piste et ombres des congères.
+ let roadL=[],roadR=[],bend=q=>Math.sin(offset/560+q*4.1)*W*.025*(1-q);
+ for(let i=0;i<=28;i++){let q=i/28,{y,w}=perspective(q);let x=bend(q);roadL.push([W/2-w+x,y]);roadR.push([W/2+w+x,y])}
+ path([...roadL,...roadR.slice().reverse()],gradient(horizon,H,'#fcffff','#edf9fa'));
+ ctx.beginPath();ctx.moveTo(...roadL[0]);for(const point of roadL.slice(1))ctx.lineTo(...point);ctx.strokeStyle='#95c1cb';ctx.lineWidth=2;ctx.stroke();
+ ctx.beginPath();ctx.moveTo(...roadR[0]);for(const point of roadR.slice(1))ctx.lineTo(...point);ctx.strokeStyle='#95c1cb';ctx.lineWidth=2;ctx.stroke();
+ // Deux traces de skis continues, en perspective.
+ for(const lane of [-.24,.24]){
+  const pts=[];
+  for(let i=0;i<=24;i++){const q=i/24,{y,w}=perspective(q);pts.push([W/2+lane*w+bend(q),y])}
+  ctx.beginPath();ctx.moveTo(...pts[0]);for(const pt of pts.slice(1))ctx.lineTo(...pt);
+  ctx.strokeStyle='#8eb9c343';ctx.lineWidth=3;ctx.stroke();
+ }
+ // Débris de neige animés et stries de la piste.
+ for(let k=0;k<70;k++){
+  const q=((k*37+offset*.16)%1000)/1000,{y,w}=perspective(q),side=Math.sin(k*27.3)*.81;
+  const x=W/2+side*w*.78+bend(q);ellipse(x,y,Math.max(.4,1.5*q),Math.max(.5,2.9*q),'#b6d6e383');
+ }
+ // Forêt proche avec volumes et branches enneigées.
+ for(let j=27;j>=0;j--){
+  let z=((j*170-offset)%4500+4500)%4500;
+  let q=1-z/4500;if(q<.01||q>1.02)continue;
+  let {y,w}=perspective(q),s=(.18+q*2.30)*35,n=(j*73)%6;
+  pine(W/2-w-40-q*(48+n*17),y,s,.60+.40*q);
+  pine(W/2+w+35+q*(35+n*20),y,s*.91,.56+.44*q);
+ }
+ // Balisage : piquets, filets et fanions sur le côté.
+ for(let i=10;i>=0;i--){
+  let along=((i*330-offset)%3600+3600)%3600;
+  let q=1-along/3600;if(q<=.09||q>.94)continue;
+  let {y,w}=perspective(q),x=W/2+w+18;
+  line(x,y,x,y-(13+q*35),'#365d72',2+q*1.2);
+  path([[x,y-(13+q*35)],[x+(13+q*16),y-(10+q*33)],[x,y-(7+q*31)]],i%2?'#d63f49':'#318fc0');
+ }
+ // Portique de pointage lorsque le coureur approche du pas de tir ou de l'arrivée.
+ const next=r.def.shotDistances[r.shootingIndex]??r.def.total;
+ const toNext=next-r.dist;
+ if(toNext>0&&toNext<420){
+  const q=clamp(1-toNext/540,.20,.76),{y,w}=perspective(q);
+  const x=W/2+bend(q),ww=w*.90,yy=y-15-q*90;
+  line(x-ww,yy,x-ww,y+10,'#156489',4+q*3);line(x+ww,yy,x+ww,y+10,'#156489',4+q*3);
+  roundRect(x-ww,yy-9,ww*2,18+q*6,4,'#185a7e','#97e2e7');
+  txt(r.shootingIndex<r.def.shotDistances.length?'STAND DE TIR':'ARRIVÉE',x,yy+1,Math.max(10,11+q*7),'#f1ffff','center');
+ }
+ const competitors=r.objects.filter(a=>a!==r.p&&a.finishGlobal===null).map((a,i)=>({a,d:a.dist-r.dist,i})).filter(o=>o.d>8&&o.d<720).sort((a,b)=>b.d-a.d).slice(0,8);
+ for(const ob of competitors){
+  const q=clamp(1-(ob.d+110)/1150,.09,.69),{y}=perspective(q),sz=clamp(.13+q*.48,.12,.54);
+  const slot=(ob.a.n%7)-3,x=W/2+slot*W*(.044+q*.023)+Math.sin(ob.a.n*4.7)*12;
+  skier(x,y-20*sz,sz,nation(ob.a.n)[3],clock*7+ob.i);
+  if(q>.56){roundRect(x-30,y-86*sz,60,16,5,'#153c5ecc');txt(nation(ob.a.n)[0],x,y-78*sz,10,'#fff','center')}
+ }
+ const bounce=r.cadence*Math.sin(clock*11)*2.6,meSize=clamp(H/450,.65,1.25);
+ skier(W*.5,H*.79+bounce,meSize*.91,nation(r.p.n)[3],clock*(4+r.cadence*8));
+ for(let j=0;j<10;j++){
+  const q=((j*19+offset*.9)%145)/145,x=W*.5-55+Math.sin(j*9)*57;
+  ellipse(x,H*.83+q*H*.27,2.2*q,4.2*q,'#ffffff78');
+ }
+ if(r.mode==='penalty'){
+  roundRect(W/2-105,H*.18,210,45,9,'#b63d4de9','#ffd9e0');
+  txt('BOUCLE DE PÉNALITÉ',W/2,H*.205,14,'#fff','center');
+  txt(`${Math.ceil(r.penaltyLeft)} m`,W/2,H*.27,19,'#fff2b2','center');
+ }
+ if(r.mode==='ski'&&r.shootingIndex<r.def.shotDistances.length){
+  roundRect(W/2-120,58,240,29,8,'#113b57ed','#8ecde0');
+  txt(`◎ PAS DE TIR DANS ${Math.round(Math.max(0,toNext))} m`,W/2,73,11,'#f3ffff','center');
+ }
+ const barX=W*.28,barW=W*.44,barY=H-80;
+ roundRect(barX,barY,barW,6,3,'#24516aa2');
+ roundRect(barX,barY,barW*clamp(r.dist/r.def.total,0,1),6,3,'#b4e971');
+ for(const t of r.def.shotDistances){const p=barX+barW*t/r.def.total;ellipse(p,barY+3,4,4,'#ffffff')}
+}
+function drawScope(){
+ const s=race.shoot;if(!s)return;
+ rect(0,0,W,H,gradient(0,H,'#648ba8','#e1f1f3'));
+ drawMountainLayer(H*.36,H*.18,'#678ca7','#e2edf1');
+ drawMountainLayer(H*.42,H*.11,'#a2bcc7','#f4faf8');
+ rect(0,H*.39,W,H*.61,gradient(H*.39,H,'#e7f6f6','#b6d3db'));
+ // Sapins lointains de chaque côté du stand de tir.
+ for(let i=0;i<9;i++){
+  const x=i*W/8,y=H*.47+12*Math.sin(i*2.3);
+  pine(x,y,35+10*(i%3),.45);
+ }
+ // Auvent du stand et supports en perspective.
+ rect(0,H*.235,W,H*.095,'#173d56');
+ path([[0,H*.23],[W,H*.23],[W,H*.265],[0,H*.26]],'#225c74');
+ line(0,H*.336,W,H*.336,'#7599ab',4);
+ for(let i=0;i<12;i++){
+  const x=i*W/11;
+  rect(x-3,H*.235,6,H*.185,'#26485d');
+  rect(x-1.5,H*.162,3,H*.072,'#d8e8eb');
+ }
+ const l=shootLayout();
+ // Une plaque de cible avec relief métallique et contours peints.
+ roundRect(l.first-l.space*.51-4,l.y-l.r*2.4,5*l.space+12,l.r*4.8,11,'#7894a3','#476274');
+ roundRect(l.first-l.space*.51,l.y-l.r*2.33,5*l.space+5,l.r*4.65,9,'#d6e2e4','#a7b6bd');
+ for(let i=0;i<5;i++){
+  const x=l.first+i*l.space;
+  ellipse(x,l.y+2,l.r+5,l.r+5,'#839ca7');
+  ellipse(x,l.y,l.r+3,l.r+3,'#f8fcfa');
+  ellipse(x,l.y,l.r+.65,l.r+.65,'#313f4b');
+  ellipse(x,l.y,l.r*.83,l.r*.83,s.hit[i]?'#ecf7ef':'#0c1925');
+  if(s.hit[i])ellipse(x-l.r*.16,l.y-l.r*.20,l.r*.18,l.r*.13,'#ffffffc7');
+  if(i===s.active&&!s.hit[i]){
+   ctx.strokeStyle='#c9f367';ctx.lineWidth=2;ctx.setLineDash([4,3]);
+   ctx.beginPath();ctx.arc(x,l.y,l.r+10,0,Math.PI*2);ctx.stroke();ctx.setLineDash([]);
+  }
+ }
+ // Couloirs de tir, tapis, marquages, numéros et neige tassée.
+ for(let i=0;i<5;i++){
+  const x=l.first+i*l.space;
+  path([[x-21,H*.67],[x-46,H],[x+46,H],[x+21,H*.67]],i%2?'#cddfe2ab':'#d9ebecad');
+  path([[x-24,H*.81],[x-36,H*.98],[x+36,H*.98],[x+24,H*.81]],'#466a78b7');
+  line(x-21,H*.67,x-48,H,'#a3bdc5',1.6);
+  line(x+21,H*.67,x+48,H,'#a3bdc5',1.6);
+  roundRect(x-17,H*.62,34,21,4,'#e9f1f3','#688799');
+  txt(String(i+1).padStart(2,'0'),x,H*.646,13,'#234e64','center');
+ }
+ // Présence du joueur, fusil posé / à l'épaule selon la position de tir.
+ if(s.stance==='P'){
+  ellipse(W*.28,H*.90,45,12,'#456a7682');
+  path([[W*.13,H],[W*.19,H*.83],[W*.30,H*.77],[W*.45,H*.85],[W*.47,H]],'#2b5973');
+  ellipse(W*.27,H*.81,17,12,'#274457');
+  line(W*.28,H*.795,W*.61,H*.64,'#2d3941',11);
+  line(W*.47,H*.71,W*.68,H*.64,'#8c8e8b',3);
+ }else{
+  ellipse(W*.24,H*.97,40,9,'#51778c77');
+  path([[W*.19,H],[W*.21,H*.76],[W*.235,H*.73],[W*.275,H*.78],[W*.29,H]],'#2c5874');
+  ellipse(W*.24,H*.71,17,18,'#25435a');
+  line(W*.25,H*.715,W*.59,H*.595,'#263c49',11);
+  line(W*.48,H*.625,W*.67,H*.604,'#82919a',3);
+ }
+ // Réticule de visée : décalé par la respiration et le vent.
+ const aim=s.aim,wob=shotSway(s),actualX=aim.x+wob.x,actualY=aim.y+wob.y;
+ ctx.strokeStyle='#eb434e';ctx.lineWidth=2.25;
+ ctx.beginPath();ctx.arc(actualX,actualY,Math.max(16,l.r*1.13),0,Math.PI*2);
+ ctx.moveTo(actualX-33,actualY);ctx.lineTo(actualX-8,actualY);
+ ctx.moveTo(actualX+8,actualY);ctx.lineTo(actualX+33,actualY);
+ ctx.moveTo(actualX,actualY-33);ctx.lineTo(actualX,actualY-8);
+ ctx.moveTo(actualX,actualY+8);ctx.lineTo(actualX,actualY+33);ctx.stroke();
+ ellipse(actualX,actualY,2.2,2.2,'#fff');
+ if(s.feedback>0&&s.shotX!==null){
+  ellipse(s.shotX,s.shotY,4,4,'#e95c42');
+  ctx.strokeStyle='#ffd79b';ctx.lineWidth=1.8;
+  ctx.beginPath();ctx.arc(s.shotX,s.shotY,7+s.feedback*15,0,Math.PI*2);ctx.stroke();
+ }
+ const bw=Math.min(224,W*.27),bx=W*.5-bw*.5,by=H*.70;
+ roundRect(bx,by,bw,9,5,'#16364ba9');
+ roundRect(bx,by,bw*(s.breathLeft/100),9,5,s.breathLeft<25?'#f8a85f':'#92e9c6');
+ txt(`SOUFFLE ${Math.round(s.breathLeft)}%`,W/2,by+23,11,'#1e4055','center');
+ if(s.exhausted)txt('SOUFFLE ÉPUISÉ !',W/2,by-18,13,'#aa2c2e','center');
+ const wx=clamp(s.wind/3,-1,1)*42,wy=H*.16;
+ roundRect(W*.5-83,wy-28,166,37,9,'#14354ed6','#6c9aaf');
+ line(W*.5-43,wy-6,W*.5+43,wy-6,'#d4eff2',2);
+ path([[W*.5+wx,wy-12],[W*.5+wx+Math.sign(wx||1)*11,wy-6],[W*.5+wx,wy]],'#daf8f5');
+ txt(`${s.wind>=0?'VENT →':'VENT ←'} ${Math.abs(s.wind).toFixed(1)} m/s`,W*.5,wy-22,11,'#efffff','center');
 }
 function render(){if(!race)return;ctx.save();ctx.clearRect(0,0,W,H);if(race.mode==='shoot')drawScope();else drawSki();ctx.restore()}
 function tick(now){requestAnimationFrame(tick);let dt=clamp((now-timePrev)/1000,0,.06);timePrev=now;if(toastTimer>0){toastTimer-=dt;if(toastTimer<=0)$('toast').classList.add('hidden')}if(!race)return;
@@ -185,7 +509,7 @@ function holdButton(id,key){const b=$(id);const release=()=>{held[key]=false;b.c
 function tapButton(id,side){const b=$(id);b.addEventListener('pointerdown',e=>{e.preventDefault();pushFoot(side);b.classList.add('pressed')});for(const name of ['pointerup','pointercancel','lostpointercapture'])b.addEventListener(name,()=>b.classList.remove('pressed'))}
 tapButton('leftButton','L');tapButton('rightButton','R');holdButton('attackButton','attack');holdButton('recoverButton','recover');holdButton('breathButton','breath');$('fireButton').addEventListener('pointerdown',e=>{e.preventDefault();fire()});$('reloadButton').addEventListener('pointerdown',e=>{e.preventDefault();reload()});$('pauseButton').onclick=pause;
 const keys={};window.addEventListener('keydown',e=>{if(e.repeat)return;if(!race||race.paused)return;const k=e.key.toLowerCase();if(['a','q','arrowleft'].includes(k))pushFoot('L');if(['d','arrowright'].includes(k))pushFoot('R');if(k===' '){held.attack=true;e.preventDefault()}if(k==='r')held.recover=true;if(k==='b')held.breath=true;if(k==='enter'){e.preventDefault();if(race.mode==='shoot')fire()}if(k==='x'&&race.mode==='shoot')reload();if(k==='escape')pause()});window.addEventListener('keyup',e=>{const k=e.key.toLowerCase();if(k===' ')held.attack=false;if(k==='r')held.recover=false;if(k==='b')held.breath=false});window.addEventListener('blur',()=>{held.attack=held.recover=held.breath=false});
-window.addEventListener('contextmenu',e=>{if(state.screen==='game')e.preventDefault()});document.addEventListener('touchmove',e=>{if(state.screen==='game')e.preventDefault()},{passive:false});
+window.addEventListener('contextmenu',e=>{if(state.screen==='game')e.preventDefault()});document.addEventListener('touchmove',e=>{if(state.screen==='game'&&!e.target.closest('#modalRoot, #menu'))e.preventDefault()},{passive:false});
 state.screen='menu';resize();menuRender();requestAnimationFrame(tick);
 })();
 </script></body></html>
