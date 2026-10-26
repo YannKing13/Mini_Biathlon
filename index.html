@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#061429"><meta name="apple-mobile-web-app-capable" content="yes"><title>Mini Biathlon Championship V2</title>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#061429"><meta name="apple-mobile-web-app-capable" content="yes"><title>Mini Biathlon Championship V4 · Tir & Pénalités</title>
 <style>
 :root{color-scheme:dark;--bg:#07172b;--panel:#102844;--panel2:#173655;--line:#31536e;--glow:#30d6f7;--lime:#b5e94f;--amber:#ffc55c;--muted:#9bb6cb;--txt:#edf7ff;--red:#ef6170}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--txt);touch-action:none}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.36;cursor:default}#app{position:fixed;inset:0;overflow:hidden}#background{position:absolute;inset:0;background:radial-gradient(ellipse at 75% -5%,#34668b 0,transparent 55%),linear-gradient(148deg,#081426,#112b47 63%,#07182d)}#background:after{content:'';position:absolute;left:0;right:0;bottom:-15%;height:63%;background:repeating-linear-gradient(160deg,transparent 0 30px,#ffffff05 31px 32px);transform:skewY(-7deg);pointer-events:none}#menu{position:absolute;inset:0;overflow:auto;overscroll-behavior:contain;touch-action:pan-y;padding:max(14px,env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left))}#menu::-webkit-scrollbar{width:6px}#menu::-webkit-scrollbar-thumb{background:#ffffff32;border-radius:9px}.shell{max-width:1200px;margin:auto;position:relative}.header{display:flex;gap:14px;justify-content:space-between;align-items:center;margin-bottom:15px}.logo{font-weight:1000;letter-spacing:.04em;font-size:clamp(20px,3.6vw,32px);line-height:1.02;text-shadow:0 4px 18px #0008}.logo em{font-style:normal;color:var(--glow)}.eyebrow{font-size:11px;letter-spacing:.24em;color:var(--lime);font-weight:900;margin-bottom:5px}.chip{border:1px solid #ffffff32;background:#ffffff13;border-radius:30px;padding:7px 11px;font-size:11px;font-weight:800;color:#d2eaf5;white-space:nowrap}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 16px}.tab{background:#102e4c;border:1px solid #31506f;color:#a7c4d8;padding:10px 16px;border-radius:11px;font-weight:800}.tab.active{background:#2b6480;border-color:#4fd9fa;color:#fff;box-shadow:inset 0 0 0 1px #4fd9fa35}.panel{background:linear-gradient(146deg,#173957eb,#0e223de8);border:1px solid #4c77954f;border-radius:16px;box-shadow:0 14px 35px #0002;padding:16px}.grid2{display:grid;grid-template-columns:minmax(260px,1.18fr) minmax(250px,1fr);gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.title2{font-size:17px;font-weight:900;margin:0 0 11px}.small{font-size:12px;color:var(--muted);line-height:1.55}.statline{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0}.pill{display:inline-block;border:1px solid #456b81;background:#081d34;border-radius:16px;padding:5px 9px;font-size:11px;color:#d6ecf7;font-weight:800}.pill.good{color:#baff79;border-color:#617e36}.pill.warn{color:#ffd27d;border-color:#867046}.action{background:linear-gradient(180deg,#cdfa73,#a8df42);color:#182915;border:0;border-radius:11px;padding:12px 18px;font-weight:1000;box-shadow:0 6px 20px #9ae1332a}.action.alt{background:#214a69;color:#e8f7fd;border:1px solid #517c97;box-shadow:none}.action.warn{background:#4b3446;color:#ffcad0;border:1px solid #8b5567;box-shadow:none}.action:active{filter:brightness(1.12);transform:translateY(1px)}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.field label{display:block;color:#a9c8d7;font-size:11px;letter-spacing:.08em;margin-bottom:5px;font-weight:900;text-transform:uppercase}.field select,.field input{width:100%;padding:10px 10px;background:#081d31;color:#eafaff;border:1px solid #416681;border-radius:8px;outline:none}.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hero{position:relative;overflow:hidden;min-height:180px;background:linear-gradient(116deg,#244967,#126e86 52%,#4d93a8);border-radius:14px;padding:20px;border:1px solid #83c5d273}.hero:after{content:'❄';position:absolute;right:-12px;top:-50px;opacity:.16;font-size:250px;line-height:1;color:white;pointer-events:none}.hero .big{font-weight:1000;font-size:clamp(24px,4vw,43px);max-width:520px;line-height:1.08;margin-bottom:10px}.hero .sub{font-size:13px;max-width:440px;color:#e3f2fa;line-height:1.5}.race-item{display:flex;gap:10px;align-items:center;padding:10px;border-bottom:1px solid #ffffff18}.race-item:last-child{border-bottom:0}.race-item.sel{background:#205376a0;border-radius:9px}.race-item .num{flex:0 0 26px;color:#85a9ba;font-weight:1000;font-size:14px}.race-item .info{flex:1;min-width:0}.race-item .name{font-weight:850;font-size:13px}.race-item .meta{font-size:11px;color:#9cbacc;margin-top:3px}.race-item .status{font-size:12px;white-space:nowrap;font-weight:900}.scrolllist{max-height:330px;overflow:auto;touch-action:pan-y}.scrolllist::-webkit-scrollbar{width:4px}.scrolllist::-webkit-scrollbar-thumb{background:#4b6e87}.table{width:100%;border-collapse:collapse;font-size:12px}.table th,.table td{padding:9px 8px;text-align:left;border-bottom:1px solid #ffffff17;white-space:nowrap}.table th{color:#9fbaca;font-size:11px;letter-spacing:.05em}.table tr.me{background:#28638679;color:#fff;font-weight:900}.table tr:first-child td:first-child{color:#d8f77e}.banner{padding:9px 12px;background:#9cc44d17;border-left:3px solid #bff468;border-radius:7px;font-size:12px;color:#dff3bf;margin:10px 0}.cardformat{padding:11px;border:1px solid #436580;background:#0e2944;border-radius:11px;text-align:left;color:white;cursor:pointer;min-height:90px}.cardformat.active{border-color:#c3f86b;box-shadow:inset 0 0 0 1px #bcf176;background:#1d4d60}.cardformat b{font-size:13px}.cardformat div{font-size:11px;color:#b5cddd;margin-top:5px;line-height:1.45}.how{line-height:1.65;font-size:13px;color:#cadfee}.how b{color:white}#game{position:absolute;inset:0;display:none;width:100%;height:100%;touch-action:none}#hud{display:none;position:absolute;inset:0;pointer-events:none}#hud>*{pointer-events:auto}.topbar{height:53px;background:linear-gradient(180deg,#061628f2,#0a2440e0);display:flex;align-items:center;gap:14px;padding:4px max(10px,env(safe-area-inset-left));border-bottom:1px solid #8cc8df47}.topbar .metric{min-width:0}.topbar .metric strong{font-weight:1000;font-size:clamp(13px,2.8vh,21px);display:block;white-space:nowrap}.topbar .metric span{font-size:10px;letter-spacing:.08em;color:#a7c5d5;font-weight:900}.topbar .metric .cyan{color:#86f2ff}.topbar .metric .lime{color:#cafa76}.topbar #raceTitle{flex:1;min-width:70px}.hudbtn{background:#0c3653ed;border:1px solid #83b8d1a1;border-radius:8px;padding:8px 11px;color:white;font-size:12px;font-weight:900}.hudbtn:active{background:#266687}.leftinfo{position:absolute;top:62px;left:max(8px,env(safe-area-inset-left));min-width:192px;max-width:34%;background:#09233fe4;border:1px solid #79b2d35c;border-radius:10px;padding:8px 10px;pointer-events:none}.barline{display:flex;align-items:center;gap:6px;margin:4px 0}.barline span{width:60px;font-size:10px;color:#daecf3;font-weight:900}.bar{width:105px;height:8px;background:#04111e;border-radius:10px;overflow:hidden;border:1px solid #65849c80}.bar i{display:block;height:100%;background:linear-gradient(90deg,#83efbc,#cef96e);width:50%;transition:width .12s}.bar i.hot{background:linear-gradient(90deg,#f8b452,#ef5b62)}.barline b{font-size:10px;width:30px;text-align:right}.sideboard{position:absolute;top:62px;right:max(8px,env(safe-area-inset-right));min-width:153px;max-width:25%;background:#09233fdc;border:1px solid #79b2d35c;border-radius:10px;padding:6px 8px;pointer-events:none;font-size:11px}.sideboard .line{display:flex;gap:5px;justify-content:space-between;padding:4px 1px;border-bottom:1px solid #ffffff22}.sideboard .line:last-child{border:0}.sideboard .line.me{color:#d6ff8c;font-weight:900}.sideboard .head{font-weight:1000;color:#b0d7e8;margin-bottom:3px}.bottomrow{position:absolute;left:0;right:0;bottom:max(7px,env(safe-area-inset-bottom));display:flex;align-items:flex-end;justify-content:space-between;padding:0 max(12px,env(safe-area-inset-left));gap:10px;pointer-events:none}.controls{display:flex;gap:9px;align-items:flex-end;pointer-events:auto}.control{border-radius:15px;border:2px solid #9cc8de8c;color:white;background:linear-gradient(180deg,#2c627ce8,#0a2b48e8);box-shadow:0 4px 15px #0007;min-width:90px;height:61px;font-weight:1000;font-size:15px;letter-spacing:.02em;touch-action:none;user-select:none;-webkit-user-select:none}.control small{display:block;font-size:10px;font-weight:800;color:#b9d6e3}.control:active,.control.pressed{background:linear-gradient(180deg,#c7f66d,#80b838);color:#10281b;border-color:#d5ff9a;transform:scale(.98)}.control:active small,.control.pressed small{color:#18320f}.control.fire{background:#ad3649;color:#fff;border-color:#fc919d;min-width:135px;height:65px;font-size:18px}.control.fire:active{background:#ea6b6b}.control.recover{background:#22536beb}.hintcenter{position:absolute;left:50%;bottom:79px;transform:translateX(-50%);background:#061b2dbd;border:1px solid #80b9d561;border-radius:25px;color:#eafaff;padding:5px 14px;font-size:11px;text-align:center;max-width:45%;pointer-events:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.shootinfo{position:absolute;left:50%;top:62px;transform:translateX(-50%);font-weight:950;background:#09233fe0;border:1px solid #7bb6d3;border-radius:10px;padding:7px 16px;white-space:nowrap;font-size:13px;pointer-events:none}.modalback{position:absolute;inset:0;background:#020a15b9;display:flex;align-items:center;justify-content:center;padding:14px;z-index:12}.modal{width:min(800px,98vw);max-height:90vh;overflow:auto;touch-action:pan-y;background:linear-gradient(160deg,#1c3f5e,#0e203a);border:1px solid #77a8c2;border-radius:20px;padding:19px;box-shadow:0 20px 60px #000b}.modal h2{margin:0 0 8px;font-size:24px}.modal h3{font-size:15px}.modal .tablewrap{max-height:47vh;overflow:auto;touch-action:pan-y}.toast{position:absolute;top:51%;left:50%;transform:translate(-50%,-50%);font-weight:1000;color:#fff;font-size:clamp(17px,3.5vw,30px);text-shadow:0 3px 14px #061524;pointer-events:none;z-index:8;text-align:center;background:#0c3154b9;padding:10px 22px;border-radius:12px;max-width:78%;border:1px solid #cdefff53}.hidden{display:none!important}#rotate{display:none;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;text-align:center;background:#061729ed;z-index:25;font-size:21px;padding:25px;gap:8px}#rotate span{font-size:65px}@media(orientation:portrait) and (max-width:800px){#rotate{display:flex}#menu{pointer-events:none}#game,#hud{pointer-events:none}}@media(max-height:500px){.topbar{height:45px}.topbar .metric strong{font-size:14px}.topbar .metric span{font-size:8px}.leftinfo,.sideboard,.shootinfo{top:51px}.control{height:52px;min-width:82px;font-size:13px;border-radius:12px}.control.fire{height:57px;min-width:105px;font-size:15px}.hintcenter{bottom:64px;font-size:10px}.barline{margin:2px 0}.leftinfo{padding:5px 7px}.sideboard .line{padding:2px 1px}}@media(max-width:700px){.grid2{grid-template-columns:1fr}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.header{align-items:flex-start}.chip{font-size:9px}.control{min-width:73px}.sideboard{min-width:135px}.leftinfo{min-width:150px}.bar{width:70px}.barline span{width:49px}}
 
@@ -34,7 +34,29 @@
 .live-modal .small{margin-bottom:2px}
 @media(max-height:440px){.modal.results-modal{height:96dvh;max-height:96dvh}.modal.results-modal h2{margin:0 0 3px}.modal.results-modal .statline{margin:2px 0}.result-toolbar{margin:1px 0}.result-actions{margin:4px 0 0}.sideboard .line{padding:3px 0}.sideboard .board-bottom{display:none}}
 @media(max-width:700px){.sideboard{max-width:31%;min-width:158px;padding:6px}.sideboard .board-sub{font-size:8px}.sideboard .board-expand{font-size:9px}.sideboard .board-bottom{display:none}.result-toolbar>span{display:none}.result-nav button{font-size:10px;padding:6px 7px}}
-</style></head><body><div id="app"><div id="background"></div><div id="menu"></div><canvas id="game"></canvas><div id="hud"><div class="topbar"><div id="raceTitle" class="metric"><strong>BIATHLON</strong><span>ÉPREUVE</span></div><div class="metric"><strong class="cyan" id="clock">00:00</strong><span>CHRONO</span></div><div class="metric"><strong id="distance">0.0 km</strong><span>PARCOURS</span></div><div class="metric"><strong class="lime" id="rank">1 / 60</strong><span>POSITION</span></div><button id="pauseButton" class="hudbtn">Ⅱ PAUSE</button></div><div class="leftinfo"><div class="barline"><span>ÉNERGIE</span><div class="bar"><i id="energyBar"></i></div><b id="energyText">100%</b></div><div class="barline"><span>FATIGUE</span><div class="bar"><i id="fatigueBar" class="hot"></i></div><b id="fatigueText">0%</b></div><div class="barline"><span>CŒUR</span><div class="bar"><i id="heartBar" class="hot"></i></div><b id="heartText">120</b></div><div class="barline"><span>VITESSE</span><b id="speedText">0 km/h</b><span id="terrainText" style="width:auto"></span></div></div><div id="shootInfo" class="shootinfo hidden"></div><div id="sideboard" class="sideboard"></div><div id="hint" class="hintcenter">Alternez les poussées pour prendre de la vitesse</div><div class="bottomrow"><div class="controls" id="skiControls"><button class="control" id="leftButton">◀ G<small>POUSSÉE</small></button><button class="control" id="rightButton">D ▶<small>POUSSÉE</small></button></div><div class="controls" id="effortControls"><button class="control" id="recoverButton">RÉCUP.<small>GLISSER</small></button><button class="control" id="attackButton">ATTAQUE<small>MAINTENIR</small></button></div><div class="controls hidden" id="shootControls"><button class="control recover" id="breathButton">SOUFFLE<small>RETENIR</small></button><button class="control fire" id="fireButton">◎ TIRER</button><button class="control alt hidden" id="reloadButton">+ RECHARGE</button></div></div></div><div id="modalRoot"></div><div id="toast" class="toast hidden"></div><div id="rotate"><span>↻</span><b>Tourne ton téléphone en paysage</b><small>Mini Biathlon Championship se joue horizontalement.</small></div></div>
+
+/* V3 CAREER / OLYMPICS / RELAY SQUAD */
+.header .chip{background:#1e3d5b;white-space:normal;text-align:right}
+.history-card{background:#0b2641;border:1px solid #3c6284;border-radius:13px;padding:13px;margin:0 0 10px}
+.lineup-modal{width:min(790px,98vw)}
+.lineup-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}
+.lineup-field{min-width:0}.lineup-field label{display:block;font-size:11px;color:#b9dbec;font-weight:900;margin-bottom:6px}
+.lineup-field select{width:100%;background:#061c31;color:#fff;border:1px solid #6085a0;border-radius:9px;padding:11px 6px;font-size:13px}
+.history-detail{font-size:12px}
+@media(max-width:620px){.lineup-grid{grid-template-columns:1fr}.lineup-modal{max-height:94dvh;overflow-y:auto}.header{align-items:flex-start}.header .chip{max-width:39%}}
+/* V4 • pointages lisibles et panneau d'incidents de tir */
+.sideboard{max-height:calc(100dvh - 147px);overflow:hidden;}
+.sideboard .board-state{font-size:9px;font-weight:800;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#9dcad9;margin-top:1px}
+.sideboard .board-state.warning{color:#ffce7e}.sideboard .board-state.danger{color:#ff9d99}
+.sideboard .line{align-items:start!important}.sideboard .board-name-wrap{flex:1;min-width:0}.sideboard .board-gap{margin-top:2px}
+.race-feed{border-top:1px solid #87a6b855;margin-top:5px;padding-top:4px;font-size:10px;color:#f7d8b0;line-height:1.45}
+.race-feed .item{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.live-state{font-size:11px;font-weight:850;white-space:nowrap}.live-state.warn{color:#ffd389}.live-state.danger{color:#ffaba3}.live-state.ok{color:#a2e4e8}
+.live-modal .tablewrap{max-height:50vh}.live-modal .result-table td{padding:7px 8px}
+#rangeNotice{position:absolute;bottom:83px;left:50%;transform:translateX(-50%);padding:6px 13px;border-radius:10px;background:#123955ee;color:#d6f4ff;font-size:12px;font-weight:950;white-space:nowrap;box-shadow:0 3px 18px #0005}
+@media(max-height:450px){.sideboard .line{padding:3px 0}.sideboard .board-state{font-size:8px}.race-feed .item:nth-child(2){display:none}.sideboard{top:58px;max-height:calc(100dvh - 138px)} }
+@media(max-width:750px){.sideboard{max-width:30%;min-width:159px}.sideboard .board-gap{font-size:10px}.race-feed{font-size:9px}.sideboard .line{gap:3px}}
+</style></head><body><div id="app"><div id="background"></div><div id="menu"></div><canvas id="game"></canvas><div id="hud"><div class="topbar"><div id="raceTitle" class="metric"><strong>BIATHLON</strong><span>ÉPREUVE</span></div><div class="metric"><strong class="cyan" id="clock">00:00</strong><span>CHRONO</span></div><div class="metric"><strong id="distance">0.0 km</strong><span>PARCOURS</span></div><div class="metric"><strong class="lime" id="rank">1 / 60</strong><span>POSITION</span></div><button id="pauseButton" class="hudbtn">Ⅱ PAUSE</button></div><div class="leftinfo"><div class="barline"><span>ÉNERGIE</span><div class="bar"><i id="energyBar"></i></div><b id="energyText">100%</b></div><div class="barline"><span>FATIGUE</span><div class="bar"><i id="fatigueBar" class="hot"></i></div><b id="fatigueText">0%</b></div><div class="barline"><span>CŒUR</span><div class="bar"><i id="heartBar" class="hot"></i></div><b id="heartText">120</b></div><div class="barline"><span>VITESSE</span><b id="speedText">0 km/h</b><span id="terrainText" style="width:auto"></span></div></div><div id="shootInfo" class="shootinfo hidden"></div><div id="sideboard" class="sideboard"></div><div id="hint" class="hintcenter">Alternez les poussées pour prendre de la vitesse</div><div class="bottomrow"><div class="controls" id="skiControls"><button class="control" id="leftButton">◀ G<small>POUSSÉE</small></button><button class="control" id="rightButton">D ▶<small>POUSSÉE</small></button></div><div class="controls" id="effortControls"><button class="control" id="recoverButton">RÉCUP.<small>GLISSER</small></button><button class="control" id="attackButton">ATTAQUE<small>MAINTENIR</small></button></div><div class="controls hidden" id="shootControls"><button class="control recover" id="breathButton">SOUFFLE<small>RETENIR</small></button><button class="control fire" id="fireButton">◎ TIRER</button><button class="control alt hidden" id="reloadButton">+ RECHARGE</button></div></div></div><div id="modalRoot"></div><div id="toast" class="toast hidden"></div><div id="rotate"><span>↻</span><b>Tourne ton téléphone en paysage</b><small>Mini Biathlon Championship V4 se joue horizontalement.</small></div></div>
 <script>
 'use strict';
 (() => {
@@ -61,38 +83,117 @@ const eventDefs={
  mixed:{name:'Relais mixte',kind:'team',legs:4,shots:'PS',penalty:150,discipline:'Relais mixte',field:12,sub:'2 femmes + 2 hommes • 3 pioches'},
  single:{name:'Relais mixte simple',kind:'team',legs:4,shots:'PS',penalty:75,discipline:'Relais mixte simple',field:12,sub:'Duo alterné • pénalité 75 m'}
 };
-const CALENDAR=[['sprint','ÖSTERSUND','Suède'],['pursuit','ÖSTERSUND','Suède'],['individual','HOCHFILZEN','Autriche'],['relay','HOCHFILZEN','Autriche'],['mass','LE GRAND-BORNAND','France'],['mixed','LE GRAND-BORNAND','France'],['short','RUHPOLDING','Allemagne'],['sprint','RUHPOLDING','Allemagne'],['pursuit','RUHPOLDING','Allemagne'],['single','ANTHOLZ','Italie'],['supersprint','ANTHOLZ','Italie'],['mass60','OSLO-HOLMENKOLLEN','Norvège']];
+const BASE_CALENDAR=[['sprint','ÖSTERSUND','Suède'],['pursuit','ÖSTERSUND','Suède'],['individual','HOCHFILZEN','Autriche'],['relay','HOCHFILZEN','Autriche'],['mass','LE GRAND-BORNAND','France'],['mixed','LE GRAND-BORNAND','France'],['short','RUHPOLDING','Allemagne'],['sprint','RUHPOLDING','Allemagne'],['pursuit','RUHPOLDING','Allemagne'],['single','ANTHOLZ','Italie'],['supersprint','ANTHOLZ','Italie'],['mass60','OSLO-HOLMENKOLLEN','Norvège']];
+const olympicYear=y=>(y+1)>=2030&&(y+1)%4===2;
+const OLYMPIC_EVENTS=[['mixed','JEUX OLYMPIQUES','Site olympique','JO','mixte'],['individual','JEUX OLYMPIQUES','Site olympique','JO','M'],['individual','JEUX OLYMPIQUES','Site olympique','JO','F'],['sprint','JEUX OLYMPIQUES','Site olympique','JO','M'],['pursuit','JEUX OLYMPIQUES','Site olympique','JO','M'],['sprint','JEUX OLYMPIQUES','Site olympique','JO','F'],['pursuit','JEUX OLYMPIQUES','Site olympique','JO','F'],['relay','JEUX OLYMPIQUES','Site olympique','JO','M'],['relay','JEUX OLYMPIQUES','Site olympique','JO','F'],['mass','JEUX OLYMPIQUES','Site olympique','JO','M'],['mass','JEUX OLYMPIQUES','Site olympique','JO','F']];
+function makeCalendar(year){const base=BASE_CALENDAR.map(x=>x.slice());if(olympicYear(year)){const target=year+1,loc=target===2030?'LE GRAND-BORNAND':target===2034?'SOLDIER HOLLOW':'SITE OLYMPIQUE',country=target===2030?'France':target===2034?'États-Unis':'À déterminer';base.splice(6,0,...OLYMPIC_EVENTS.map(x=>[x[0],loc,country,x[3],x[4]]));}return base;}
+let CALENDAR=makeCalendar(2026);
 const SCORE=[90,75,65,55,50,45,40,36,34,31,...Array.from({length:30},(_,i)=>30-i)];
 const SPECIAL_SCORE=[90,75,65,55,50,45,40,36,34,31,30,29,28,27,26,25,24,23,22,21,20,18,16,14,12,10,8,6,4,2];
 const randName=(nation,sex,k)=>`${(sex==='F'?WOMEN:MEN)[nation][k]} ${LAST[nation]}`;
-const ROSTER=[];for(let n=0;n<12;n++)for(const sex of ['M','F'])for(let k=0;k<5;k++){const seed=n*37+k*23+(sex==='F'?17:0);ROSTER.push({id:`${sex}${n}_${k}`,n,sex,k,name:randName(n,sex,k),ski:clamp(68+((seed*7)%28),60,98),shoot:clamp(66+((seed*11)%30),60,96),endurance:clamp(67+((seed*13)%30),60,96)})}
+let ROSTER=[];
+function initialRoster(){const all=[];for(let n=0;n<12;n++)for(const sex of ['M','F'])for(let k=0;k<5;k++){const seed=n*37+k*23+(sex==='F'?17:0);all.push({id:`${sex}${n}_${k}`,n,sex,k,name:randName(n,sex,k),ski:clamp(68+((seed*7)%28),60,98),shoot:clamp(66+((seed*11)%30),60,96),endurance:clamp(67+((seed*13)%30),60,96),age:20+((n*7+k*4+(sex==='F'?3:0))%17),potential:clamp(75+(seed*5)%24,72,99),retired:false,rookieYear:2026,careerWins:0});}return all;}
+const state={screen:'menu',tab:'home',sex:'M',nation:0,athleteId:'M0_0',quick:'sprint',stage:0,results:[],seasonActive:false,sound:true,difficulty:'normal',year:2026,history:[],retired:[],news:[],nextRookie:0,relaySelections:{},medalArchive:[]};
+const storage='mini_biathlon_championship_v1';
+try{const saved=JSON.parse(localStorage.getItem(storage)||'null');if(saved)Object.assign(state,saved);}catch(e){}
+if(!Number.isInteger(state.year)||state.year<2026)state.year=2026;
+if(!Array.isArray(state.history))state.history=[];
+if(!Array.isArray(state.results))state.results=[];
+if(!Array.isArray(state.retired))state.retired=[];
+if(!Array.isArray(state.news))state.news=[];
+if(!state.relaySelections||typeof state.relaySelections!=='object')state.relaySelections={};
+ROSTER=Array.isArray(state.roster)&&state.roster.length?state.roster:initialRoster();
+for(const a of ROSTER){if(!Number.isFinite(a.age))a.age=20+((a.n*7+a.k*4+(a.sex==='F'?3:0))%17);if(!Number.isFinite(a.potential))a.potential=86;if(!Number.isFinite(a.careerWins))a.careerWins=0;}
+CALENDAR=makeCalendar(state.year);state.stage=clamp(state.stage||0,0,CALENDAR.length);
 const byId=id=>ROSTER.find(a=>a.id===id);
-const getAthletes=(sex)=>ROSTER.filter(x=>x.sex===sex);
-const state={screen:'home',tab:'home',sex:'M',nation:0,athleteId:'M0_0',quick:'sprint',stage:0,results:[],seasonActive:false,sound:true,difficulty:'normal'};
-const storage='mini_biathlon_championship_v1';try{let s=JSON.parse(localStorage.getItem(storage)||'null');if(s)Object.assign(state,s)}catch(e){}
-function save(){try{localStorage.setItem(storage,JSON.stringify({sex:state.sex,nation:state.nation,athleteId:state.athleteId,stage:state.stage,results:state.results,seasonActive:state.seasonActive,quick:state.quick,sound:state.sound,difficulty:state.difficulty}))}catch(e){}}
-const nation=n=>NATIONS[n];const player=()=>byId(state.athleteId)||getAthletes(state.sex).find(a=>a.n===state.nation)||getAthletes(state.sex)[0];
+const getAthletes=sex=>ROSTER.filter(a=>a.sex===sex&&!a.retired);
+const nation=n=>NATIONS[n];
+function player(sex=state.sex){const chosen=byId(state.athleteId);if(chosen&&!chosen.retired&&chosen.sex===sex&&chosen.n===state.nation)return chosen;return getAthletes(sex).filter(a=>a.n===state.nation).sort((a,b)=>b.ski+b.shoot-a.ski-a.shoot)[0]||getAthletes(sex)[0];}
+if(!byId(state.athleteId)||byId(state.athleteId).retired){state.athleteId=player().id;}
+function save(){try{const {screen,tab,rankFilter,resultFilter,...persist}=state;localStorage.setItem(storage,JSON.stringify({...persist,roster:ROSTER}));}catch(e){console.warn('Sauvegarde impossible',e)}}
+function eventAt(i=state.stage){const e=CALENDAR[i];return e?{type:e[0],venue:e[1],country:e[2],olympic:e[3]==='JO',sex:e[4]==='mixte'?'mixte':e[4]||null}:null;}
+function sexForEvent(i=state.stage){const ev=eventAt(i);return ev?.sex&&ev.sex!=='mixte'?ev.sex:state.sex;}
+function raceSex(){return race?.sex||state.sex;}
+function seasonLabel(y=state.year){return `${y}–${String((y+1)%100).padStart(2,'0')}`;}
+function sportLabel(sex){return sex==='M'?'Hommes':sex==='F'?'Femmes':'Mixte';}
+function rosterByNation(n,sex){return getAthletes(sex).filter(a=>a.n===n).sort((a,b)=>((b.ski+b.shoot+b.endurance)/3)-((a.ski+a.shoot+a.endurance)/3));}
+function olympicResults(){return state.results.filter(r=>r.olympic);}
+function olympicMedals(){const totals=Array.from({length:12},(_,n)=>({n,gold:0,silver:0,bronze:0}));for(const r of olympicResults()){for(const [i,row] of r.rows.slice(0,3).entries())totals[row.n][['gold','silver','bronze'][i]]++;}return totals.sort((a,b)=>b.gold-a.gold||b.silver-a.silver||b.bronze-a.bronze);}
+function medalText(n){const m=olympicMedals().find(x=>x.n===n);return `🥇 ${m.gold} · 🥈 ${m.silver} · 🥉 ${m.bronze}`;}
+function teamKey(type,sex){const key=type==='relay'?`relay${sex}`:type;return `${state.nation}:${key}`;}
+function legSexes(type,sex){if(type==='relay')return [sex,sex,sex,sex];if(type==='mixed')return ['M','M','F','F'];return ['F','M','F','M'];}
+function lineupFor(n,type,sex,custom=n===state.nation){const order=legSexes(type,sex),key=teamKey(type,sex),saved=custom?state.relaySelections[key]||[]:[];const used={M:new Set(),F:new Set()};return order.map((s,i)=>{const pool=rosterByNation(n,s),prior=byId(saved[i]);if(type==='single'&&i>=2)return i===2?used.F.first:used.M.first;let athlete=prior&&prior.sex===s&&prior.n===n&&!prior.retired&&!used[s].has(prior.id)?prior:pool.find(a=>!used[s].has(a.id))||pool[0];if(athlete){used[s].add(athlete.id);used[s].first=used[s].first||athlete;}return athlete;});}
+function saveLineup(type,sex,ids){const keys=legSexes(type,sex),seen=new Set();for(let i=0;i<(type==='single'?2:4);i++){const ath=byId(ids[i]);if(!ath||ath.retired||ath.n!==state.nation||ath.sex!==keys[i]||seen.has(ath.id))return false;seen.add(ath.id);}const arr=type==='single'?[ids[0],ids[1],ids[0],ids[1]]:ids.slice(0,4);state.relaySelections[teamKey(type,sex)]=arr;save();return true;}
+function seasonFinish(){const champions={};for(const sex of ['M','F']){const g=standingsFor('Général',sex);champions[sex]=g[0]?{name:g[0].name,n:g[0].n,pts:g[0].pts}:null;}
+ const topTeams=teamStandings('Équipes'), medals=olympicMedals();const summary={year:state.year,label:seasonLabel(),events:state.results.length,champions,teams:topTeams.slice(0,3).map(x=>({...x})),personal:state.results.filter(r=>r.userRank).map(r=>({name:r.name,venue:r.venue,rank:r.userRank,olympic:!!r.olympic,sex:r.sex})),medals:olympicYear(state.year)?medals:[],olympic:olympicYear(state.year)};state.history.push(summary);}
+function seasonAdvance(){if(state.stage<CALENDAR.length){return;}seasonFinish();const developments=[],departures=[];for(const a of ROSTER.filter(x=>!x.retired)){a.age++;const young=a.age<=24,peak=a.age<=30,old=a.age>=34;const roll=Math.random();let diff=young?rand(.0,1.8):peak?rand(-.65,.9):old?rand(-2.2,.2):rand(-1.15,.35);const bound=young?a.potential:99;a.ski=Math.round(clamp(a.ski+diff+rand(-.55,.55),54,bound));a.shoot=Math.round(clamp(a.shoot+diff*.70+rand(-.7,.7),52,bound));a.endurance=Math.round(clamp(a.endurance+diff+rand(-.4,.4),55,bound));if(a.age>=38||(a.age>=33&&roll<(a.age-32)*.055)){a.retired=true;departures.push(a);state.retired.push({...a,retiredYear:state.year+1});}}
+ const arrivals=[];for(let n=0;n<12;n++)for(const sex of ['M','F']){let pool=rosterByNation(n,sex);let target=6+((state.year+n+(sex==='F'?1:0))%2);let recruits=0;while(pool.length<target&&recruits++<3){const idx=state.nextRookie++;const k=5+idx;const names=(sex==='F'?WOMEN:MEN)[n];const first=names[(idx+n)%names.length],last=LAST[(n+idx*5+3)%12];const a={id:`Y${sex}${n}_${idx}`,n,sex,k,name:`${first} ${last}`,age:18+idx%4,ski:Math.round(rand(68,83)),shoot:Math.round(rand(66,84)),endurance:Math.round(rand(69,86)),potential:Math.round(rand(83,99)),rookieYear:state.year+1,careerWins:0,retired:false};ROSTER.push(a);arrivals.push(a);pool.push(a);}}
+ state.stage=0;state.results=[];state.seasonActive=false;state.year++;CALENDAR=makeCalendar(state.year);state.news=[...arrivals.filter(a=>a.n===state.nation).map(a=>`✨ Nouvelle recrue : ${a.name} (${a.age} ans) · ${sportLabel(a.sex)}`),...departures.filter(a=>a.n===state.nation).map(a=>`👋 Retraite : ${a.name} (${a.age} ans)`)];
+ if(!state.news.length)state.news=[`🔁 ${arrivals.length} jeunes talents intègrent le circuit, ${departures.length} sportifs prennent leur retraite.`];
+ if(!byId(state.athleteId)||byId(state.athleteId).retired)state.athleteId=player(state.sex).id;
+ for(const key of Object.keys(state.relaySelections))state.relaySelections[key]=state.relaySelections[key].filter(id=>byId(id)&&!byId(id).retired);
+ save();}
 function fullName(a){return a.name}
 function pts(pos,type=''){return (['mass','mass60','supersprint'].includes(type)?SPECIAL_SCORE:SCORE)[pos-1]||0}
-function standingsFor(discipline){const scores={};for(const a of getAthletes(state.sex))scores[a.id]={id:a.id,name:a.name,n:a.n,pts:0,starts:0,wins:0};for(const r of state.results){if(r.team)continue;if(discipline!=='Général'&&r.discipline!==discipline)continue;for(const row of r.rows||[]){let t=scores[row.id];if(t){t.pts+=pts(row.rank,r.type);t.starts++;if(row.rank===1)t.wins++}}}return Object.values(scores).filter(x=>x.starts>0).sort((a,b)=>b.pts-a.pts||b.wins-a.wins)}
-function teamStandings(filter){const scores={};for(let n=0;n<12;n++)scores[n]={n,pts:0,starts:0,wins:0};for(const r of state.results){if(!r.team)continue;if(filter!=='Équipes'&&r.discipline!==filter)continue;for(const row of r.rows||[]){let t=scores[row.n];if(t){t.pts+=pts(row.rank,r.type);t.starts++;if(row.rank===1)t.wins++}}}return Object.values(scores).filter(x=>x.starts>0).sort((a,b)=>b.pts-a.pts||b.wins-a.wins)}
+function standingsFor(discipline,sex=state.sex){const scores={};for(const a of getAthletes(sex))scores[a.id]={id:a.id,name:a.name,n:a.n,pts:0,starts:0,wins:0};for(const r of state.results){if(r.team||r.olympic||r.sex&&r.sex!==sex)continue;if(discipline!=='Général'&&r.discipline!==discipline)continue;for(const row of r.rows||[]){let t=scores[row.id];if(t){t.pts+=pts(row.rank,r.type);t.starts++;if(row.rank===1)t.wins++}}}return Object.values(scores).filter(x=>x.starts>0).sort((a,b)=>b.pts-a.pts||b.wins-a.wins);}
+function teamStandings(filter){const scores={};for(let n=0;n<12;n++)scores[n]={n,pts:0,starts:0,wins:0};for(const r of state.results){if(!r.team||r.olympic)continue;if(filter!=='Équipes'&&r.discipline!==filter)continue;for(const row of r.rows||[]){let t=scores[row.n];if(t){t.pts+=pts(row.rank,r.type);t.starts++;if(row.rank===1)t.wins++}}}return Object.values(scores).filter(x=>x.starts>0).sort((a,b)=>b.pts-a.pts||b.wins-a.wins);}
+
 function playerResults(){return state.results.filter(r=>r.userRank).map(r=>({name:r.name,rank:r.userRank,winner:r.winner,when:r.venue}))}
-function optionsRoster(){return getAthletes(state.sex).filter(a=>a.n===state.nation).map(a=>`<option value="${a.id}" ${a.id===player().id?'selected':''}>${esc(a.name)} · Ski ${a.ski} / Tir ${a.shoot}</option>`).join('')}
-function menuRender(){if(state.screen!=='menu')return;const general=standingsFor('Général'),mine=general.findIndex(x=>x.id===player().id)+1;const current=CALENDAR[Math.min(state.stage,CALENDAR.length-1)],stageType=current?.[0],end=state.stage>=CALENDAR.length;const p=player();$('menu').innerHTML=`<div class="shell"><div class="header"><div><div class="eyebrow">WORLD TOUR • SIMULATION SPORTIVE</div><div class="logo">MINI <em>BIATHLON</em><div style="font-size:.53em;color:#e9f4ff;margin-top:4px;letter-spacing:.27em">CHAMPIONSHIP</div></div></div><div class="chip">❄ SAISON · 12 ÉTAPES · V2</div></div><div class="tabs">${[['home','ACCUEIL'],['season','SAISON'],['quick','COURSE LIBRE'],['ranks','CLASSEMENTS'],['results','RÉSULTATS'],['rules','RÈGLES']].map(([id,label])=>`<button class="tab ${state.tab===id?'active':''}" data-tab="${id}">${label}</button>`).join('')}</div><div id="tabBody"></div></div>`;document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{state.tab=b.dataset.tab;menuRender()});let html='';
-if(state.tab==='home')html=`<div class="grid2"><div><div class="hero"><div class="eyebrow">NEIGE • VENT • PRÉCISION</div><div class="big">Skiez vite.<br>Visez juste.<br><span style="color:#dcff9b">Gagnez la saison.</span></div><div class="sub">La fatigue perturbe la visée. Choisissez le bon rythme en côte et récupérez avant le pas de tir.</div></div><div class="panel" style="margin-top:12px"><div class="title2">Votre biathlète</div><div class="fields"><div class="field"><label>Catégorie</label><select id="sexSelect"><option value="M" ${state.sex==='M'?'selected':''}>Hommes</option><option value="F" ${state.sex==='F'?'selected':''}>Femmes</option></select></div><div class="field"><label>Nation</label><select id="nationSelect">${NATIONS.map((n,i)=>`<option value="${i}" ${state.nation===i?'selected':''}>${n[1]} ${n[2]}</option>`).join('')}</select></div><div class="field" style="grid-column:1/-1"><label>Athlète</label><select id="athleteSelect">${optionsRoster()}</select></div><div class="field" style="grid-column:1/-1"><label>Difficulté</label><select id="difficultySelect"><option value="easy" ${state.difficulty==='easy'?'selected':''}>Accessible</option><option value="normal" ${state.difficulty==='normal'?'selected':''}>Normale</option><option value="hard" ${state.difficulty==='hard'?'selected':''}>Expert (adversaires rapides)</option></select></div></div><div class="statline"><span class="pill">⛷ Ski ${p.ski}/100</span><span class="pill">◎ Tir ${p.shoot}/100</span><span class="pill">♥ Endurance ${p.endurance}/100</span></div><div class="small">Les concurrents possèdent des profils différents. La sélection s'applique à la prochaine course.</div></div></div><div><div class="panel"><div class="eyebrow">PROCHAINE ÉPREUVE</div><div class="title2" style="font-size:24px">${end?'🏆 Saison terminée':eventDefs[stageType].name}</div><div class="statline"><span class="pill">${end?'12 / 12':`Étape ${state.stage+1} / 12`}</span><span class="pill">${end?'Palmarès':current[1]}</span></div><div class="small">${end?'Consultez les classements finaux. Vous pouvez lancer une nouvelle saison.':eventDefs[stageType].sub}</div><div class="actions">${end?`<button class="action" id="gotoRanks">VOIR LE PALMARÈS</button><button class="action warn" id="newSeason">NOUVELLE SAISON</button>`:`<button class="action" id="startSeason">${state.stage?'ÉTAPE SUIVANTE':'DÉMARRER LA SAISON'} ➜</button><button class="action alt" id="goSeason">CALENDRIER</button>`}</div></div><div class="panel" style="margin-top:12px"><div class="title2">Situation au championnat</div><div class="statline"><span class="pill good">${state.results.length} courses disputées</span><span class="pill">${mine?'N° '+mine+' au général':'Pas encore classé'}</span></div>${playerResults().slice(-4).reverse().map(r=>`<div class="race-item"><div class="num">${r.rank}e</div><div class="info"><div class="name">${esc(r.name)}</div><div class="meta">${esc(r.when)}</div></div><div class="status">${r.rank===1?'🥇':r.rank===2?'🥈':r.rank===3?'🥉':'❄'}</div></div>`).join('')||'<div class="small">Disputez votre première course pour obtenir des points.</div>'}</div></div></div>`;
-if(state.tab==='season')html=`<div class="grid2"><div class="panel"><div class="title2">Calendrier de la saison</div><div class="scrolllist">${CALENDAR.map(([t,loc,ct],i)=>{const r=state.results.find(x=>x.stage===i);return `<div class="race-item ${i===state.stage?'sel':''}"><div class="num">${String(i+1).padStart(2,'0')}</div><div class="info"><div class="name">${eventDefs[t].name}</div><div class="meta">${loc} • ${ct}</div></div><div class="status">${r?`<span style="color:#c7ee75">${r.userRank}e</span>`:i===state.stage?'À JOUER':'—'}</div></div>`}).join('')}</div><div class="actions">${state.stage<CALENDAR.length?`<button class="action" id="startSeason">JOUER L'ÉTAPE ${state.stage+1}</button>`:''}<button class="action alt" id="goRanks">CLASSEMENTS</button></div></div><div class="panel"><div class="title2">Formats au programme</div><div class="how">Une saison de 12 manches :<br>• Sprint et poursuite avec écarts de départ<br>• Individuel et individuel court<br>• Mass start et mass start 60<br>• Relais national, mixte et mixte simple<br>• Super sprint, avec qualification simulée<br><br><b>Classements conservés :</b> général, classements par discipline, nations/relais et résultats de chaque étape. Les relais alimentent le classement des équipes, pas le général individuel.</div></div></div>`;
-if(state.tab==='quick')html=`<div class="panel"><div class="title2">Choisissez une épreuve</div><div class="grid3">${Object.entries(eventDefs).map(([key,r])=>`<button class="cardformat ${state.quick===key?'active':''}" data-format="${key}"><b>${esc(r.name)}</b><div>${esc(r.sub)}</div></button>`).join('')}</div><div class="actions"><button class="action" id="startQuick">LANCER LA COURSE ➜</button><span class="small">La course libre n'altère pas le championnat. Résultats consultables après l'arrivée.</span></div></div>`;
-if(state.tab==='ranks'){const filters=['Général','Sprint','Poursuite','Individuel','Mass start','Super sprint','Équipes','Relais','Relais mixte','Relais mixte simple'];if(!filters.includes(state.rankFilter))state.rankFilter='Général';let teams=['Équipes','Relais','Relais mixte','Relais mixte simple'].includes(state.rankFilter),rows=teams?teamStandings(state.rankFilter):standingsFor(state.rankFilter);html=`<div class="panel"><div class="title2">Classements de la saison</div><div class="tabs">${filters.map(t=>`<button class="tab ${state.rankFilter===t?'active':''}" data-filter="${t}">${t}</button>`).join('')}</div><div class="scrolllist" style="max-height:48vh"><table class="table"><thead><tr><th>#</th><th>${teams?'NATION':'BIATHLÈTE'}</th><th>POINTS</th><th>DÉPARTS</th><th>VIC.</th></tr></thead><tbody>${rows.map((a,i)=>`<tr class="${(teams?a.n===state.nation:a.id===player().id)?'me':''}"><td>${i+1}</td><td>${nation(a.n)[1]} ${teams?nation(a.n)[2]:esc(a.name)}</td><td><b>${a.pts}</b></td><td>${a.starts}</td><td>${a.wins}</td></tr>`).join('')||'<tr><td colspan="5">Aucun résultat : commencez une course de la saison.</td></tr>'}</tbody></table></div></div>`;}
-if(state.tab==='results'){const valid=state.results.slice().reverse();let rr=state.results.find(x=>x.stage===state.resultFilter)||state.results[state.results.length-1];html=`<div class="grid2"><div class="panel"><div class="title2">Toutes les étapes disputées</div><div class="scrolllist">${valid.map(r=>`<button style="width:100%;color:inherit;text-align:left;background:none;border:0;border-radius:8px;cursor:pointer" data-result="${r.stage}"><div class="race-item ${rr===r?'sel':''}"><div class="num">${r.stage+1}</div><div class="info"><div class="name">${esc(r.name)}</div><div class="meta">${esc(r.venue)}</div></div><div class="status">${r.userRank}e</div></div></button>`).join('')||'<div class="small">Aucun résultat enregistré pour cette saison.</div>'}</div></div><div class="panel"><div class="title2">${rr?esc(rr.name)+' • '+esc(rr.venue):'Classement de la manche'}</div><div class="scrolllist" style="max-height:49vh"><table class="table"><thead><tr><th>#</th><th>ATHLÈTE / ÉQUIPE</th><th>CHRONO</th><th>TIRS</th></tr></thead><tbody>${rr?rr.rows.map(x=>`<tr class="${x.id===(rr.team?'T'+state.nation:state.athleteId)?'me':''}"><td>${x.rank}</td><td>${nation(x.n)[1]} ${esc(x.name)}</td><td>${x.rank===1?fmt(x.time):'+'+fmt(x.time-rr.rows[0].time)}</td><td>${esc(x.shoots||'—')}</td></tr>`).join(''):'<tr><td colspan="4">Les résultats détaillés apparaîtront après la première course.</td></tr>'}</tbody></table></div></div></div>`;}
-if(state.tab==='rules')html=`<div class="grid2"><div class="panel"><div class="title2">⛷ SKI : gérer votre effort</div><div class="how"><b>POUSSÉE G / D :</b> alternez régulièrement pour maintenir une cadence efficace. Une poussée répétée du même côté apporte peu de vitesse.<br><b>ATTAQUE :</b> maintenez pour accélérer, mais l'énergie baisse, la fatigue et la fréquence cardiaque montent.<br><b>RÉCUP. :</b> maintenez pour glisser en récupérant de l'énergie, surtout dans les descentes.<br><b>Relief :</b> côtes, plat et descentes modifient la vitesse. L'altitude et la fatigue influencent le tir.<br><br><b>Conseil :</b> ralentissez l'effort dans les derniers mètres avant le pas de tir.</div></div><div class="panel"><div class="title2">◎ TIR : précision et sang-froid</div><div class="how">Visez en <b>glissant sur la vue de tir</b>, ou touchez la cible active pour recentrer. Déclenchez avec <b>TIRER</b> lorsque le réticule est dans le disque noir.<br><b>SOUFFLE :</b> maintenez brièvement pour stabiliser la carabine. En abusant, le tremblement revient.<br><b>Le vent</b> dévie l'impact ; la fatigue et le pouls font davantage trembler le viseur, surtout debout. Le niveau de difficulté règle la vitesse et l'adresse des rivaux.<br><br>Chaque série comporte <b>5 cibles</b>. Les relais disposent de <b>3 balles supplémentaires</b>, chargées une par une. Chaque cible non blanchie impose une boucle de 150 m (ou 75 m), sauf en individuel : +60 s (ou +45 s).</div></div><div class="panel"><div class="title2">🏆 Saison & classement</div><div class="how">Le classement d'une course dépend du temps corrigé par les pénalités, ou de l'ordre d'arrivée pour les départs collectifs. Le sprint détermine l'ordre et les écarts de la poursuite suivante.<br>Le championnat utilise un barème de points inspiré de l'IBU (90 points au vainqueur). Les courses libres ne comptent pas pour la saison. Sauvegarde locale sur cet appareil.</div></div><div class="panel"><div class="title2">📱 Compatible mobile</div><div class="how">Se joue sans connexion une fois chargé, sur Samsung Galaxy, Android, iPhone, iPad et ordinateur. Sur mobile : mode paysage. Clavier : touches <b>A / D</b> pour les poussées, <b>Espace</b> attaque, <b>R</b> récupération, <b>clic</b> pour viser, <b>Entrée</b> pour tirer, <b>B</b> pour le souffle. Le son peut être coupé.</div><div class="actions"><button class="action alt" id="soundToggle">SON : ${state.sound?'ACTIVÉ':'COUPÉ'}</button></div></div></div>`;
+function optionsRoster(){return rosterByNation(state.nation,state.sex).map(a=>`<option value="${a.id}" ${a.id===player().id?'selected':''}>${esc(a.name)} (${a.age} ans) · Ski ${a.ski} / Tir ${a.shoot}</option>`).join('')}
+function rosterTable(sex){return `<div class="scrolllist" style="max-height:43vh"><table class="table"><thead><tr><th>ATHLÈTE</th><th>ÂGE</th><th>SKI</th><th>TIR</th><th>END.</th></tr></thead><tbody>${rosterByNation(state.nation,sex).map(a=>`<tr class="${a.id===player(sex).id?'me':''}"><td>${esc(a.name)} ${a.rookieYear===state.year&&a.rookieYear>2026?'✨':''}</td><td>${a.age}</td><td>${a.ski}</td><td>${a.shoot}</td><td>${a.endurance}</td></tr>`).join('')}</tbody></table></div>`;}
+function menuRender(){if(state.screen!=='menu')return;
+const total=CALENDAR.length,end=state.stage>=total,p=player(),current=eventAt(),general=standingsFor('Général'),mine=general.findIndex(a=>a.id===p.id)+1;
+$('menu').innerHTML=`<div class="shell"><div class="header"><div><div class="eyebrow">CARRIÈRE • COUPE DU MONDE • JEUX OLYMPIQUES</div><div class="logo">MINI <em>BIATHLON</em><div style="font-size:.52em;color:#e9f4ff;letter-spacing:.23em;margin-top:5px">CHAMPIONSHIP V4</div></div></div><div class="chip">❄ ${seasonLabel()} · SAISON ${state.history.length+1}</div></div><div class="tabs">${[['home','ACCUEIL'],['season','CALENDRIER'],['teams','RELAIS'],['ranks','CLASSEMENTS'],['olympics','JEUX OLYMPIQUES'],['history','PALMARÈS'],['quick','COURSE LIBRE'],['results','RÉSULTATS'],['rules','RÈGLES']].map(([id,t])=>`<button class="tab ${state.tab===id?'active':''}" data-tab="${id}">${t}</button>`).join('')}</div><div id="tabBody"></div></div>`;
+let html='';
+if(state.tab==='home')html=`<div class="grid2"><div><div class="hero"><div class="eyebrow">LA LÉGENDE S'ÉCRIT SUR PLUSIEURS SAISONS</div><div class="big">Ta carrière.<br>Ton équipe.<br><span style="color:#dcff9b">Tes médailles.</span></div><div class="sub">Les jeunes espoirs arrivent, les champions progressent puis déclinent et les vétérans se retirent. Compose tes relais et vise les Jeux olympiques de 2030, 2034...</div></div><div class="panel" style="margin-top:12px"><div class="title2">Mon équipe nationale</div><div class="fields"><div class="field"><label>Catégorie en Coupe du monde</label><select id="sexSelect"><option value="M" ${state.sex==='M'?'selected':''}>Hommes</option><option value="F" ${state.sex==='F'?'selected':''}>Femmes</option></select></div><div class="field"><label>Nation</label><select id="nationSelect">${NATIONS.map((n,i)=>`<option value="${i}" ${state.nation===i?'selected':''}>${n[1]} ${n[2]}</option>`).join('')}</select></div><div class="field" style="grid-column:1/-1"><label>Biathlète titulaire</label><select id="athleteSelect">${optionsRoster()}</select></div><div class="field" style="grid-column:1/-1"><label>Difficulté</label><select id="difficultySelect"><option value="easy" ${state.difficulty==='easy'?'selected':''}>Accessible</option><option value="normal" ${state.difficulty==='normal'?'selected':''}>Normale</option><option value="hard" ${state.difficulty==='hard'?'selected':''}>Expert</option></select></div></div><div class="statline"><span class="pill">🎂 ${p.age} ans</span><span class="pill">⛷ Ski ${p.ski}</span><span class="pill">🎯 Tir ${p.shoot}</span><span class="pill">♥ Endurance ${p.endurance}</span></div></div></div><div><div class="panel"><div class="eyebrow">SAISON ${seasonLabel()}</div><div class="title2" style="font-size:23px">${end?'🏆 Fin de saison':(current.olympic?'🥇 JEUX OLYMPIQUES · ':'')+eventDefs[current.type].name+' '+(current.sex&&current.sex!=='mixte'?sportLabel(current.sex):'')}</div><div class="statline"><span class="pill good">${state.stage} / ${total} épreuves</span><span class="pill">${end?'Palmarès':current.venue}</span></div><div class="small">${end?'Consulte les classements et passe à la saison suivante. Les athlètes vont vieillir, évoluer, être recrutés ou prendre leur retraite.':current.olympic?'Cette course rapporte des médailles olympiques, et non des points de Coupe du monde.':eventDefs[current.type].sub}</div><div class="actions">${end?`<button class="action" id="advanceSeason">PASSER À LA SAISON ${seasonLabel(state.year+1)} ➜</button><button class="action alt" id="gotoRanks">PALMARÈS</button>`:`<button class="action" id="startSeason">JOUER L'ÉPREUVE ${state.stage+1} ➜</button><button class="action alt" id="goSeason">CALENDRIER</button><button class="action alt" id="simulateOne">SIMULER</button>`}</div></div><div class="panel" style="margin-top:12px"><div class="title2">Classement & actualités</div><div class="statline"><span class="pill">${mine?mine+'e au général':'Non classé'}</span><span class="pill">${state.history.length} saison(s) terminée(s)</span></div>${(state.news.length?state.news.slice(0,5):['Bienvenue en mode carrière ! Les Jeux olympiques arrivent en 2030.']).map(t=>`<div class="race-item"><div class="info"><div class="name">${esc(t)}</div></div></div>`).join('')}<div class="actions"><button class="action alt" id="goTeams">GÉRER LES RELAIS</button><button class="action alt" id="goHistory">CARRIÈRE</button></div></div></div></div>`;
+if(state.tab==='season')html=`<div class="grid2"><div class="panel"><div class="title2">Coupe du monde ${seasonLabel()} ${olympicYear(state.year)?'· Jeux olympiques '+(state.year+1):''}</div><div class="scrolllist" style="max-height:60vh">${CALENDAR.map(([type,venue,country,comp,sex],i)=>{const res=state.results.find(r=>r.stage===i);return `<div class="race-item ${i===state.stage?'sel':''}"><div class="num">${String(i+1).padStart(2,'0')}</div><div class="info"><div class="name">${comp==='JO'?'🥇':'🏆'} ${eventDefs[type].name} ${sex&&sex!=='mixte'?'· '+sportLabel(sex):''}</div><div class="meta">${venue} • ${comp==='JO'?'Jeux olympiques':'Coupe du monde'}</div></div><div class="status">${res?`<span style="color:#bff481">${res.userRank}e</span>`:i===state.stage?'▶ À JOUER':'—'}</div></div>`}).join('')}</div><div class="actions">${end?`<button class="action" id="advanceSeason">SAISON SUIVANTE ➜</button>`:`<button class="action" id="startSeason">JOUER L'ÉPREUVE ${state.stage+1}</button><button class="action alt" id="simulateOne">SIMULER L'ÉPREUVE</button><button class="action alt" id="simulateRest">SIMULER LA FIN DE SAISON</button>`}</div></div><div class="panel"><div class="title2">Progression de carrière</div><div class="how">🏆 <b>Coupe du monde :</b> ${BASE_CALENDAR.length} manches par saison. Points au général et aux petits globes par discipline.<br><br>🥇 <b>Jeux olympiques :</b> tous les 4 ans à partir de 2030. Les 11 épreuves olympiques hommes/femmes/mixte sont incluses ; podiums et médailles sont conservés séparément.<br><br>✨ <b>Nouvelle génération :</b> promotions de jeunes biathlètes à chaque intersaison. Leurs qualités progressent suivant l'âge et le potentiel.<br><br>👋 <b>Retraites :</b> départs progressifs des vétérans et renouvellement des sélections. Tous les classements précédents restent dans le palmarès.</div><div class="actions"><button class="action alt" id="goHistory">ANCIENNES SAISONS</button></div></div></div>`;
+if(state.tab==='teams')html=`<div class="grid2"><div class="panel"><div class="title2">🇫🇷 Sélection des relais · ${esc(nation(state.nation)[2])}</div><p class="small">Choisis librement les titulaires et leur ordre de départ. Les compositions sont sauvegardées et utilisées en Coupe du monde, aux Jeux olympiques et en course libre.</p>${[['relay','M','Relais hommes • 4 titulaires'],['relay','F','Relais femmes • 4 titulaires'],['mixed','M','Relais mixte • 2 hommes puis 2 femmes'],['single','M','Relais mixte simple • 1 femme + 1 homme']].map(([type,sex,title])=>`<div class="race-item"><div class="info"><div class="name">${title}</div><div class="meta">${lineupFor(state.nation,type,sex).map(a=>a?esc(a.name):'?').join(' → ')}</div></div><button class="action alt" style="padding:8px" data-compose="${type}" data-sex="${sex}">MODIFIER</button></div>`).join('')}</div><div class="panel"><div class="title2">Effectifs ${seasonLabel()}</div><div class="tabs"><button class="tab ${state.rosterTab!=='F'?'active':''}" data-roster="M">HOMMES</button><button class="tab ${state.rosterTab==='F'?'active':''}" data-roster="F">FEMMES</button></div>${rosterTable(state.rosterTab==='F'?'F':'M')}<p class="small">Les statistiques de ski, tir et endurance évoluent d'une saison à l'autre. Les nouveaux athlètes portent une étoile ✨.</p></div></div>`;
+if(state.tab==='ranks'){const filters=['Général','Sprint','Poursuite','Individuel','Mass start','Super sprint','Équipes','Relais','Relais mixte','Relais mixte simple'];if(!filters.includes(state.rankFilter))state.rankFilter='Général';const teams=['Équipes','Relais','Relais mixte','Relais mixte simple'].includes(state.rankFilter),rows=teams?teamStandings(state.rankFilter):standingsFor(state.rankFilter);html=`<div class="panel"><div class="title2">🏆 Classements de Coupe du monde · ${seasonLabel()} · ${sportLabel(state.sex)}</div><div class="tabs">${filters.map(f=>`<button class="tab ${f===state.rankFilter?'active':''}" data-filter="${f}">${f}</button>`).join('')}</div><div class="scrolllist" style="max-height:51vh"><table class="table"><thead><tr><th>POS.</th><th>${teams?'NATION':'BIATHLÈTE'}</th><th>POINTS</th><th>COURSES</th><th>VICTOIRES</th></tr></thead><tbody>${rows.map((a,i)=>`<tr class="${(teams?a.n===state.nation:a.id===p.id)?'me':''}"><td>${i+1}</td><td>${nation(a.n)[1]} ${teams?nation(a.n)[2]:esc(a.name)}</td><td>${a.pts}</td><td>${a.starts}</td><td>${a.wins}</td></tr>`).join('')||'<tr><td colspan="5">Le classement sera publié après la première épreuve de Coupe du monde.</td></tr>'}</tbody></table></div><p class="small">Les médailles olympiques sont comptabilisées séparément dans l'onglet JEUX OLYMPIQUES.</p></div>`;}
+if(state.tab==='olympics'){let medals=olympicMedals();html=`<div class="grid2"><div class="panel"><div class="title2">🥇 Jeux olympiques ${olympicYear(state.year)?state.year+1:'d’hiver'}</div><div class="how">${olympicYear(state.year)?`Cette saison inclut 11 épreuves olympiques : 5 hommes, 5 femmes et le relais mixte.`:`Prochaine édition : <b>${2030+Math.max(0,Math.ceil((state.year+1-2030)/4))*4}</b>. Toutes les quatre saisons, une session olympique se glisse au calendrier de la Coupe du monde.`}<br>Les médailles sont enregistrées dans le palmarès de carrière.</div><div class="title2" style="margin-top:14px">Tableau des médailles</div><div class="scrolllist" style="max-height:43vh"><table class="table"><thead><tr><th>NATION</th><th>🥇</th><th>🥈</th><th>🥉</th></tr></thead><tbody>${medals.filter(m=>m.gold+m.silver+m.bronze).map(m=>`<tr class="${m.n===state.nation?'me':''}"><td>${nation(m.n)[1]} ${nation(m.n)[2]}</td><td>${m.gold}</td><td>${m.silver}</td><td>${m.bronze}</td></tr>`).join('')||'<tr><td colspan="4">Les prochains podiums s’afficheront après les courses olympiques.</td></tr>'}</tbody></table></div></div><div class="panel"><div class="title2">Podiums olympiques</div><div class="scrolllist" style="max-height:62vh">${olympicResults().map(r=>`<div class="race-item"><div class="info"><div class="name">${esc(r.name)} · ${r.type==='mixed'||r.type==='single'?'Mixte':sportLabel(r.sex)}</div><div class="meta">🥇 ${nation(r.rows[0].n)[1]} ${esc(r.rows[0].name)}<br>🥈 ${nation(r.rows[1].n)[1]} ${esc(r.rows[1].name)}<br>🥉 ${nation(r.rows[2].n)[1]} ${esc(r.rows[2].name)}</div></div></div>`).join('')||'<p class="small">Les podiums seront présentés pendant les Jeux olympiques de la carrière.</p>'}</div></div></div>`;}
+if(state.tab==='history')html=`<div class="grid2"><div class="panel"><div class="title2">📜 Palmarès multi-saisons</div><div class="scrolllist" style="max-height:62vh">${state.history.slice().reverse().map(h=>`<div class="history-card"><div class="eyebrow">SAISON ${h.label} ${h.olympic?'• ANNÉE OLYMPIQUE':''}</div><div class="title2">🏆 Coupe du monde · ${h.events} courses</div><div class="small">Hommes : ${h.champions.M?`${nation(h.champions.M.n)[1]} ${esc(h.champions.M.name)} (${h.champions.M.pts} pts)`:'Non disputé'}<br>Femmes : ${h.champions.F?`${nation(h.champions.F.n)[1]} ${esc(h.champions.F.name)} (${h.champions.F.pts} pts)`:'Non disputé'}<br>Vos podiums : ${h.personal.filter(x=>x.rank<=3).length} · Vos victoires : ${h.personal.filter(x=>x.rank===1).length}</div>${h.olympic?`<div class="small" style="margin-top:4px">JO : ${h.medals.filter(m=>m.gold+m.silver+m.bronze).slice(0,3).map(m=>`${nation(m.n)[1]} ${m.gold}🥇`).join(' · ')}</div>`:''}<button class="action alt history-detail" data-year="${h.year}" style="margin-top:9px">VOIR LES RÉSULTATS</button></div>`).join('')||'<p class="small">La première saison terminée sera inscrite ici. Aucun résultat ne sera effacé lors du passage à la saison suivante.</p>'}</div></div><div class="panel"><div class="title2">Générations de biathlètes</div><div class="statline"><span class="pill good">${ROSTER.filter(a=>!a.retired).length} actifs</span><span class="pill">${state.retired.length} retraités</span><span class="pill">${ROSTER.filter(a=>a.rookieYear>2026&&!a.retired).length} jeunes intégrés</span></div><div class="scrolllist" style="max-height:42vh">${state.retired.slice().reverse().slice(0,50).map(a=>`<div class="race-item"><div class="info"><div class="name">${nation(a.n)[1]} ${esc(a.name)}</div><div class="meta">Retraité en ${a.retiredYear}, à ${a.age} ans · ${sportLabel(a.sex)}</div></div></div>`).join('')||'<p class="small">Les départs à la retraite seront affichés en fin de saison.</p>'}</div><div class="actions"><button class="action warn" id="resetCareer">RECOMMENCER UNE CARRIÈRE</button></div></div></div>`;
+if(state.tab==='quick')html=`<div class="panel"><div class="title2">Course libre · tous les formats</div><p class="small">Course sans impact sur les résultats de carrière. Les relais ouvrent la sélection des titulaires.</p><div class="grid3">${Object.entries(eventDefs).map(([key,d])=>`<button class="cardformat ${state.quick===key?'active':''}" data-format="${key}"><b>${esc(d.name)}</b><div>${esc(d.sub)}</div></button>`).join('')}</div><div class="actions"><button class="action" id="startQuick">JOUER UNE COURSE ➜</button></div></div>`;
+if(state.tab==='results'){const valid=state.results.slice().reverse();let rr=state.results.find(r=>r.stage===state.resultFilter)||state.results[state.results.length-1];html=`<div class="grid2"><div class="panel"><div class="title2">Résultats de ${seasonLabel()}</div><div class="scrolllist" style="max-height:57vh">${valid.map(r=>`<button style="width:100%;color:inherit;text-align:left;background:none;border:0" data-result="${r.stage}"><div class="race-item ${rr===r?'sel':''}"><div class="num">${r.stage+1}</div><div class="info"><div class="name">${r.olympic?'🥇':'🏆'} ${esc(r.name)} ${r.sex?'· '+(r.type==='mixed'||r.type==='single'?'Mixte':sportLabel(r.sex)):''}</div><div class="meta">${esc(r.venue)}</div></div><div class="status">${r.userRank}e</div></div></button>`).join('')||'<p class="small">Aucune course terminée cette saison.</p>'}</div></div><div class="panel"><div class="title2">${rr?esc(rr.name)+' · '+esc(rr.venue):'Classement'}</div><div class="scrolllist" style="max-height:55vh"><table class="table"><thead><tr><th>#</th><th>ATHLÈTE/ÉQUIPE</th><th>ÉCART</th><th>TIRS</th></tr></thead><tbody>${rr?rr.rows.map(x=>`<tr class="${x.id===(rr.team?'T'+state.nation:player(rr.sex||state.sex).id)?'me':''}"><td>${x.rank}</td><td>${nation(x.n)[1]} ${esc(x.name)}</td><td>${x.rank===1?fmt(x.time):'+'+fmt(x.time-rr.rows[0].time)}</td><td>${esc(x.shoots||'—')}</td></tr>`).join(''):'<tr><td colspan="4">En attente de la première course.</td></tr>'}</tbody></table></div></div></div>`;}
+if(state.tab==='rules')html=`<div class="grid2"><div class="panel"><div class="title2">🎿 Ski et gestion de l'effort</div><div class="how">Alterne <b>POUSSÉE G / D</b> en rythme. Maintiens <b>ATTAQUE</b> pour accélérer, au prix d'une dépense d'énergie et d'une fréquence cardiaque plus élevée. <b>RÉCUP.</b> pour ralentir et reprendre des forces. Le relief, le ski, l'endurance et la fatigue influencent la vitesse.</div></div><div class="panel"><div class="title2">🎯 Tir couché et debout</div><div class="how">Glisse le doigt pour viser, maintiens <b>SOUFFLE</b> brièvement puis <b>TIRER</b>. Le vent, la fatigue et le cœur modifient le tremblement. Les relais offrent trois balles de pioche, chargées l'une après l'autre.</div></div><div class="panel"><div class="title2">🏆 Coupe du monde & Jeux olympiques</div><div class="how">Les <b>points</b> des manches de Coupe du monde alimentent les classements individuels et de relais. Les Jeux olympiques offrent des <b>médailles</b> sans ajouter de points au général. Les 11 épreuves olympiques (5 hommes, 5 femmes, 1 mixte) reviennent tous les quatre ans.</div></div><div class="panel"><div class="title2">📱 Commandes & sauvegarde</div><div class="how">Écran paysage, sur Samsung, iPhone ou ordinateur. Au clavier : A/D poussées, Espace attaque, R récupération, B souffle, Entrée tir, X balle de pioche. La saison et les sélections sont enregistrées sur l'appareil. La course en cours ne l'est pas.</div><div class="actions"><button class="action alt" id="soundToggle">SON : ${state.sound?'ACTIVÉ':'COUPÉ'}</button></div></div></div>`;
 $('tabBody').innerHTML=html;
-function bind(id,fn){const e=$(id);if(e)e.onclick=fn}
-if($('sexSelect'))$('sexSelect').onchange=e=>{state.sex=e.target.value;state.athleteId=`${state.sex}${state.nation}_0`;save();menuRender()};
-if($('nationSelect'))$('nationSelect').onchange=e=>{state.nation=+e.target.value;state.athleteId=`${state.sex}${state.nation}_0`;save();menuRender()};
-if($('athleteSelect'))$('athleteSelect').onchange=e=>{state.athleteId=e.target.value;save();menuRender()};
-if($('difficultySelect'))$('difficultySelect').onchange=e=>{state.difficulty=e.target.value;save();menuRender()};
-bind('startSeason',()=>beginRace(CALENDAR[state.stage][0],true));bind('startQuick',()=>beginRace(state.quick,false));bind('goSeason',()=>{state.tab='season';menuRender()});bind('goRanks',()=>{state.tab='ranks';menuRender()});bind('gotoRanks',()=>{state.tab='ranks';menuRender()});bind('newSeason',()=>confirmReset());bind('soundToggle',()=>{state.sound=!state.sound;save();menuRender()});document.querySelectorAll('[data-format]').forEach(b=>b.onclick=()=>{state.quick=b.dataset.format;save();menuRender()});document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{state.rankFilter=b.dataset.filter;menuRender()});document.querySelectorAll('[data-result]').forEach(b=>b.onclick=()=>{state.resultFilter=+b.dataset.result;menuRender()});}
-function confirmReset(){showModal(`<h2>Recommencer la saison ?</h2><p class="small">Les résultats et les classements des 12 étapes seront effacés de cet appareil.</p><div class="actions"><button class="action warn" id="yesReset">EFFACER LA SAISON</button><button class="action alt" id="noReset">ANNULER</button></div>`);$('yesReset').onclick=()=>{state.stage=0;state.results=[];state.seasonActive=false;save();hideModal();menuRender()};$('noReset').onclick=hideModal}
+document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{state.tab=b.dataset.tab;menuRender();});
+const bind=(id,fn)=>{const e=$(id);if(e)e.onclick=fn;};
+if($('sexSelect'))$('sexSelect').onchange=e=>{state.sex=e.target.value;state.athleteId=player(state.sex).id;save();menuRender();};
+if($('nationSelect'))$('nationSelect').onchange=e=>{state.nation=+e.target.value;state.athleteId=player(state.sex).id;save();menuRender();};
+if($('athleteSelect'))$('athleteSelect').onchange=e=>{state.athleteId=e.target.value;save();menuRender();};
+if($('difficultySelect'))$('difficultySelect').onchange=e=>{state.difficulty=e.target.value;save();menuRender();};
+bind('startSeason',()=>startRaceSelection(CALENDAR[state.stage][0],true));bind('startQuick',()=>startRaceSelection(state.quick,false));bind('advanceSeason',()=>{seasonAdvance();state.tab='home';menuRender();});bind('simulateOne',()=>simulateStage());bind('simulateRest',confirmSimRest);
+bind('goSeason',()=>{state.tab='season';menuRender()});bind('goTeams',()=>{state.tab='teams';menuRender()});bind('goHistory',()=>{state.tab='history';menuRender()});bind('gotoRanks',()=>{state.tab='ranks';menuRender()});bind('soundToggle',()=>{state.sound=!state.sound;save();menuRender()});bind('resetCareer',confirmReset);
+document.querySelectorAll('[data-format]').forEach(b=>b.onclick=()=>{state.quick=b.dataset.format;save();menuRender()});
+document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{state.rankFilter=b.dataset.filter;menuRender()});
+document.querySelectorAll('[data-result]').forEach(b=>b.onclick=()=>{state.resultFilter=+b.dataset.result;menuRender()});
+document.querySelectorAll('[data-compose]').forEach(b=>b.onclick=()=>composeModal(b.dataset.compose,b.dataset.sex));
+document.querySelectorAll('[data-roster]').forEach(b=>b.onclick=()=>{state.rosterTab=b.dataset.roster;menuRender()});
+document.querySelectorAll('[data-year]').forEach(b=>b.onclick=()=>showArchive(+b.dataset.year));
+}
+function showArchive(year){const h=state.history.find(x=>x.year===year);if(!h)return;showModal(`<div class="eyebrow">PALMARÈS ${h.label}</div><h2>🏆 ${h.events} épreuves</h2><div class="tablewrap"><table class="table"><thead><tr><th>ÉPREUVE</th><th>POS.</th><th>STATUT</th></tr></thead><tbody>${h.personal.map(r=>`<tr><td>${esc(r.name)} ${r.sex?'· '+(r.type==='mixed'||r.type==='single'?'Mixte':sportLabel(r.sex)):''}</td><td>${r.rank}e</td><td>${r.olympic?'🥇 JO':'🏆 CDM'}</td></tr>`).join('')}</tbody></table></div><div class="actions"><button class="action alt" id="closeArchive">FERMER</button></div>`,'results-modal');$('closeArchive').onclick=hideModal;}
+function confirmReset(){showModal(`<h2>⚠ Effacer la carrière entière ?</h2><p class="small">Cela effacera tous les résultats des saisons, le palmarès olympique, les jeunes recrutés et les anciens athlètes. La sauvegarde V2 reprise dans la V3 sera également perdue.</p><div class="actions"><button class="action warn" id="yesReset">OUI, TOUT RECOMMENCER</button><button class="action alt" id="noReset">ANNULER</button></div>`);$('yesReset').onclick=()=>{ROSTER=initialRoster();Object.assign(state,{year:2026,stage:0,results:[],history:[],retired:[],news:[],nextRookie:0,relaySelections:{},athleteId:`${state.sex}${state.nation}_0`});CALENDAR=makeCalendar(2026);save();hideModal();state.tab='home';menuRender()};$('noReset').onclick=hideModal;}
+function composeModal(type,sex,onDone=null){const sexes=legSexes(type,sex),current=lineupFor(state.nation,type,sex),max=type==='single'?2:4;const labels=type==='relay'?`Relais ${sportLabel(sex).toLowerCase()}`:type==='mixed'?'Relais mixte · H-H-F-F':'Relais mixte simple · F-H-F-H';
+showModal(`<div class="eyebrow">COMPOSITION D'ÉQUIPE · ${esc(nation(state.nation)[2])}</div><h2>👥 ${labels}</h2><p class="small">Choisis ${max} titulaires différents et leur ordre de passage. Leurs capacités de ski, de tir et leur âge sont pris en compte. ${type==='single'?'Les mêmes deux biathlètes courent deux fois chacun.':''}</p><div class="lineup-grid">${sexes.slice(0,max).map((s,i)=>`<div class="lineup-field"><label>RELÈVE ${i+1} · ${sportLabel(s)}</label><select data-lineup-slot="${i}">${rosterByNation(state.nation,s).map(a=>`<option value="${a.id}" ${a.id===current[i]?.id?'selected':''}>${esc(a.name)} (${a.age} ans) • Ski ${a.ski} / Tir ${a.shoot}</option>`).join('')}</select></div>`).join('')}</div><div class="banner" id="lineupError" style="display:none;color:#ffd1d8;border-color:#ff8390">Choisis des athlètes différents pour chaque passage.</div><div class="actions"><button class="action" id="confirmLineup">VALIDER LA COMPOSITION</button><button class="action alt" id="cancelLineup">ANNULER</button></div>`,'lineup-modal');
+$('cancelLineup').onclick=hideModal;$('confirmLineup').onclick=()=>{const ids=[...document.querySelectorAll('[data-lineup-slot]')].map(x=>x.value);if(!saveLineup(type,sex,ids)){$('lineupError').style.display='block';return;}hideModal();if(onDone)onDone();else menuRender();};}
+
+function simShot(ath,stance,relay){let misses=0,spent=0;const prob=clamp((stance==='P'?.84:.77)+(ath.shoot-77)*.0045,.55,.99);for(let i=0;i<5;i++)if(Math.random()>prob)misses++;if(relay){for(let k=0;k<3&&misses;k++){spent++;if(Math.random()<prob)misses--;}}return {misses,spent};}
+function simSolo(a,type,def,start=0){const ks=def.total/1000,sp=clamp(6.45+(a.ski-80)*.041+(a.endurance-80)*.011,4.7,8.5);let total=def.total/sp+start,misses=0,stats=[];for(const stance of def.shotTypes){const s=simShot(a,stance,false);stats.push(s.misses);misses+=s.misses;total+=rand(30,43)+(def.timePenalty?s.misses*def.timePenalty:s.misses*def.penalty/6.3);}total+=rand(-30,45);return {time:Math.round(total),misses,shoots:stats.join('-')};}
+function simTeam(n,type,sex,def){const lineup=lineupFor(n,type,sex),stats=[],shotsPer=2;let total=0,misses=0;for(let leg=0;leg<4;leg++){const ath=lineup[leg]||player(sex),km=def.legDistances[leg]*.001,sp=clamp(6.45+(ath.ski-80)*.041+(ath.endurance-80)*.011,4.7,8.5);total+=def.legDistances[leg]/sp+rand(-18,29);for(let k=0;k<shotsPer;k++){const s=simShot(ath,k===0?'P':'S',true);misses+=s.misses;stats.push(s.misses);total+=rand(30,43)+s.spent*7+s.misses*def.penalty/6.2;}if(leg<3)total+=3;}return {time:Math.round(total),misses,shoots:stats.join('-')};}
+function simulateStage(silent=false){if(state.stage>=CALENDAR.length)return null;const entry=eventAt(),type=entry.type,sex=sexForEvent(),def=defs(type,sex),isTeam=def.team,chosen=player(sex);let athletes=[];
+if(isTeam)athletes=NATIONS.map((n,i)=>({id:`T${i}`,n:i,name:n[2]}));
+else{athletes=NATIONS.flatMap((n,i)=>rosterByNation(i,sex).slice(0,5));if(!athletes.some(a=>a.id===chosen.id)){const ix=athletes.findIndex(a=>a.n===chosen.n);if(ix>=0)athletes[ix]=chosen;else athletes.push(chosen);}
+if(type==='mass'||type==='supersprint'){athletes=athletes.slice().sort((a,b)=>b.ski+b.shoot-a.ski-a.shoot).slice(0,30);if(!athletes.some(a=>a.id===chosen.id))athletes[athletes.length-1]=chosen;}}
+let previous=null;if(type==='pursuit'){previous=state.results.slice().reverse().find(r=>r.type==='sprint'&&r.sex===sex&&!!r.olympic===entry.olympic);}
+const rows=athletes.map(a=>{let delay=0;if(previous){const prev=previous.rows.find(x=>x.id===a.id);delay=prev?Math.min(900,prev.time-previous.rows[0].time):180+rand(0,120);}let info=isTeam?simTeam(a.n,type,sex,def):simSolo(a,type,def,delay);return {id:a.id,n:a.n,name:a.name,rank:0,...info};}).sort((a,b)=>a.time-b.time).map((a,i)=>({...a,rank:i+1}));
+const id=isTeam?`T${state.nation}`:chosen.id,myrow=rows.find(x=>x.id===id),place=myrow?.rank||rows.length;
+const result={type,name:def.name,sex,olympic:entry.olympic,simulated:true,year:state.year,discipline:def.discipline,venue:entry.venue,stage:state.stage,team:isTeam,rows,userRank:place,userTime:myrow?.time||0,winner:rows[0].name};
+const champion=byId(rows[0].id);if(champion&&!isTeam)champion.careerWins=(champion.careerWins||0)+1;
+state.results.push(result);state.stage++;state.seasonActive=true;save();if(!silent){showModal(`<div class="eyebrow">SIMULATION • ${result.olympic?'JEUX OLYMPIQUES':'COUPE DU MONDE'}</div><h2>${result.olympic?'🥇':'🏆'} ${esc(result.name)} · ${type==='mixed'||type==='single'?'Mixte':sportLabel(result.sex)}</h2><div class="statline"><span class="pill good">VOTRE PLACE : ${place} / ${rows.length}</span><span class="pill">${result.olympic?place<=3?['🥇 OR','🥈 ARGENT','🥉 BRONZE'][place-1]:'SANS MÉDAILLE':`+${pts(place,type)} points`}</span></div><div class="tablewrap"><table class="table"><thead><tr><th>POS.</th><th>ATHLÈTE / NATION</th><th>CHRONO / ÉCART</th><th>TIRS</th></tr></thead><tbody>${rows.map((a,i)=>`<tr class="${a.id===id?'me':''}"><td>${i+1}</td><td>${nation(a.n)[1]} ${esc(a.name)}</td><td>${i===0?fmt(a.time):'+'+fmt(a.time-rows[0].time)}</td><td>${esc(a.shoots||'')}</td></tr>`).join('')}</tbody></table></div><div class="actions"><button class="action" id="simClose">CONTINUER</button></div>`,'results-modal');$('simClose').onclick=()=>{hideModal();state.tab='home';menuRender();};}
+return result;}
+function confirmSimRest(){const remaining=CALENDAR.length-state.stage;if(remaining<=0)return;showModal(`<h2>⏩ Simuler la fin de saison ?</h2><p class="small">Les <b>${remaining}</b> épreuves restantes seront simulées automatiquement. Leur résultat sera enregistré et comptera dans le palmarès. Tu ne pourras pas les rejouer dans cette saison, mais tu garderas les courses déjà terminées.</p><div class="actions"><button class="action" id="yesSimRest">SIMULER LES ${remaining} ÉPREUVES</button><button class="action alt" id="noSimRest">ANNULER</button></div>`);$('noSimRest').onclick=hideModal;$('yesSimRest').onclick=()=>{for(let k=0;k<remaining;k++)simulateStage(true);hideModal();state.tab='home';menuRender();};}
+
+function startRaceSelection(type,season){if(season&&state.stage>=CALENDAR.length)return;const e=season?eventAt():null,sex=season?sexForEvent():state.sex;if(eventDefs[type].kind==='team'){composeModal(type,sex,()=>beginRace(type,season));}else beginRace(type,season);}
+
 function showModal(html,kind=''){$('modalRoot').innerHTML=`<div class="modalback"><div class="modal ${kind}">${html}</div></div>`}
 function hideModal(){$('modalRoot').innerHTML=''}
 let toastTimer=0;function toast(t,time=2.3){$('toast').textContent=t;$('toast').classList.remove('hidden');toastTimer=time;}
@@ -102,131 +203,353 @@ function resize(){const r=cv.getBoundingClientRect();W=r.width||innerWidth;H=r.h
 let race=null,held={attack:false,recover:false,breath:false};let timePrev=performance.now();
 function defs(type,sex){const d=eventDefs[type];let team=d.kind==='team',legDistances=[],shotDistances=[],shotTypes=[];if(team){if(type==='single')legDistances=sex==='F'?[3000,3750,3000,3750]:[3750,3000,3750,3000];else if(type==='mixed')legDistances=[6000,6000,6000,6000];else legDistances=Array(4).fill(sex==='F'?6000:7500);let base=0;legDistances.forEach((leg,k)=>{if(type==='single'){shotDistances.push(base+leg*.39,base+leg*.79)}else{shotDistances.push(base+leg/3,base+leg*2/3)}shotTypes.push('P','S');base+=leg});return {...d,team:true,total:base,shotDistances,shotTypes,legDistances,lap:0};}
 const total=(sex==='M'?d.distM:d.distF)*1000;const numShots=d.shots.length,lapNum=type==='mass60'?6:numShots+1;const loop=total/lapNum;if(type==='mass60')shotDistances=[2*loop,3*loop,4*loop,5*loop];else for(let i=1;i<=numShots;i++)shotDistances.push(loop*i);return {...d,team:false,total,shotDistances,shotTypes:d.shots.split(''),legDistances:[total],lap:loop};}
-function groupFor(type){const d=eventDefs[type];const selected=player();if(d.kind==='team')return NATIONS.map((n,i)=>({id:`T${i}`,n:i,name:n[2],stats:null}));let all=getAthletes(state.sex);if(['mass','supersprint'].includes(type)){let ranks=standingsFor('Général');if(type==='supersprint'){// qualification reconstituée
-all=all.map(a=>({a,score:a.ski*.62+a.shoot*.38+rand(-13,13)})).sort((x,y)=>y.score-x.score).slice(0,30).map(x=>x.a)}else if(ranks.length){const rankSet=new Set(ranks.slice(0,29).map(a=>a.id));all=all.filter(x=>rankSet.has(x.id));while(all.length<30){let candidate=pick(getAthletes(state.sex));if(!all.some(x=>x.id===candidate.id))all.push(candidate)}}else all=all.slice().sort((a,b)=>(b.ski+b.shoot)-(a.ski+a.shoot)).slice(0,30);
+function groupFor(type){const d=eventDefs[type];const selected=player(raceSex());if(d.kind==='team')return NATIONS.map((n,i)=>({id:`T${i}`,n:i,name:n[2],stats:null}));let all=getAthletes(raceSex());if(!['mass','supersprint'].includes(type)){all=NATIONS.flatMap((n,i)=>getAthletes(raceSex()).filter(a=>a.n===i).sort((a,b)=>b.ski+b.shoot-a.ski-a.shoot).slice(0,5));if(!all.some(a=>a.id===selected.id)){const ix=all.findIndex(a=>a.n===selected.n);if(ix>=0)all[ix]=selected;else all.push(selected);}}if(['mass','supersprint'].includes(type)){let ranks=standingsFor('Général',raceSex());if(type==='supersprint'){// qualification reconstituée
+all=all.map(a=>({a,score:a.ski*.62+a.shoot*.38+rand(-13,13)})).sort((x,y)=>y.score-x.score).slice(0,30).map(x=>x.a)}else if(ranks.length){const rankSet=new Set(ranks.slice(0,29).map(a=>a.id));all=all.filter(x=>rankSet.has(x.id));while(all.length<30){let candidate=pick(getAthletes(raceSex()));if(!all.some(x=>x.id===candidate.id))all.push(candidate)}}else all=all.slice().sort((a,b)=>(b.ski+b.shoot)-(a.ski+a.shoot)).slice(0,30);
 if(!all.includes(selected)){all[all.length-1]=selected;toast('Qualifié : invitation pour votre athlète !',3)} }
 return all;}
-function previousSprintResults(){if(!state.results.length)return null;const prev=state.results[state.results.length-1];return prev && prev.type==='sprint'?prev.rows:null}
-function runnerFor(n,leg,type){if(n===state.nation){if(type==='relay'&&leg===0)return player();if(type==='mixed'&&leg===(state.sex==='F'?0:2))return player();if(type==='single'&&leg===(state.sex==='F'?0:1))return player()}if(type==='relay')return getAthletes(state.sex).filter(a=>a.n===n)[leg%5];if(type==='mixed'){return ROSTER.find(a=>a.n===n&&a.sex===(leg<2?'F':'M')&&a.k===leg%2)}if(type==='single'){return ROSTER.find(a=>a.n===n&&a.sex===(leg%2===0?'F':'M')&&a.k===0)}return player()}
+function previousSprintResults(){const prev=state.results.slice().reverse().find(x=>x.type==='sprint'&&x.sex===raceSex()&&!!x.olympic===!!race?.olympic);return prev?.rows||null;}
+function runnerFor(n,leg,type){const sex=raceSex();let lineup=race?.teamLineups?.[n];if(!lineup)lineup=lineupFor(n,type,sex,n===state.nation);return lineup?.[leg]||rosterByNation(n,legSexes(type,sex)[leg])[0]||player(sex);}
 function currentRunner(obj){return race.def.team?runnerFor(obj.n,clamp(obj.leg,0,3),race.type):obj.athlete}
-function raceObject(a,index){const team=race.def.team;return {id:a.id,name:a.name,n:a.n,athlete:team?null:a,dist:0,energy:rand(82,99),fatigue:rand(4,17),shotIndex:0,shotTime:0,penaltyRemaining:0,misses:0,finishGlobal:null,leg:0,elapsed:0,speed:0,startOffset:0,shootStats:[],standings:0,position:index,extraTime:0,shootLock:false,started:false,shotsDone:0}}
-function beginRace(type,season){if(season&&state.stage>=CALENDAR.length)return;hideModal();race={type,season,def:defs(type,state.sex),elapsed:0,mode:'ski',phase:'ski',paused:false,objects:[],p:null,shoot:null,shotsRemaining:0,shotsDone:0,roundMiss:0,roundHits:0,reloadDelay:0,wind:rand(-1.9,1.9),timeOfDay:rand(0,1),weather:rand(0,1),lastTap:0,lastFoot:'',cadence:0,heartbeat:119,energy:95,fatigue:8,playerPace:0,dist:0,penaltyLeft:0,shootingIndex:0,leg:0,shotHistory:[],flash:0,warning:'',finished:false,seedOrder:[],postScore:0,trackOffset:rand(0,5000)};
-const field=groupFor(type),d=race.def;race.objects=field.map((a,i)=>raceObject(a,i));let p=race.objects.find(a=>a.id===(d.team?`T${state.nation}`:player().id));if(!p){p=raceObject(d.team?{id:`T${state.nation}`,n:state.nation,name:nation(state.nation)[2]}:player(),race.objects.length-1);race.objects.push(p)}race.p=p;
+function raceObject(a,index){const team=race.def.team;return {id:a.id,name:a.name,n:a.n,athlete:team?null:a,dist:0,energy:rand(82,99),fatigue:rand(4,17),shotIndex:0,shotTime:0,penaltyRemaining:0,misses:0,finishGlobal:null,leg:0,elapsed:0,speed:0,startOffset:0,shootStats:[],standings:0,position:index,extraTime:0,shootLock:false,started:false,shotsDone:0,
+ rangeState:'ski',rangeWait:0,aiShots:0,aiSpares:0,aiTargets:[false,false,false,false,false],
+ liveMisses:0,liveSpares:0,liveStatus:'PISTE',penaltyTotal:0,penaltyDone:0,
+ splitTimes:{},lastSplit:0,liveEstimate:null,projected:null}}
+function beginRace(type,season){if(season&&state.stage>=CALENDAR.length)return;hideModal();race={type,season,sex:season?sexForEvent():state.sex,olympic:!!(season&&eventAt()?.olympic),teamLineups:null,def:defs(type,season?sexForEvent():state.sex),elapsed:0,mode:'ski',phase:'ski',paused:false,rangeWait:0,pendingMisses:0,penaltyLapsTotal:0,penaltyLapsDone:0,penaltyTotal:0,liveRows:null,lastRankAt:-999,events:[],lastEventId:0,objects:[],p:null,shoot:null,shotsRemaining:0,shotsDone:0,roundMiss:0,roundHits:0,reloadDelay:0,wind:rand(-1.9,1.9),timeOfDay:rand(0,1),weather:rand(0,1),lastTap:0,lastFoot:'',cadence:0,heartbeat:119,energy:95,fatigue:8,playerPace:0,dist:0,penaltyLeft:0,shootingIndex:0,leg:0,shotHistory:[],flash:0,warning:'',finished:false,seedOrder:[],postScore:0,trackOffset:rand(0,5000)};
+race.teamLineups=race.def.team?Object.fromEntries(NATIONS.map((n,i)=>[i,lineupFor(i,type,race.sex)])):null;const field=groupFor(type),d=race.def;race.objects=field.map((a,i)=>raceObject(a,i));let p=race.objects.find(a=>a.id===(d.team?`T${state.nation}`:player(race.sex).id));if(!p){p=raceObject(d.team?{id:`T${state.nation}`,n:state.nation,name:nation(state.nation)[2]}:player(race.sex),race.objects.length-1);race.objects.push(p)}race.p=p;
 const shuffled=race.objects.slice().sort(()=>Math.random()-.5);
 if(d.kind==='interval') {shuffled.forEach((a,i)=>{a.startOffset=(i-shuffled.indexOf(p))*30})}
 else if(d.kind==='pursuit'){let previous=previousSprintResults();if(previous){let sorted=previous.slice().sort((a,b)=>a.time-b.time);let best=sorted[0].time;for(const a of race.objects){let r=sorted.find(x=>x.id===a.id);a.startOffset=r?clamp(r.time-best,0,900):180+rand(0,120)}const ofs=p.startOffset;race.objects.forEach(a=>a.startOffset-=ofs)}else{let sorted=race.objects.slice().sort((a,b)=>((byId(b.id)?.ski||75)+(byId(b.id)?.shoot||75))-((byId(a.id)?.ski||75)+(byId(a.id)?.shoot||75)));sorted.forEach((a,i)=>a.startOffset=i*3);let ofs=p.startOffset;race.objects.forEach(a=>a.startOffset-=ofs);toast('Poursuite libre : grille de départ simulée',3)}}
 else race.objects.forEach(a=>a.startOffset=0);
 // Rejoue les départs antérieurs pour présenter des écarts de course cohérents au moment du départ du joueur.
 const min=Math.min(0,...race.objects.map(a=>a.startOffset));if(min<0){for(let tick=min;tick<0;tick+=9){const slice=Math.min(9,-tick);race.elapsed=tick;for(const ai of race.objects)if(ai!==p)updateAI(ai,slice,tick+slice)}}race.elapsed=0;
-state.screen='game';$('menu').style.display='none';$('background').style.display='none';$('game').style.display='block';$('hud').style.display='block';resize();updateControls();updateHUD(true);toast(`DÉPART • ${d.name.toUpperCase()}`,2.5);tone(630,.14);}
+race.objects.forEach(a=>{a.splitTimes[0]=0;});state.screen='game';$('menu').style.display='none';$('background').style.display='none';$('game').style.display='block';$('hud').style.display='block';resize();updateControls();updateHUD(true);toast(`DÉPART • ${d.name.toUpperCase()}`,2.5);tone(630,.14);}
 function terrainAt(m){return .48*Math.sin(m/620)+.27*Math.sin(m/235+1.4)+.25*Math.sin(m/1540-1.2)}
 function slopeAt(m){return (terrainAt(m+65)-terrainAt(m-65))*3.3} // pente relative (-1..1) issue du profil
 function aiSpeed(a){const athlete=currentRunner(a)||player();const skill=athlete.ski||80;const elev=clamp(slopeAt(a.dist),-1,1);const endurance=(athlete.endurance||80);const fatigue=a.fatigue;return clamp((6.45+(skill-78)*.026+(endurance-78)*.009)*(state.difficulty==='easy'?.92:state.difficulty==='hard'?1.065:1)*(1-elev*.13)*(1-fatigue*.00165),4.1,10.9)}
 function randShoot(a,stance){const skill=currentRunner(a)?.shoot||78;const base=(stance==='P'?.83:.75)+(skill-75)*.0038-a.fatigue*.0012+(state.difficulty==='easy'?-.04:state.difficulty==='hard'?.035:0)+(Math.random()-.5)*.03;return Math.random()<clamp(base,.50,.99)}
-function aiFire(a){const idx=a.shotIndex,stance=race.def.shotTypes[idx];let unclosed=0,mainHits=0;for(let i=0;i<5;i++)if(randShoot(a,stance))mainHits++;unclosed=5-mainHits;if(race.def.team){for(let j=0;j<3&&unclosed>0;j++)if(randShoot(a,stance))unclosed--;}
-a.misses+=unclosed;a.shootStats.push({stance,miss:unclosed});a.shotsDone+=5;a.shotIndex++;if(race.def.timePenalty)a.extraTime+=unclosed*race.def.timePenalty;else a.penaltyRemaining+=unclosed*race.def.penalty;a.energy=clamp(a.energy+rand(8,17),0,100);a.fatigue=clamp(a.fatigue-rand(3,7),0,100);}
-function updateAI(a,dt,globalTime){if(a===race?.p||a.finishGlobal!==null)return;if(globalTime<=a.startOffset)return;let left=dt;let safety=0;while(left>.00001&&safety++<12){if(a.shotTime>0){const n=Math.min(left,a.shotTime);a.shotTime-=n;left-=n;if(a.shotTime<=.001){a.shotTime=0;aiFire(a)}continue}
-if(a.penaltyRemaining>0){const sp=6.4;let n=Math.min(left,a.penaltyRemaining/sp);a.penaltyRemaining-=sp*n;left-=n;continue}
-let speed=aiSpeed(a);const next= race.def.shotDistances[a.shotIndex]??race.def.total,legLimit=race.def.team?race.def.legDistances.slice(0,a.leg+1).reduce((x,y)=>x+y,0):race.def.total;let target=Math.min(next,legLimit,race.def.total);const movetime=Math.max(0,(target-a.dist)/Math.max(.01,speed));const n=Math.min(left,movetime);a.dist+=speed*n;left-=n;a.speed=speed*3.6;a.fatigue=clamp(a.fatigue+n*(.009+(.96-((currentRunner(a)?.endurance||80)/100))*.02),0,94);a.energy=clamp(a.energy-n*.008,15,100);if(a.dist>=race.def.total-.01){a.dist=race.def.total;a.finishGlobal=globalTime-left+a.extraTime;break}
-if(a.dist>=next-.01&&a.shotIndex<race.def.shotDistances.length){a.shotTime=rand(28,48)+((currentRunner(a)?.shoot||80)<77?5:0);continue}
-if(race.def.team&&a.dist>=legLimit-.01&&a.leg<race.def.legs-1){a.leg++;a.energy=rand(80,99);a.fatigue=rand(3,14);left-=Math.min(left,3);continue}
-if(n<.00001)break;}
+function raceEvent(a,message,kind='info'){
+ if(!race)return;const timestamp=Math.max(0,race.elapsed);
+ race.events.unshift({id:++race.lastEventId,t:timestamp,idAth:a?.id,n:a?.n,text:`${a?esc(a.name.split(' ').pop()):'Course'} : ${message}`,kind});
+ if(race.events.length>18)race.events.length=18;
+ // Un nouvel incident important modifie les temps projetés, sans reclasser toute la course à chaque image.
+ if(kind==='penalty')race.lastRankAt=Math.min(race.lastRankAt,race.elapsed-13);
+}
+function splitMark(a,before,after,when){
+ if(after<=before)return;
+ const interval=race.def.kind==='interval';
+ let k=Math.max(1,Math.floor(before/500)+1);
+ for(;k*500<=after+.01;k++){
+  const frac=clamp((k*500-before)/(after-before),0,1);
+  a.splitTimes[k]=when-(1-frac)*(after-before)/Math.max(2,a.speed/3.6)- (interval?a.startOffset:0)+(a.extraTime||0);
+  a.lastSplit=k;
+ }
+}
+function beginAIShooting(a){
+ a.rangeState='installation';a.liveStatus='INSTALLATION';a.shotTime=rand(7.5,11.5);
+ a.aiShots=0;a.aiSpares=0;a.liveSpares=0;a.liveMisses=0;
+ a.aiTargets=[false,false,false,false,false];a.liveHits=0;
+}
+function finishAIShooting(a){
+ const missed=a.aiTargets.filter(x=>!x).length,stance=race.def.shotTypes[a.shotIndex];
+ a.misses+=missed;a.shootStats.push({stance,miss:missed,spares:a.aiSpares});a.shotIndex++;
+ if(race.def.timePenalty){a.extraTime+=missed*race.def.timePenalty;a.rangeState='ski';a.liveStatus=missed?`+${missed*race.def.timePenalty}s`:'5/5';}
+ else if(missed){a.penaltyRemaining=missed*race.def.penalty;a.penaltyTotal=a.penaltyRemaining;a.penaltyDone=0;a.rangeState='penalty';a.liveStatus=`PÉNALITÉ ${missed} TOUR${missed>1?'S':''}`;raceEvent(a,`${missed} tour${missed>1?'s':''} de pénalité (${missed*race.def.penalty} m)`,'penalty');}
+ else{a.rangeState='ski';a.liveStatus='5/5 · SORTIE TIR';}
+ a.energy=clamp(a.energy+rand(7,12),0,100);a.fatigue=clamp(a.fatigue-rand(2,5),0,100);a.shotTime=0;
+}
+function aiFire(a){
+ const stance=race.def.shotTypes[a.shotIndex];
+ if(a.rangeState==='installation'){a.rangeState='tir';a.liveStatus=`${stance==='P'?'COUCHÉ':'DEBOUT'} 0/5`;a.shotTime=rand(2.2,3.8);return;}
+ if(a.rangeState==='rechargement'){a.rangeState='tir';a.shotTime=rand(1.7,3.0);return;}
+ if(a.rangeState==='rangement'){finishAIShooting(a);return;}
+ if(a.rangeState!=='tir')return;
+ const target=a.aiShots<5?a.aiShots:a.aiTargets.findIndex(v=>!v);
+ const hit=target>=0&&randShoot(a,stance);
+ if(hit)a.aiTargets[target]=true;
+ else if(a.aiShots<5){a.liveMisses++;raceEvent(a,`cible ${target+1} manquée au ${stance==='P'?'couché':'debout'}`,'miss');}
+ a.shotsDone++;a.aiShots++;a.liveHits=a.aiTargets.filter(Boolean).length;
+ a.liveStatus=`${stance==='P'?'COUCHÉ':'DEBOUT'} ${Math.min(5,a.aiShots)}/5 · ${a.liveMisses} err.`;
+ const complete=a.aiShots>=5;
+ if(complete&&a.aiTargets.every(Boolean)){
+  a.liveStatus='5/5 · RANGEMENT';a.rangeState='rangement';a.shotTime=rand(4.5,6.8);return;
+ }
+ if(complete&&race.def.team&&a.aiSpares<3){
+  a.aiSpares++;a.liveSpares=a.aiSpares;a.rangeState='rechargement';a.shotTime=rand(4.0,6.5);
+  a.liveStatus=`PIOCHE ${a.aiSpares}/3 · ${a.aiTargets.filter(v=>!v).length} reste`;
+  raceEvent(a,`balle de pioche ${a.aiSpares}/3`,'spare');return;
+ }
+ if(complete&&(!race.def.team||a.aiSpares>=3)){
+  a.rangeState='rangement';a.liveStatus=`${a.aiTargets.filter(v=>!v).length} CIBLE(S) MANQUÉE(S)`;
+  a.shotTime=rand(4.6,7.4);return;
+ }
+ a.shotTime=rand(2.0,3.9)+(a.fatigue>60?.35:0);
+}
+function updateAI(a,dt,globalTime){
+ if(a===race?.p||a.finishGlobal!==null||globalTime<=a.startOffset)return;
+ let left=dt,safety=0;
+ while(left>0.00001&&safety++<96){
+  if(a.shotTime>0){
+   const n=Math.min(left,a.shotTime);a.shotTime-=n;left-=n;
+   if(a.shotTime<=.0001){a.shotTime=0;aiFire(a)}
+   continue;
+  }
+  if(a.penaltyRemaining>0){
+   const speed=clamp(aiSpeed(a)*.86,4.7,7.2),n=Math.min(left,a.penaltyRemaining/speed),old=a.penaltyRemaining;
+   a.penaltyRemaining=Math.max(0,a.penaltyRemaining-speed*n);left-=n;
+   const done0=Math.floor((a.penaltyTotal-old+.00001)/race.def.penalty),done1=Math.floor((a.penaltyTotal-a.penaltyRemaining+.00001)/race.def.penalty);
+   if(done1>done0){a.penaltyDone=done1;a.liveStatus=`TOUR ${done1}/${Math.round(a.penaltyTotal/race.def.penalty)}`;}
+   if(a.penaltyRemaining<=.01){a.penaltyRemaining=0;a.rangeState='ski';a.liveStatus='SORTIE PÉNALITÉ';}
+   continue;
+  }
+  if(['installation','tir','rechargement','rangement'].includes(a.rangeState)){a.shotTime=.01;continue;}
+  let speed=aiSpeed(a),next=race.def.shotDistances[a.shotIndex]??race.def.total;
+  const legLimit=race.def.team?race.def.legDistances.slice(0,a.leg+1).reduce((x,y)=>x+y,0):race.def.total;
+  const target=Math.min(next,legLimit,race.def.total),approach=next-a.dist;
+  if(a.shotIndex<race.def.shotDistances.length&&approach>0&&approach<95){speed*=.72+clamp(approach/95,0,1)*.25;a.rangeState='approche';a.liveStatus='ARRIVÉE AU TIR';}
+  else if(a.rangeState==='approche'){a.rangeState='ski';a.liveStatus='PISTE';}
+  const before=a.dist,moveTime=Math.max(0,(target-a.dist)/Math.max(.01,speed));
+  const n=Math.min(left,moveTime);a.dist+=speed*n;left-=n;a.speed=speed*3.6;
+  a.fatigue=clamp(a.fatigue+n*(.009+(.96-((currentRunner(a)?.endurance||80)/100))*.02),0,94);
+  a.energy=clamp(a.energy-n*.008,15,100);
+  splitMark(a,before,a.dist,globalTime-left);
+  if(a.dist>=race.def.total-.01){a.dist=race.def.total;a.finishGlobal=globalTime-left+a.extraTime;a.rangeState='finish';a.liveStatus='ARRIVÉ';break;}
+  if(a.dist>=next-.01&&a.shotIndex<race.def.shotDistances.length){beginAIShooting(a);continue;}
+  if(race.def.team&&a.dist>=legLimit-.01&&a.leg<3){a.leg++;a.energy=rand(80,99);a.fatigue=rand(3,14);a.liveStatus='PASSAGE RELAIS';left-=Math.min(left,3);continue;}
+  if(n<.00001)break;
+ }
 }
 function pushFoot(side){if(!race||race.mode!=='ski'||race.paused)return;const now=performance.now()/1000,delta=now-race.lastTap;const alternate=side!==race.lastFoot;const quality=!race.lastTap?1:(alternate?clamp(1-Math.abs(delta-.5)/1.0,.27,1):.18);race.cadence=clamp(race.cadence*.72+quality*.38,0,1);race.lastFoot=side;race.lastTap=now;race.energy=clamp(race.energy-.16-(held.attack?.35:0),0,100);race.flash=.15;tone(alternate?110:90,.04,'triangle',.01)}
-function playerSki(dt){const r=race,p=r.p,sim=dt*9.2;if(p.finishGlobal!==null)return;const late=(performance.now()/1000)-r.lastTap;r.cadence=clamp(r.cadence-dt*(late>.8?.33:.065),0,1);const elev=clamp(slopeAt(r.dist),-1,1);const attack=held.attack&&!held.recover&&r.energy>3,rest=held.recover;const ath=currentRunner(p),skill=ath?.ski||80;let base=5.55+(skill-78)*.026+r.cadence*1.45+(attack?1.43:0)-(rest?1.35:0);base*=1-elev*.20;base+=elev<-.25?(.22-elev*.55):0;base*=1-r.fatigue*.0027;base*=r.energy<17?.86:1;base=clamp(base,2.5,10.7);r.playerPace=mix(r.playerPace||base,base,clamp(dt*3.2,0,1));p.speed=r.playerPace*3.6;let gain=rest?.55:.07,drain=attack?.83:(r.cadence>.65?.13:.08);r.energy=clamp(r.energy+dt*(gain-drain),0,100);r.fatigue=clamp(r.fatigue+dt*(attack?.42:rest?-.25:.085)+dt*(r.energy<25?.08:0),0,95);let targetHeart=rest?115:attack?186:138+r.cadence*26+Math.max(0,elev)*11; r.heartbeat=mix(r.heartbeat,targetHeart,clamp(dt*(attack?.34:.19),0,1));
-let distance=r.playerPace*sim;if(r.mode==='penalty'){const v=Math.min(distance,r.penaltyLeft);r.penaltyLeft-=v;if(r.penaltyLeft<=.01){r.penaltyLeft=0;r.mode='ski';toast('RETOUR SUR LA PISTE',1.2)}}else{let target=r.def.shotDistances[r.shootingIndex]??r.def.total;const legEnd=r.def.team?r.def.legDistances.slice(0,r.leg+1).reduce((x,y)=>x+y,0):r.def.total;target=Math.min(target,legEnd);r.dist=Math.min(target,r.dist+distance);p.dist=r.dist;if(r.dist>=r.def.total-.01){finishPlayer();return}if(r.shootingIndex<r.def.shotDistances.length &&r.dist>=r.def.shotDistances[r.shootingIndex]-.01){startShooting();return}if(r.def.team&&r.dist>=legEnd-.01&&r.leg<3){r.leg++;p.leg=r.leg;r.energy=96;r.fatigue=8;r.heartbeat=124;r.cadence=0;toast(`RELAIS ! ${currentRunner(p)?.name||nation(p.n)[2]} prend la piste`,3);tone(730,.2);return}}}
+function playerSki(dt){
+ const r=race,p=r.p,sim=dt*9.2;if(p.finishGlobal!==null)return;
+ if(r.mode==='rangeEntry'||r.mode==='rangeExit'){
+  r.rangeWait-=sim;r.playerPace=mix(r.playerPace,0,clamp(dt*4,0,1));
+  r.heartbeat=mix(r.heartbeat,118,clamp(dt*.65,0,1));
+  if(r.rangeWait<=0){if(r.mode==='rangeEntry')startShooting();else leaveRange();}
+  return;
+ }
+ const late=(performance.now()/1000)-r.lastTap;
+ r.cadence=clamp(r.cadence-dt*(late>.8?.33:.065),0,1);
+ const elev=clamp(slopeAt(r.dist),-1,1),attack=held.attack&&!held.recover&&r.energy>3,rest=held.recover;
+ const ath=currentRunner(p),skill=ath?.ski||80;
+ let base=5.55+(skill-78)*.026+r.cadence*1.45+(attack?1.43:0)-(rest?1.35:0);
+ base*=1-elev*.20;base+=elev<-.25?(.22-elev*.55):0;
+ base*=1-r.fatigue*.0027;base*=r.energy<17?.86:1;
+ if(r.mode==='ski'&&r.shootingIndex<r.def.shotDistances.length){
+  const approach=r.def.shotDistances[r.shootingIndex]-r.dist;
+  if(approach<95)base*=.69+.31*clamp(approach/95,0,1);
+ }
+ if(r.mode==='penalty')base=clamp(base*.86,4.6,7.3);
+ base=clamp(base,2.5,10.7);
+ r.playerPace=mix(r.playerPace||base,base,clamp(dt*3.2,0,1));p.speed=r.playerPace*3.6;
+ const gain=rest?.55:.07,drain=attack?.83:(r.cadence>.65?.13:.08);
+ r.energy=clamp(r.energy+dt*(gain-drain),0,100);
+ r.fatigue=clamp(r.fatigue+dt*(attack?.42:rest?-.25:.085)+dt*(r.energy<25?.08:0),0,95);
+ const targetHeart=rest?115:attack?186:138+r.cadence*26+Math.max(0,elev)*11;
+ r.heartbeat=mix(r.heartbeat,targetHeart,clamp(dt*(attack?.34:.19),0,1));
+ const distance=r.playerPace*sim;
+ if(r.mode==='penalty'){
+  const before=r.penaltyLeft;
+  r.penaltyLeft=Math.max(0,before-distance);p.penaltyRemaining=r.penaltyLeft;
+  const prev=Math.floor((r.penaltyTotal-before+.0001)/r.def.penalty),now=Math.floor((r.penaltyTotal-r.penaltyLeft+.0001)/r.def.penalty);
+  if(now>prev){r.penaltyLapsDone=now;if(r.penaltyLeft>0)toast(`TOUR ${now}/${r.penaltyLapsTotal} TERMINÉ`,1.2)}
+  if(r.penaltyLeft<=.01){r.penaltyLeft=0;p.penaltyRemaining=0;r.mode='ski';p.rangeState='ski';p.liveStatus='SORTIE PÉNALITÉ';toast('SORTIE DE LA BOUCLE • RETOUR PISTE',1.6);}
+ }else{
+  let target=r.def.shotDistances[r.shootingIndex]??r.def.total;
+  const legEnd=r.def.team?r.def.legDistances.slice(0,r.leg+1).reduce((x,y)=>x+y,0):r.def.total;
+  target=Math.min(target,legEnd);const before=r.dist;
+  r.dist=Math.min(target,r.dist+distance);p.dist=r.dist;
+  splitMark(p,before,r.dist,r.elapsed);
+  if(r.dist>=r.def.total-.01){finishPlayer();return;}
+  if(r.shootingIndex<r.def.shotDistances.length&&r.dist>=r.def.shotDistances[r.shootingIndex]-.01){
+   r.mode='rangeEntry';r.rangeWait=rand(7.2,10);r.cadence=0;p.rangeState='installation';p.liveStatus='ENTRÉE PAS DE TIR';held.attack=held.recover=false;
+   updateControls();toast('ENTRÉE SUR LE PAS DE TIR • RALENTISSEMENT',1.4);return;
+  }
+  if(r.def.team&&r.dist>=legEnd-.01&&r.leg<3){r.leg++;p.leg=r.leg;r.energy=96;r.fatigue=8;r.heartbeat=124;r.cadence=0;toast(`RELAIS ! ${currentRunner(p)?.name||nation(p.n)[2]} prend la piste`,3);tone(730,.2);return;}
+ }
+}
 function shootLayout(){const span=Math.min(W*.60,550),space=span/5,cY=H*.45;return {span,space,first:W/2-span/2+space/2,y:cY,r:(race?.shoot?.stance==='P'?Math.max(10,Math.min(15,W*.019)):Math.max(14,Math.min(21,W*.027)))}}
 function aimCenter(index){const l=shootLayout();return {x:l.first+index*l.space,y:l.y}}
-function startShooting(){const r=race,i=r.shootingIndex,stance=r.def.shotTypes[i];r.mode='shoot';r.cadence=0;r.shoot={stance,hit:Array(5).fill(false),attempt:0,spares:0,loaded:5,cooldown:0,hold:0,breathLeft:100,exhausted:false,aim:{x:W/2,y:H*.45},active:0,shotX:null,shotY:null,feedback:0,miss:0,wind:r.wind+rand(-.65,.65)};r.shoot.aim=aimCenter(0);r.shoot.wind=clamp(r.shoot.wind,-2.8,2.8);updateControls();toast(stance==='P'?'TIR COUCHÉ':'TIR DEBOUT',1.1);tone(550,.16,'sine',.025)}
+function startShooting(){const r=race,i=r.shootingIndex,stance=r.def.shotTypes[i];r.mode='shoot';r.cadence=0;r.p.rangeState='tir';r.p.liveMisses=0;r.p.liveSpares=0;r.p.liveStatus=stance==='P'?'COUCHÉ 0/5':'DEBOUT 0/5';r.shoot={stance,hit:Array(5).fill(false),attempt:0,spares:0,loaded:5,cooldown:1.7,hold:0,breathLeft:100,exhausted:false,aim:{x:W/2,y:H*.45},active:0,shotX:null,shotY:null,feedback:0,miss:0,wind:r.wind+rand(-.65,.65)};r.shoot.aim=aimCenter(0);r.shoot.wind=clamp(r.shoot.wind,-2.8,2.8);updateControls();toast(stance==='P'?'TIR COUCHÉ':'TIR DEBOUT',1.1);tone(550,.16,'sine',.025)}
 function newAim(){const s=race.shoot,l=shootLayout();let index=s.attempt<5?s.attempt:s.hit.findIndex(x=>!x);if(index<0)index=0;s.active=clamp(index,0,4);s.aim=aimCenter(s.active)}
 function shotSway(s){const r=race,t=performance.now()/1000;const factor=s.stance==='P'?0.78:1.35;const trem=(5.0+r.fatigue*.19+(r.heartbeat-100)*.074)*(1-(s.hold&&s.breathLeft>0?0.67:0))*factor*(s.exhausted?1.35:1);return {x:Math.sin(t*3.4)*trem+Math.sin(t*7.1+1)*trem*.40+Math.sin(t*1.07+1.3)*2,y:Math.cos(t*2.7)*trem*.67+Math.sin(t*6.1)*trem*.32};}
-function fire(){if(!race||race.mode!=='shoot'||race.paused)return;const s=race.shoot;if(s.cooldown>0||s.loaded<=0||s.hit.every(Boolean))return;const center=aimCenter(s.active),wob=shotSway(s),skill=currentRunner(race.p)?.shoot||78;let precision=((98-skill)*.28+race.fatigue*.028+rand(0,1.4))*(state.difficulty==='easy'?.72:state.difficulty==='hard'?1.25:1);const dx=rand(-precision,precision),dy=rand(-precision,precision);const impactX=s.aim.x+wob.x+s.wind*(s.stance==='P'?4.4:6.0)+dx,impactY=s.aim.y+wob.y+dy;const radius=shootLayout().r;const hit=!s.hit[s.active]&&Math.hypot(impactX-center.x,impactY-center.y)<radius*.91;
-s.shotX=impactX;s.shotY=impactY;s.feedback=.40;s.cooldown=.38;s.loaded--;let spare=s.attempt>=5;if(!spare)s.attempt++;if(hit){s.hit[s.active]=true;race.roundHits++;tone(690,.11,'sine',.07);setTimeout(()=>tone(930,.12,'sine',.033),70)}else{race.roundMiss++;s.miss++;tone(145,.17,'sawtooth',.023)}race.fatigue=clamp(race.fatigue+.4,0,100);if(s.hit.every(Boolean)){setTimeout(()=>{if(race?.shoot===s)endShooting()},520);return}
-if(s.loaded===0&&!race.def.team){setTimeout(()=>{if(race?.shoot===s)endShooting()},650);return}if(s.loaded===0&&race.def.team&&s.spares===3){setTimeout(()=>{if(race?.shoot===s)endShooting()},650);return}
-newAim();}
-function reload(){const s=race?.shoot;if(!s||race.mode!=='shoot'||!race.def.team||s.loaded>0||s.spares>=3||s.hit.every(Boolean))return;if(s.cooldown>0)return;s.spares++;s.loaded=1;s.cooldown=1.6;s.breathLeft=clamp(s.breathLeft+6,0,100);tone(245,.12,'triangle',.036);toast(`BALLE DE PIOCHE ${s.spares} / 3`,.95)}
-function endShooting(){if(!race||race.mode!=='shoot')return;const r=race,s=r.shoot,miss=s.hit.filter(x=>!x).length;r.p.misses+=miss;r.p.shotIndex++;r.p.shootStats.push({stance:s.stance,miss});r.shotHistory.push({type:s.stance,miss});r.shootingIndex++;r.roundMiss=0;r.roundHits=0;r.shoot=null;r.mode='ski';r.heartbeat=clamp(r.heartbeat-8,105,190);r.fatigue=clamp(r.fatigue-5,0,100);r.energy=clamp(r.energy+10,0,100);if(r.def.timePenalty){r.p.extraTime+=miss*r.def.timePenalty;toast(miss?`${miss} MANQUÉE(S) · +${miss*r.def.timePenalty}s`:'5 / 5 • TIR PARFAIT',2)}else{r.penaltyLeft=miss*r.def.penalty;if(miss){r.mode='penalty';toast(`${miss} CIBLE(S) MANQUÉE(S) • ${r.penaltyLeft} m DE PÉNALITÉ`,2.8)}else toast('5 / 5 • AUCUNE PÉNALITÉ',1.9)}updateControls();}
+function fire(){
+ if(!race||race.mode!=='shoot'||race.paused)return;
+ const s=race.shoot;if(s.cooldown>0||s.loaded<=0||s.hit.every(Boolean))return;
+ const center=aimCenter(s.active),wob=shotSway(s),skill=currentRunner(race.p)?.shoot||78;
+ const precision=((98-skill)*.28+race.fatigue*.028+rand(0,1.4))*(state.difficulty==='easy'?.72:state.difficulty==='hard'?1.25:1);
+ const impactX=s.aim.x+wob.x+s.wind*(s.stance==='P'?4.4:6.0)+rand(-precision,precision);
+ const impactY=s.aim.y+wob.y+rand(-precision,precision);
+ const hit=!s.hit[s.active]&&Math.hypot(impactX-center.x,impactY-center.y)<shootLayout().r*.91;
+ s.shotX=impactX;s.shotY=impactY;s.feedback=.48;s.loaded--;
+ const spare=s.attempt>=5;if(!spare)s.attempt++;
+ s.cooldown=(s.stance==='P'?.82:1.05)+(race.fatigue>60?.12:0);
+ if(hit){s.hit[s.active]=true;race.roundHits++;tone(690,.11,'sine',.07);setTimeout(()=>tone(930,.12,'sine',.033),70)}
+ else{race.roundMiss++;s.miss++;race.p.liveMisses++;tone(145,.17,'sawtooth',.023);raceEvent(race.p,`tir ${s.attempt} manqué`,'miss')}
+ race.p.shotsDone++;race.p.liveHits=s.hit.filter(Boolean).length;
+ race.p.liveStatus=`${s.stance==='P'?'COUCHÉ':'DEBOUT'} ${Math.min(5,s.attempt)}/5 · ${race.p.liveMisses} err.`;
+ race.fatigue=clamp(race.fatigue+.4,0,100);
+ if(s.hit.every(Boolean)){setTimeout(()=>{if(race?.shoot===s)endShooting()},Math.max(560,s.cooldown*1000*.68));return;}
+ if(s.loaded===0&&!race.def.team){setTimeout(()=>{if(race?.shoot===s)endShooting()},Math.max(650,s.cooldown*1000*.75));return;}
+ if(s.loaded===0&&race.def.team&&s.spares===3){setTimeout(()=>{if(race?.shoot===s)endShooting()},Math.max(650,s.cooldown*1000*.75));return;}
+ newAim();
+}
+function reload(){
+ const s=race?.shoot;if(!s||race.mode!=='shoot'||!race.def.team||s.loaded>0||s.spares>=3||s.hit.every(Boolean)||s.cooldown>0)return;
+ s.spares++;s.loaded=1;s.cooldown=1.45;s.breathLeft=clamp(s.breathLeft+6,0,100);
+ race.p.liveSpares=s.spares;race.p.liveStatus=`PIOCHE ${s.spares}/3 · ${s.hit.filter(v=>!v).length} reste`;
+ raceEvent(race.p,`balle de pioche ${s.spares}/3`,'spare');tone(245,.12,'triangle',.036);toast(`RECHARGEMENT MANUEL • PIOCHE ${s.spares}/3`,1.0);
+}
+function endShooting(){
+ if(!race||race.mode!=='shoot')return;
+ const r=race,s=r.shoot,miss=s.hit.filter(x=>!x).length;
+ r.p.misses+=miss;r.p.shotIndex++;r.p.shootStats.push({stance:s.stance,miss,spares:s.spares});
+ r.shotHistory.push({type:s.stance,miss,spares:s.spares});r.shootingIndex++;
+ r.pendingMisses=miss;r.roundMiss=0;r.roundHits=0;r.shoot=null;
+ r.mode='rangeExit';r.rangeWait=rand(4.6,6.5);
+ r.p.rangeState='rangement';r.p.liveStatus=`SORTIE TIR · ${miss} RESTANTE${miss>1?'S':''}`;
+ r.heartbeat=clamp(r.heartbeat-5,105,190);r.fatigue=clamp(r.fatigue-3,0,100);r.energy=clamp(r.energy+8,0,100);
+ updateControls();toast(miss?`${miss} CIBLE(S) NON BLANCHIE(S) • SORTIE STAND`:'5 / 5 • DÉPART DU PAS DE TIR',1.7);
+}
+function leaveRange(){
+ const r=race,miss=r.pendingMisses;r.rangeWait=0;r.p.liveMisses=miss;
+ if(r.def.timePenalty){
+  r.p.extraTime+=miss*r.def.timePenalty;r.mode='ski';r.p.rangeState='ski';r.p.liveStatus=miss?`+${miss*r.def.timePenalty}s`:'5/5';
+  if(miss)raceEvent(r.p,`+${miss*r.def.timePenalty}s au temps`,'penalty');
+  toast(miss?`INDIVIDUEL : +${miss*r.def.timePenalty} SECONDES`:'AUCUNE PÉNALITÉ',2);
+ }else if(miss){
+  r.penaltyLeft=miss*r.def.penalty;r.penaltyTotal=r.penaltyLeft;r.penaltyLapsTotal=miss;r.penaltyLapsDone=0;
+  r.mode='penalty';r.p.rangeState='penalty';r.p.penaltyTotal=r.penaltyLeft;r.p.penaltyRemaining=r.penaltyLeft;
+  r.p.liveStatus=`BOUCLE ${miss} TOUR${miss>1?'S':''}`;
+  raceEvent(r.p,`${miss} tour${miss>1?'s':''} de pénalité (${r.penaltyLeft} m)`,'penalty');
+  toast(`${miss} TOUR${miss>1?'S':''} DE ${r.def.penalty} M • ENTRÉE PÉNALITÉ`,2.6);
+ }else{r.mode='ski';r.p.rangeState='ski';r.p.liveStatus='5/5 · SORTIE TIR';toast('REPRISE DU SKI • 5/5',1.5);}
+ updateControls();
+}
 function finishPlayer(){const r=race;if(r.p.finishGlobal!==null)return;r.dist=r.def.total;r.p.dist=r.dist;r.p.finishGlobal=r.elapsed+r.p.extraTime;r.finished=true;r.mode='finish';held.attack=held.recover=held.breath=false;updateControls();toast('LIGNE D’ARRIVÉE FRANCHIE !',2.2);tone(750,.35,'sine',.08);
 // Finir les concurrents encore en course ; temps de la simulation respecté.
 let remaining=r.objects.filter(a=>a!==r.p&&a.finishGlobal===null),ticks=0;while(remaining.length&&ticks++<1500){const t=r.elapsed+ticks*25;for(const a of remaining)updateAI(a,25,t);remaining=r.objects.filter(a=>a!==r.p&&a.finishGlobal===null)}for(const a of remaining)a.finishGlobal=r.elapsed+ticks*25+rand(0,50);
-const sort=r.objects.slice().sort((a,b)=>{let aTime=a.finishGlobal-(r.def.kind==='interval'?a.startOffset:0),bTime=b.finishGlobal-(r.def.kind==='interval'?b.startOffset:0);return aTime-bTime});const rows=sort.map((a,i)=>({id:a.id,n:a.n,name:a.name,rank:i+1,time:Math.round(a.finishGlobal-(r.def.kind==='interval'?a.startOffset:0)),misses:a.misses,shoots:a.shootStats.map(s=>s.miss).join('-')}));const place=rows.find(x=>x.id===r.p.id).rank;const label=r.season?CALENDAR[state.stage][1]:'COURSE LIBRE';r.result={type:r.type,name:r.def.name,discipline:r.def.discipline,venue:label,stage:r.season?state.stage:null,team:r.def.team,rows,userRank:place,userTime:rows.find(x=>x.id===r.p.id).time,winner:rows[0].name};if(r.season){state.results.push(r.result);state.stage++;state.seasonActive=true;save()}setTimeout(()=>{if(race===r)showResults()},1050);}
+const sort=r.objects.slice().sort((a,b)=>{let aTime=a.finishGlobal-(r.def.kind==='interval'?a.startOffset:0),bTime=b.finishGlobal-(r.def.kind==='interval'?b.startOffset:0);return aTime-bTime});const rows=sort.map((a,i)=>({id:a.id,n:a.n,name:a.name,rank:i+1,time:Math.round(a.finishGlobal-(r.def.kind==='interval'?a.startOffset:0)),misses:a.misses,shoots:a.shootStats.map(s=>s.miss).join('-'),spares:a.shootStats.reduce((sum,s)=>sum+(s.spares||0),0)}));const place=rows.find(x=>x.id===r.p.id).rank;const label=r.season?CALENDAR[state.stage][1]:'COURSE LIBRE';r.result={type:r.type,name:r.def.name,sex:r.sex,olympic:r.olympic,year:state.year,discipline:r.def.discipline,venue:label,stage:r.season?state.stage:null,team:r.def.team,rows,userRank:place,userTime:rows.find(x=>x.id===r.p.id).time,winner:rows[0].name};if(place===1&&!r.def.team){const a=byId(r.p.id);if(a)a.careerWins=(a.careerWins||0)+1;}if(r.season){state.results.push(r.result);state.stage++;state.seasonActive=true;save()}setTimeout(()=>{if(race===r)showResults()},1050);}
 function showResults(){
  const r=race;if(!r?.result)return;
  const place=r.result.userRank,row=r.result.rows.find(x=>x.id===r.p.id),end=state.stage>=CALENDAR.length;
  const medal=place===1?'🥇':place===2?'🥈':place===3?'🥉':'🏁';
  showModal(`<div class="eyebrow">RÉSULTATS OFFICIELS • ${r.result.rows.length} CONCURRENTS</div>
-  <h2>${medal} ${esc(r.def.name)} • ${esc(r.result.venue)}</h2>
-  <div class="statline"><span class="pill good">PLACE ${place} / ${r.objects.length}</span><span class="pill">CHRONO ${fmt(row.time)}</span><span class="pill">CIBLES MANQUÉES : ${r.p.misses}</span><span class="pill">${r.season?`+${pts(place,r.type)} points`:'COURSE LIBRE'}</span></div>
+  <h2>${medal} ${esc(r.def.name)} • ${esc(r.result.venue)}${r.olympic?' · JEUX OLYMPIQUES':''}</h2>
+  <div class="statline"><span class="pill good">PLACE ${place} / ${r.objects.length}</span><span class="pill">CHRONO ${fmt(row.time)}</span><span class="pill">CIBLES MANQUÉES : ${r.p.misses}</span><span class="pill">${r.season?(r.olympic?(place<=3?medal+' MÉDAILLE OLYMPIQUE':'JEUX OLYMPIQUES'): `+${pts(place,r.type)} points`):'COURSE LIBRE'}</span></div>
   <div class="result-toolbar"><span>↕ Glisse pour voir tout le classement</span><div class="result-nav"><button type="button" id="resultTop">↑ 1er</button><button type="button" id="resultMe">◎ Ma place</button><button type="button" id="resultBottom">↓ Dernier</button></div></div>
-  <div class="tablewrap" id="resultsScroll"><table class="table result-table"><thead><tr><th>POS.</th><th>${r.def.team?'ÉQUIPE':'ATHLÈTE'}</th><th>TEMPS / ÉCART</th><th>TIRS</th><th>PTS</th></tr></thead><tbody>${r.result.rows.map(a=>`<tr class="${a.id===r.p.id?'me':''}"><td>${a.rank}</td><td>${nation(a.n)[1]} ${esc(a.name)}</td><td>${a.rank===1?fmt(a.time):`+${fmt(a.time-r.result.rows[0].time)}`}</td><td>${a.shoots||'—'}</td><td>${pts(a.rank,r.type)}</td></tr>`).join('')}</tbody></table></div>
-  <div class="actions result-actions"><button class="action" id="backToMenu">${end&&r.season?'PALMARÈS DE SAISON':'RETOUR AU MENU'}</button>${!r.season?`<button class="action alt" id="retry">REJOUER</button>`:''}</div>`,'results-modal');
+  <div class="tablewrap" id="resultsScroll"><table class="table result-table"><thead><tr><th>POS.</th><th>${r.def.team?'ÉQUIPE':'ATHLÈTE'}</th><th>TEMPS / ÉCART</th><th>TIRS</th><th>${r.olympic?'MÉD.':'PTS'}</th></tr></thead><tbody>${r.result.rows.map(a=>`<tr class="${a.id===r.p.id?'me':''}"><td>${a.rank}</td><td>${nation(a.n)[1]} ${esc(a.name)}</td><td>${a.rank===1?fmt(a.time):`+${fmt(a.time-r.result.rows[0].time)}`}</td><td>${a.shoots||'—'}</td><td>${r.olympic?(a.rank<4?['🥇','🥈','🥉'][a.rank-1]:'—'):r.season?pts(a.rank,r.type):'—'}</td></tr>`).join('')}</tbody></table></div>
+  <div class="actions result-actions"><button class="action" id="backToMenu">${end&&r.season?'FIN DE SAISON':'RETOUR AU MENU'}</button>${!r.season?`<button class="action alt" id="retry">REJOUER</button>`:''}</div>`,'results-modal');
  const wrap=$('resultsScroll');
  $('resultTop').onclick=()=>wrap.scrollTop=0;
  $('resultBottom').onclick=()=>wrap.scrollTop=wrap.scrollHeight;
  $('resultMe').onclick=()=>{const tr=wrap.querySelector('tr.me');if(!tr)return;const w=wrap.getBoundingClientRect(),a=tr.getBoundingClientRect();wrap.scrollTop+=a.top-w.top-w.height/2+a.height/2};
- $('backToMenu').onclick=()=>{hideModal();endRaceUI();state.tab=end&&r.season?'ranks':'home';menuRender()};
+ $('backToMenu').onclick=()=>{hideModal();endRaceUI();state.tab=end&&r.season?'home':'home';menuRender()};
  if($('retry'))$('retry').onclick=()=>{const type=r.type;hideModal();beginRace(type,false)};
 }
 function endRaceUI(){race=null;held.attack=held.recover=held.breath=false;state.screen='menu';$('hud').style.display='none';$('game').style.display='none';$('background').style.display='block';$('menu').style.display='block';$('toast').classList.add('hidden');save()}
 function pause(){if(!race||race.finished)return;if(race.paused){race.paused=false;hideModal();$('pauseButton').textContent='Ⅱ PAUSE';return}race.paused=true;held.attack=held.recover=held.breath=false;$('pauseButton').textContent='▶ REPRENDRE';showModal(`<div class="eyebrow">COURSE INTERROMPUE</div><h2>Ⅱ Pause</h2><div class="small">Votre progression dans cette course n'est pas sauvegardée. Le championnat reste enregistré après chaque épreuve terminée.</div><div class="actions"><button class="action" id="resume">REPRENDRE ▶</button><button class="action alt" id="instructions">COMMANDES</button><button class="action warn" id="quit">ABANDONNER</button></div>`);$('resume').onclick=pause;$('instructions').onclick=()=>{showModal(`<h2>Comment jouer</h2><div class="how"><b>SKI :</b> alternez poussées G et D pour garder la cadence. Maintenez ATTAQUE pour accélérer, RÉCUP. pour reprendre de l'énergie.<br><b>TIR :</b> déplacez la visée du doigt. Stabilisez avec SOUFFLE puis tirez. En relais, appuyez sur RECHARGE pour utiliser les trois balles de pioche.<br><b>TEMPS :</b> les durées sont accélérées pour rendre les courses jouables sur téléphone.</div><div class="actions"><button class="action" id="backPause">RETOUR PAUSE</button></div>`);$('backPause').onclick=()=>{race.paused=false;pause()}};$('quit').onclick=()=>{hideModal();endRaceUI();menuRender()}}
-function updateControls(){if(!race)return;const isShot=race.mode==='shoot';$('skiControls').classList.toggle('hidden',isShot||race.finished);$('effortControls').classList.toggle('hidden',isShot||race.finished);$('shootControls').classList.toggle('hidden',!isShot);$('shootInfo').classList.toggle('hidden',!isShot);if(isShot){const s=race.shoot;$('reloadButton').classList.toggle('hidden',!race.def.team||s.loaded>0||s.spares>=3||s.hit.every(Boolean));$('fireButton').disabled=s.loaded<=0;}}
-function liveStandings(){
+function updateControls(){
+ if(!race)return;
+ const isShot=race.mode==='shoot',isTransition=['rangeEntry','rangeExit'].includes(race.mode);
+ $('skiControls').classList.toggle('hidden',isShot||isTransition||race.finished);
+ $('effortControls').classList.toggle('hidden',isShot||isTransition||race.finished);
+ $('shootControls').classList.toggle('hidden',!isShot);
+ $('shootInfo').classList.toggle('hidden',!isShot&&!isTransition);
+ if(isShot){const s=race.shoot;$('reloadButton').classList.toggle('hidden',!race.def.team||s.loaded>0||s.spares>=3||s.hit.every(Boolean));$('fireButton').disabled=s.loaded<=0||s.cooldown>0;}
+}
+function statusOf(a){
+ if(a.finishGlobal!==null)return {text:'✓ ARRIVÉ',cls:'ok'};
+ if(a===race.p&&race.mode==='rangeEntry')return {text:'ARRIVÉE • INSTALLATION',cls:'warn'};
+ if(a===race.p&&race.mode==='rangeExit')return {text:'RANGEMENT • SORTIE',cls:'warn'};
+ if(a===race.p&&race.mode==='penalty')return {text:`🔴 ${race.penaltyLapsDone+1}/${race.penaltyLapsTotal} · ${Math.ceil(race.penaltyLeft)} m`,cls:'danger'};
+ if(a.penaltyRemaining>0)return {text:`🔴 TOUR ${a.penaltyDone+1}/${Math.round(a.penaltyTotal/race.def.penalty)} · ${Math.ceil(a.penaltyRemaining)} m`,cls:'danger'};
+ if(a.shotTime>0||['tir','installation','rangement','rechargement'].includes(a.rangeState))return {text:`🎯 ${a.liveStatus}`,cls:a.liveMisses?'warn':'ok'};
+ if(a.rangeState==='approche')return {text:'↘ ARRIVE AU STAND',cls:'warn'};
+ if(a===race.p&&race.def.timePenalty&&a.extraTime>0)return {text:`⏱ +${a.extraTime}s de pénalités`,cls:'warn'};
+ if(a.startOffset>race.elapsed)return {text:'EN ATTENTE DÉPART',cls:'ok'};
+ return {text:a.liveStatus==='SORTIE PÉNALITÉ'?'↗ SORTIE BOUCLE':'SKI EN COURS',cls:'ok'};
+}
+function averageSkiSpeed(a){
+ const athlete=currentRunner(a)||player(),base=clamp(6.45+(athlete.ski-78)*.026+(athlete.endurance-78)*.009,4.3,9);
+ if(a===race.p){const cur=race.playerPace||base;return clamp(mix(base,cur,.30),4.0,9.2);}
+ return clamp(mix(base,a.speed? a.speed/3.6:base,.22),4.1,9.2);
+}
+function predictedRemaining(a){
+ const r=race,shootsLeft=Math.max(0,r.def.shotDistances.length-a.shotIndex);
+ const wait=r.def.team?37:33,penaltyGuess=r.def.timePenalty?r.def.timePenalty*.65:r.def.penalty/6.2*.53;
+ let shotForecast=shootsLeft*(wait+penaltyGuess);
+ if(a===r.p&&['rangeEntry','shoot','rangeExit'].includes(r.mode)){
+  if(r.mode==='rangeEntry')shotForecast=(r.rangeWait+31)+Math.max(0,shootsLeft-1)*(wait+penaltyGuess);
+  if(r.mode==='shoot'){
+   const s=r.shoot,left=Math.max(0,5-s.attempt);
+   shotForecast=(left*3.5+7+(r.def.team?s.hit.filter(v=>!v).length*8:0))+Math.max(0,shootsLeft-1)*(wait+penaltyGuess);
+  }
+  if(r.mode==='rangeExit')shotForecast=r.rangeWait+Math.max(0,shootsLeft)*(wait+penaltyGuess);
+ }else if(['installation','tir','rechargement','rangement'].includes(a.rangeState)){
+  const remain=a.rangeState==='rangement'?a.shotTime:a.shotTime+Math.max(0,5-a.aiShots)*3.1+6;
+  shotForecast=remain+Math.max(0,shootsLeft-1)*(wait+penaltyGuess);
+ }
+ // Les erreurs déjà constatées comptent immédiatement dans le chrono virtuel.
+ if(a===r.p&&r.mode==='shoot'&&!r.def.timePenalty)shotForecast+=r.shoot.miss*(r.def.penalty/6.2)*.3;
+ if(a!==r.p&&a.aiShots>=5&&a.rangeState==='tir')shotForecast+=a.aiTargets.filter(v=>!v).length*(r.def.penalty/6.2)*.5;
+ return shotForecast;
+}
+function currentEstimate(a){
+ const r=race,interval=r.def.kind==='interval',finished=a.finishGlobal!==null;
+ if(finished)return a.finishGlobal-(interval?a.startOffset:0);
+ const elapsed=interval?Math.max(0,r.elapsed-a.startOffset):Math.max(r.elapsed,a.startOffset);
+ const remaining=Math.max(0,r.def.total-a.dist),velocity=averageSkiSpeed(a);
+ const pen=(a===r.p?r.penaltyLeft:a.penaltyRemaining)/clamp(velocity*.86,4.7,7.3);
+ // Ne jamais intégrer deux fois le temps déjà écoulé pendant une boucle.
+ return elapsed+remaining/velocity+predictedRemaining(a)+pen+(a.extraTime||0);
+}
+function liveStandings(force=false){
  if(!race)return[];
- const r=race,interval=r.def.kind==='interval';
- const vals=r.objects.map(a=>{
-  const finished=a.finishGlobal!==null;
-  const ski=currentRunner(a)||player();
-  const elapsed=Math.max(0,r.elapsed-a.startOffset);
-  const remaining=Math.max(0,r.def.total-a.dist);
-  const base=clamp(6.45+(ski.ski-78)*.026+(ski.endurance-78)*.009,4.2,9);
-  const current=a===r.p?(r.playerPace||base):a.speed>0?a.speed/3.6:base;
-  // Les dix premières secondes ne suffisent pas pour projeter une course entière.
-  const confidence=clamp(a.dist/Math.max(500,r.def.total*.42),0,.42);
-  const speed=clamp(mix(base,current,confidence),3.5,10);
-  const shootsLeft=Math.max(0,r.def.shotDistances.length-a.shotIndex);
-  const tShot=r.def.team?46:39;
-  const expectedPenalty=r.def.timePenalty?r.def.timePenalty*.75:(r.def.penalty||150)/6.2*.75;
-  const official=a.finishGlobal-(interval?a.startOffset:0);
-  const predicted=finished?official:
-   elapsed+remaining/speed+shootsLeft*(tShot+expectedPenalty)+
-   (a.penaltyRemaining||0)/6.4+(a===r.p?r.penaltyLeft||0:0)/6.4+
-   (a.extraTime||0)+(a.shotTime>0?a.shotTime:0);
-  return {a,projected:predicted,finished,elapsed};
+ const r=race;
+ if(!force&&r.liveRows&&r.elapsed-r.lastRankAt<18){r.liveRows.forEach(v=>v.status=statusOf(v.a));return r.liveRows;}
+ const interval=r.def.kind==='interval',initial=!r.liveRows;
+ const entries=r.objects.map(a=>{
+  const val=currentEstimate(a);
+  if(a.liveEstimate===null||!Number.isFinite(a.liveEstimate))a.liveEstimate=val;
+  else a.liveEstimate+=clamp((r.elapsed-r.lastRankAt)/52,.16,.68)*(val-a.liveEstimate);
+  if(a.finishGlobal!==null)a.liveEstimate=val;
+  return {a,projected:a.liveEstimate,finished:a.finishGlobal!==null,notStarted:a.finishGlobal===null&&a.startOffset>r.elapsed};
  });
- vals.sort(interval?(x,y)=>x.projected-y.projected:(x,y)=>{
-  if(x.finished!==y.finished)return x.finished?-1:1;
-  if(x.finished)return x.a.finishGlobal-y.a.finishGlobal;
-  return y.a.dist-x.a.dist || x.projected-y.projected;
+ const prior=new Map((r.liveRows||[]).map((v,i)=>[v.a.id,i]));
+ entries.sort((x,y)=>{
+  if(x.notStarted!==y.notStarted)return x.notStarted?1:-1;
+  const delta=x.projected-y.projected;
+  if(Math.abs(delta)>7||initial)return delta;
+  return (prior.get(x.a.id)??1000)-(prior.get(y.a.id)??1000);
  });
- const first=vals[0];const speedLead=first?Math.max(4.5,((first.a.speed||25)/3.6)):6.6;
- vals.forEach((v,i)=>{
-  v.rank=i+1;
-  v.gap=i===0?0:interval?v.projected-first.projected:
-    v.finished&&first.finished?v.a.finishGlobal-first.a.finishGlobal:
-    Math.max(0,first.a.dist-v.a.dist)/speedLead;
- });
- return vals;
+ const best=entries[0]?.projected||0;
+ entries.forEach((v,i)=>{v.rank=i+1;v.gap=v.notStarted?null:Math.max(0,v.projected-best);v.status=statusOf(v.a)});
+ r.liveRows=entries;r.lastRankAt=r.elapsed;
+ return entries;
 }
 function relativeRanks(){return liveStandings().map(v=>v.a)}
-function gapText(v){return v.rank===1?'LEADER':`+${fmt(v.gap)}`}
+function gapText(v){return v.notStarted?'—':v.rank===1?'1er':`+${fmt(v.gap)}`}
 function liveBoard(){
  if(!race)return;
- const r=race,vals=liveStandings(),p=vals.findIndex(v=>v.a===r.p),shown=vals.slice(Math.max(0,Math.min(vals.length-7,p-3)),Math.max(7,Math.min(vals.length,p+4)));
- const interval=r.def.kind==='interval';
+ const r=race,vals=liveStandings(),idx=vals.findIndex(v=>v.a===r.p),maxRows=5;
+ const start=Math.max(0,Math.min(vals.length-maxRows,idx-2)),shown=vals.slice(start,start+maxRows);
+ const events=r.events.filter(x=>x.idAth!==r.p.id).slice(0,2);
  $('sideboard').innerHTML=`<div class="head"><span>CLASSEMENT PROVISOIRE</span><button class="board-expand" id="showLiveBoard" type="button">⤢ TOUT</button></div>
-   <div class="board-sub">${interval?'TEMPS FINAL ESTIMÉ':'POSITION SUR LA PISTE'} · ÉCARTS ≈</div>
-   ${shown.map(v=>`<div class="line ${v.a===r.p?'me':''}"><span class="board-name">${v.rank}. ${nation(v.a.n)[1]} ${r.def.team?nation(v.a.n)[0]:esc(v.a.name.split(' ').pop())}</span><b class="board-gap">${v.a===r.p?'VOUS '+(v.rank===1?'🥇':`+${fmt(v.gap)}`):gapText(v)}</b></div>`).join('')}
-   <div class="board-bottom">${p+1}/${vals.length} · toucher pour voir les 60</div>`;
- $('sideboard').onclick=()=>showLiveBoard();
+ <div class="board-sub">ÉCARTS ESTIMÉS • MAJ ~20 s</div>
+ ${shown.map(v=>`<div class="line ${v.a===r.p?'me':''}"><div class="board-name-wrap"><div class="board-name">${v.rank}. ${nation(v.a.n)[1]} ${r.def.team?nation(v.a.n)[0]:esc(v.a.name.split(' ').pop())}</div><div class="board-state ${v.status.cls==='danger'?'danger':v.status.cls==='warn'?'warning':''}">${v.status.text}</div></div><b class="board-gap">${v.a===r.p?'VOUS · '+gapText(v):gapText(v)}</b></div>`).join('')}
+ ${events.length?`<div class="race-feed">${events.map(e=>`<div class="item">${e.kind==='penalty'?'🔴':'🎯'} ${e.text}</div>`).join('')}</div>`:''}
+ <div class="board-bottom">${idx+1}/${vals.length} • TOUCHER POUR DÉTAILS</div>`;
+ $('sideboard').onclick=showLiveBoard;
 }
 function showLiveBoard(){
  if(!race||race.finished)return;
  const wasPaused=race.paused;race.paused=true;
- const vals=liveStandings(),r=race,interval=r.def.kind==='interval';
- showModal(`<div class="eyebrow">POINTAGE INTERMÉDIAIRE</div><h2>Classement provisoire · ${esc(r.def.name)}</h2>
- <div class="small">${interval?'Les temps sont projetés à l’arrivée en tenant compte du rythme et des tirs restants.':'Ordre sur la piste, écarts évalués en secondes à partir des distances entre concurrents.'} Classement non officiel, susceptible d’évoluer.</div>
+ const vals=liveStandings(true),r=race,events=r.events.slice(0,8);
+ showModal(`<div class="eyebrow">POINTAGE DES CONCURRENTS</div><h2>Classement provisoire · ${esc(r.def.name)}</h2>
+ <div class="small">Écarts estimés sur le rythme et les temps déjà perdus. <b>Le classement est actualisé par pointages réguliers</b> pour éviter les changements incessants. Les erreurs, pioches et tours de pénalité des adversaires s'affichent ci-dessous.</div>
  <div class="result-toolbar"><span>${(r.dist/1000).toFixed(1)} km parcourus</span><div class="result-nav"><button id="liveTop">↑ 1er</button><button id="liveMe">◎ Ma place</button><button id="liveBottom">↓ Dernier</button></div></div>
- <div class="tablewrap" id="liveScroll"><table class="table result-table"><thead><tr><th>POS.</th><th>${r.def.team?'ÉQUIPE':'ATHLÈTE'}</th><th>ÉCART EST.</th><th>KM</th></tr></thead><tbody>${vals.map(v=>`<tr class="${v.a===r.p?'me':''}"><td>${v.rank}</td><td>${nation(v.a.n)[1]} ${esc(v.a.name)}</td><td>${gapText(v)}</td><td>${(v.a.dist/1000).toFixed(1)}</td></tr>`).join('')}</tbody></table></div>
+ <div class="tablewrap" id="liveScroll"><table class="table result-table"><thead><tr><th>POS.</th><th>${r.def.team?'ÉQUIPE':'ATHLÈTE'}</th><th>ÉCART ≈</th><th>KM</th><th>TIRS / PÉNALITÉS</th></tr></thead><tbody>${vals.map(v=>`<tr class="${v.a===r.p?'me':''}"><td>${v.rank}</td><td>${nation(v.a.n)[1]} ${esc(v.a.name)}</td><td>${gapText(v)}</td><td>${(v.a.dist/1000).toFixed(1)}</td><td class="live-state ${v.status.cls}">${v.status.text}${v.a.shootStats?.length?' · '+v.a.shootStats.map(s=>s.miss).join('-'):''}${v.a.liveSpares?' · '+v.a.liveSpares+' pioches':''}</td></tr>`).join('')}</tbody></table></div>
+ ${events.length?`<div class="small" style="margin-top:7px"><b>🎯 DERNIERS INCIDENTS :</b> ${events.slice(0,4).map(x=>`${nation(x.n)[1]} ${x.text}`).join(' · ')}</div>`:''}
  <div class="actions result-actions"><button class="action" id="closeLive">REPRENDRE LA COURSE ▶</button></div>`,'results-modal live-modal');
  const wrap=$('liveScroll');$('liveTop').onclick=()=>wrap.scrollTop=0;$('liveBottom').onclick=()=>wrap.scrollTop=wrap.scrollHeight;
  $('liveMe').onclick=()=>{const tr=wrap.querySelector('tr.me');if(tr){const w=wrap.getBoundingClientRect(),a=tr.getBoundingClientRect();wrap.scrollTop+=a.top-w.top-w.height/2+a.height/2}};
@@ -239,7 +562,8 @@ const ranks=relativeRanks();const pos=ranks.indexOf(p)+1;$('rank').textContent=`
 $('energyBar').style.width=r.energy+'%';$('energyText').textContent=Math.round(r.energy)+'%';$('fatigueBar').style.width=r.fatigue+'%';$('fatigueText').textContent=Math.round(r.fatigue)+'%';$('heartBar').style.width=clamp((r.heartbeat-90)/1.15,0,100)+'%';$('heartText').textContent=Math.round(r.heartbeat);$('speedText').textContent=`${Math.round(r.playerPace*3.6)} km/h`;
 const elev=slopeAt(r.dist);$('terrainText').textContent=elev>.26?'↗ MONTÉE':elev<-.26?'↘ DESCENTE':'→ PLAT';
 liveBoard();
-if(r.mode==='shoot'){const s=r.shoot;$('shootInfo').textContent=`${s.stance==='P'?'COUCHÉ':'DEBOUT'} • ${s.hit.filter(Boolean).length}/5 • ${s.loaded} CART. ${r.def.team?'• PIOCHES '+(3-s.spares):''} • VENT ${s.wind>0?'→':'←'} ${Math.abs(s.wind).toFixed(1)} m/s`;$('hint').textContent='Glisse sur les cibles pour viser • Souffle pour stabiliser';$('reloadButton').classList.toggle('hidden',!r.def.team||s.loaded>0||s.spares>=3||s.hit.every(Boolean));$('fireButton').disabled=s.loaded<=0}else if(r.mode==='penalty')$('hint').textContent=`BOUCLE DE PÉNALITÉ • ${Math.ceil(r.penaltyLeft)} m restant(s)`;else $('hint').textContent=held.attack?'ATTAQUE • Énergie consommée':held.recover?'RÉCUPÉRATION • Ralentissement volontaire':r.shootingIndex>=r.def.shotDistances.length?`DERNIÈRE BOUCLE • ARRIVÉE DANS ${Math.round(Math.max(0,r.def.total-r.dist))} m`:`TIR ${r.shootingIndex+1}/${r.def.shotDistances.length} • alterner G / D`;}
+if(['rangeEntry','rangeExit'].includes(r.mode)){$('shootInfo').textContent=r.mode==='rangeEntry'?'ARRIVÉE AU STAND • RETIRER LE FUSIL • INSTALLATION':'SORTIE DU STAND • RANGER LE FUSIL';$('hint').textContent=r.mode==='rangeEntry'?'Ralentissement et installation sur le tapis de tir':'Rangement du fusil et sortie de la ligne';}
+else if(r.mode==='shoot'){const s=r.shoot;$('shootInfo').textContent=`${s.stance==='P'?'COUCHÉ':'DEBOUT'} • ${s.hit.filter(Boolean).length}/5 • ${s.loaded} CART. ${r.def.team?'• PIOCHES '+(3-s.spares):''} • VENT ${s.wind>0?'→':'←'} ${Math.abs(s.wind).toFixed(1)} m/s`;$('hint').textContent='Glisse sur les cibles pour viser • Souffle pour stabiliser';$('reloadButton').classList.toggle('hidden',!r.def.team||s.loaded>0||s.spares>=3||s.hit.every(Boolean));$('fireButton').disabled=s.loaded<=0||s.cooldown>0}else if(r.mode==='penalty')$('hint').textContent=`PÉNALITÉ • TOUR ${Math.min(r.penaltyLapsTotal,r.penaltyLapsDone+1)}/${r.penaltyLapsTotal} • ${Math.ceil(r.penaltyLeft)} m restants`; else $('hint').textContent=held.attack?'ATTAQUE • Énergie consommée':held.recover?'RÉCUPÉRATION • Ralentissement volontaire':r.shootingIndex>=r.def.shotDistances.length?`DERNIÈRE BOUCLE • ARRIVÉE DANS ${Math.round(Math.max(0,r.def.total-r.dist))} m`:`TIR ${r.shootingIndex+1}/${r.def.shotDistances.length} • alterner G / D`;}
 function path(poly,fill,stroke,width=1){ctx.beginPath();ctx.moveTo(poly[0][0],poly[0][1]);for(let i=1;i<poly.length;i++)ctx.lineTo(poly[i][0],poly[i][1]);ctx.closePath();if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke()}}
 function line(x1,y1,x2,y2,color,w=1){ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.strokeStyle=color;ctx.lineWidth=w;ctx.stroke()}
 function ellipse(x,y,rx,ry,color){ctx.beginPath();ctx.ellipse(x,y,Math.max(0,rx),Math.max(0,ry),0,0,Math.PI*2);ctx.fillStyle=color;ctx.fill()}
@@ -411,6 +735,49 @@ function drawSki(){
  roundRect(barX,barY,barW*clamp(r.dist/r.def.total,0,1),6,3,'#b4e971');
  for(const t of r.def.shotDistances){const p=barX+barW*t/r.def.total;ellipse(p,barY+3,4,4,'#ffffff')}
 }
+function drawRangeTransition(){
+ const r=race,enter=r.mode==='rangeEntry',t=clamp(1-r.rangeWait/(enter?10:7),0,1);
+ // Piste arrivant en pente douce vers des lignes de tir numérotées.
+ rect(0,0,W,H,gradient(0,H,'#6a9ab3','#d8eff2'));
+ drawMountainLayer(H*.35,H*.18,'#7298ae','#e8f6f8');
+ rect(0,H*.42,W,H*.58,gradient(H*.42,H,'#e6f3f4','#adcdd5'));
+ for(let i=0;i<13;i++)pine((i+.2)*W/12,H*.49+(i%3)*5,22+(i%5)*10,.60);
+ rect(0,H*.37,W,H*.10,'#1b5169');rect(0,H*.36,W,H*.025,'#d7f8ff');
+ for(let i=0;i<12;i++){const x=(i+.5)*W/12;rect(x-3,H*.38,6,H*.22,'#325769');roundRect(x-15,H*.59,30,21,3,'#eff6f7','#3b6175');txt(''+(i+1),x,H*.617,12,'#23435b','center')}
+ // Allée damée, marquage d'entrée-sortie et fusil sur le dos.
+ path([[W*.12,H],[W*.32,H*.53],[W*.68,H*.53],[W*.88,H]],'#f9ffff');
+ for(let i=0;i<8;i++){const x=W*(.26+i*.068);line(x,H*.54,x+(i-3.5)*W*.025,H,'#9dc3cc70',2)}
+ const x=W*(enter?.34+t*.18:.54+t*.19),y=H*(.73+Math.sin(t*8)*.009);
+ skier(x,y,Math.min(1.12,H/460),nation(r.p.n)[3],performance.now()/180);
+ roundRect(W*.5-167,H*.09,334,51,9,'#113b56e8','#9bd8e3');
+ txt(enter?'ENTRÉE SUR LE PAS DE TIR':'SORTIE DU STAND',W*.5,H*.135,19,'#fff','center');
+ txt(enter?'Approche • arrêt • installation':'Rangement • reprise des bâtons',W*.5,H*.188,11,'#d0eff2','center');
+}
+function drawPenaltyScene(){
+ const r=race,clock=performance.now()/1000;
+ rect(0,0,W,H,gradient(0,H,'#6d9bbb','#e1f1f1'));
+ drawMountainLayer(H*.36,H*.19,'#5e8aa5','#e8f1f3');
+ rect(0,H*.42,W,H*.58,gradient(H*.42,H,'#e3f6f8','#c8e3e6'));
+ for(let i=0;i<24;i++){const x=(i*73)%W,y=H*.45+17*Math.sin(i*3.8);pine(x,y,30+(i%5)*12,.45)}
+ const cx=W*.50,cy=H*.63,rx=W*.315,ry=H*.245,loop=r.def.penalty;
+ ellipse(cx,cy,rx+22,ry+18,'#87aab9aa');ellipse(cx,cy,rx+8,ry+7,'#f6ffff');
+ ellipse(cx,cy,rx-40,ry-29,'#8bc0c4');ellipse(cx,cy,rx-48,ry-36,'#cde9e7');
+ // Filets et panneaux qui bordent l'ovale.
+ for(let i=0;i<22;i++){const angle=i/22*Math.PI*2,x=cx+(rx+21)*Math.cos(angle),y=cy+(ry+16)*Math.sin(angle);
+  line(x,y,x,y-12,'#32556b',2);if(i%2===0)path([[x,y-12],[x+12,y-9],[x,y-5]],'#d94b59');}
+ const traveled=(r.penaltyTotal-r.penaltyLeft),a=traveled/loop*Math.PI*2-Math.PI*.5;
+ const sx=cx+(rx-10)*Math.cos(a),sy=cy+(ry-10)*Math.sin(a);
+ // Quelques rivaux peuvent effectuer simultanément une boucle de pénalité.
+ r.objects.filter(o=>o!==r.p&&o.penaltyRemaining>0).slice(0,5).forEach((o,j)=>{
+  const phase=(o.penaltyTotal-o.penaltyRemaining)/loop*Math.PI*2-Math.PI*.5+j*.27;
+  skier(cx+(rx-11-j*3)*Math.cos(phase),cy+(ry-9-j*2)*Math.sin(phase),.32,nation(o.n)[3],clock*6+j);
+ });
+ skier(sx,sy,clamp(H/630,.48,.9),nation(r.p.n)[3],clock*11);
+ roundRect(W*.5-190,H*.095,380,51,10,'#173b55ea','#93d3da');
+ txt(`BOUCLE DE PÉNALITÉ • ${loop} m`,W*.5,H*.134,19,'#fff','center');
+ txt(`TOUR ${Math.min(r.penaltyLapsTotal,r.penaltyLapsDone+1)} / ${r.penaltyLapsTotal}   ·   ${Math.ceil(r.penaltyLeft)} m RESTANTS`,W*.5,H*.196,13,'#f9dca8','center');
+ roundRect(W*.30,H*.90,W*.40,9,4,'#1c4a5dbb');roundRect(W*.30,H*.90,W*.40*(1-r.penaltyLeft/r.penaltyTotal),9,4,'#c5f67d');
+}
 function drawScope(){
  const s=race.shoot;if(!s)return;
  rect(0,0,W,H,gradient(0,H,'#648ba8','#e1f1f3'));
@@ -496,10 +863,10 @@ function drawScope(){
  path([[W*.5+wx,wy-12],[W*.5+wx+Math.sign(wx||1)*11,wy-6],[W*.5+wx,wy]],'#daf8f5');
  txt(`${s.wind>=0?'VENT →':'VENT ←'} ${Math.abs(s.wind).toFixed(1)} m/s`,W*.5,wy-22,11,'#efffff','center');
 }
-function render(){if(!race)return;ctx.save();ctx.clearRect(0,0,W,H);if(race.mode==='shoot')drawScope();else drawSki();ctx.restore()}
+function render(){if(!race)return;ctx.save();ctx.clearRect(0,0,W,H);if(race.mode==='shoot')drawScope();else if(race.mode==='penalty')drawPenaltyScene();else if(race.mode==='rangeEntry'||race.mode==='rangeExit')drawRangeTransition();else drawSki();ctx.restore()}
 function tick(now){requestAnimationFrame(tick);let dt=clamp((now-timePrev)/1000,0,.06);timePrev=now;if(toastTimer>0){toastTimer-=dt;if(toastTimer<=0)$('toast').classList.add('hidden')}if(!race)return;
 if(!race.paused&&!race.finished){let sim=dt*(race.mode==='shoot'?3.5:9.2);race.elapsed+=sim;race.wind=clamp(race.wind+Math.sin(now/10000)*dt*.007,-3,3);for(const a of race.objects)if(a!==race.p)updateAI(a,sim,race.elapsed);
-if(race.mode==='ski'||race.mode==='penalty')playerSki(dt);else if(race.mode==='shoot'){const s=race.shoot;if(s){s.cooldown=Math.max(0,s.cooldown-dt);s.feedback=Math.max(0,s.feedback-dt);if(held.breath&&s.breathLeft>0){s.hold=true;s.breathLeft=Math.max(0,s.breathLeft-dt*21);s.exhausted=s.breathLeft<=0}else{s.hold=false;s.breathLeft=clamp(s.breathLeft+dt*11,0,100);if(s.breathLeft>35)s.exhausted=false}race.heartbeat=mix(race.heartbeat,held.breath?race.heartbeat+3:111,dt*.13);race.fatigue=clamp(race.fatigue-dt*.09,0,95);}}
+if(['ski','penalty','rangeEntry','rangeExit'].includes(race.mode))playerSki(dt);else if(race.mode==='shoot'){const s=race.shoot;if(s){s.cooldown=Math.max(0,s.cooldown-dt);s.feedback=Math.max(0,s.feedback-dt);if(held.breath&&s.breathLeft>0){s.hold=true;s.breathLeft=Math.max(0,s.breathLeft-dt*21);s.exhausted=s.breathLeft<=0}else{s.hold=false;s.breathLeft=clamp(s.breathLeft+dt*11,0,100);if(s.breathLeft>35)s.exhausted=false}race.heartbeat=mix(race.heartbeat,held.breath?race.heartbeat+3:111,dt*.13);race.fatigue=clamp(race.fatigue-dt*.09,0,95);}}
 race.flash=Math.max(0,race.flash-dt);updateHUD();}render()}
 function pointerXY(ev){const rect=cv.getBoundingClientRect();return {x:ev.clientX-rect.left,y:ev.clientY-rect.top}}
 let aiming=false;cv.addEventListener('pointerdown',e=>{if(!race||race.paused||race.mode!=='shoot')return;e.preventDefault();aiming=true;cv.setPointerCapture(e.pointerId);const p=pointerXY(e);race.shoot.aim={x:clamp(p.x,22,W-22),y:clamp(p.y,84,H*.79)};let l=shootLayout();let i=Math.round((p.x-l.first)/l.space);if(i>=0&&i<5&& !race.shoot.hit[i]&&(race.shoot.attempt>=5||i===race.shoot.attempt))race.shoot.active=i;});
